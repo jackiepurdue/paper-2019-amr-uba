@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/gh-pages) branch hosts the contents of this directory at https://jackiepurdue.github.io/paper-2019-amr-uba/.
-The permalink for this webpage version is https://jackiepurdue.github.io/paper-2019-amr-uba/v/1c054130221c71c1afeb82e99e89f7ea1c773faf/.
+The permalink for this webpage version is https://jackiepurdue.github.io/paper-2019-amr-uba/v/819a017bd87a861374d0a528b549a68ca1243479/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://jackiepurdue.github.io/paper-2019-amr-uba/v/freeze/.
 
 ## Files
@@ -36,4 +36,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`1c054130221c71c1afeb82e99e89f7ea1c773faf`](https://github.com/jackiepurdue/paper-2019-amr-uba/commit/1c054130221c71c1afeb82e99e89f7ea1c773faf).
+[`819a017bd87a861374d0a528b549a68ca1243479`](https://github.com/jackiepurdue/paper-2019-amr-uba/commit/819a017bd87a861374d0a528b549a68ca1243479).
