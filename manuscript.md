@@ -1,14 +1,14 @@
 ---
 author-meta:
-- John Doe
+- Jackie Purdue
 - Jane Roe
 date-meta: '2019-06-10'
 keywords:
-- markdown
-- publishing
-- manubot
-lang: en-US
-title: Manuscript Title
+- metagenome
+- antimicrobial resistance
+lang: en-CA
+title: Identifying possibly novel sources of antimicrobial resistance in uncultivated
+  bacterial and archeal metagenome-assembled genomes
 ...
 
 
@@ -18,9 +18,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/1c054130221c71c1afeb82e99e89f7ea1c773faf/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/819a017bd87a861374d0a528b549a68ca1243479/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@1c05413](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/1c054130221c71c1afeb82e99e89f7ea1c773faf)
+from [jackiepurdue/paper-2019-amr-uba@819a017](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/819a017bd87a861374d0a528b549a68ca1243479)
 on June 10, 2019.
 </em></small>
 
@@ -28,15 +28,15 @@ on June 10, 2019.
 
 
 
-+ **John Doe**<br>
++ **Jackie Purdue**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0003-3131-0688](https://orcid.org/0000-0003-3131-0688)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [johndoe](https://github.com/johndoe)
+    [jackiepurdue](https://github.com/jackiepurdue)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [jackiepurdue](https://twitter.com/jackiepurdue)<br>
   <small>
-     Department of Something, University of Whatever
+     Department of Computer Science, Dalhousie University
      · Funded by Grant XXXXXXXX
   </small>
 

@@ -2,14 +2,14 @@
   "date": "June 10, 2019",
   "authors": [
     {
-      "github": "johndoe",
-      "name": "John Doe",
-      "initials": "JD",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "twitter": "johndoe",
-      "email": "john.doe@something.com",
+      "github": "jackiepurdue",
+      "name": "Jackie Purdue",
+      "initials": "JP",
+      "orcid": "0000-0003-3131-0688",
+      "twitter": "jackiepurdue",
+      "email": "jpurdue@dal.ca",
       "affiliations": [
-        "Department of Something, University of Whatever"
+        "Department of Computer Science, Dalhousie University"
       ],
       "funders": "Grant XXXXXXXX",
       "affiliation_numbers": [
@@ -27,26 +27,30 @@
         "Department of Whatever, University of Something"
       ],
       "affiliation_numbers": [
-        1,
-        2
+        2,
+        3
       ]
     }
   ],
   "affiliations": [
     {
-      "affiliation": "Department of Something, University of Whatever",
+      "affiliation": "Department of Computer Science, Dalhousie University",
       "affiliation_number": 1
     },
     {
-      "affiliation": "Department of Whatever, University of Something",
+      "affiliation": "Department of Something, University of Whatever",
       "affiliation_number": 2
+    },
+    {
+      "affiliation": "Department of Whatever, University of Something",
+      "affiliation_number": 3
     }
   ],
   "ci_source": {
     "repo_slug": "jackiepurdue/paper-2019-amr-uba",
     "repo_owner": "jackiepurdue",
     "repo_name": "paper-2019-amr-uba",
-    "commit": "1c054130221c71c1afeb82e99e89f7ea1c773faf"
+    "commit": "819a017bd87a861374d0a528b549a68ca1243479"
   },
   "manuscript_stats": {
     "reference_counts": {
