@@ -18,9 +18,9 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/819a017bd87a861374d0a528b549a68ca1243479/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/59b4fb8a56e5c64d6b5eb104a07033ca157bf2dd/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@819a017](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/819a017bd87a861374d0a528b549a68ca1243479)
+from [jackiepurdue/paper-2019-amr-uba@59b4fb8](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/59b4fb8a56e5c64d6b5eb104a07033ca157bf2dd)
 on June 10, 2019.
 </em></small>
 
