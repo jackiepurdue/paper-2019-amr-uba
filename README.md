@@ -2,8 +2,8 @@
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://manubot.github.io/rootstock/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://manubot.github.io/rootstock/manuscript.pdf)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://jackiepurdue.github.io/paper-2019-amr-uba/)
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://jackiepurdue.github.io/paper-2019-amr-uba/manuscript.pdf)
 [![Build Status](https://travis-ci.com/manubot/rootstock.svg?branch=master)](https://travis-ci.com/manubot/rootstock)
 
 ## Manuscript description
@@ -79,8 +79,8 @@ If your pull request build fails, see the Travis CI logs for the cause of failur
 When a commit to the `master` branch occurs (for example, when a pull request is merged), Travis CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/manubot/rootstock/tree/gh-pages) and [`output`](https://github.com/manubot/rootstock/tree/output) branches.
 The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
 
-+ **HTML manuscript** at https://manubot.github.io/rootstock/
-+ **PDF manuscript** at https://manubot.github.io/rootstock/manuscript.pdf
++ **HTML manuscript** at https://jackiepurdue.github.io/paper-2019-amr-uba/
++ **PDF manuscript** at https://jackiepurdue.github.io/paper-2019-amr-uba/manuscript.pdf
 
 For continuous integration configuration details, see [`.travis.yml`](.travis.yml).
 
