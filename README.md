@@ -1,17 +1,11 @@
-# Automated scholarly manuscripts on GitHub
-
-<!-- usage note: edit the H1 title above to personalize the manuscript -->
+# Uncultivated MAG and AMR Paper
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://jackiepurdue.github.io/paper-2019-amr-uba/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://jackiepurdue.github.io/paper-2019-amr-uba/manuscript.pdf)
 [![Build Status](https://travis-ci.com/manubot/rootstock.svg?branch=master)](https://travis-ci.com/manubot/rootstock)
 
 ## Manuscript description
-
-<!-- usage note: edit this section. -->
-
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+This serves as a working repository for a paper on identifying candidate antimicrobial resistance genes in uncultivated bacterial and archeal metagenome-assembled genomes.
 
 ## Manubot
 
