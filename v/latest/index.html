@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jackie Purdue" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2019-06-10" />
+  <meta name="dcterms.date" content="2019-07-24" />
   <meta name="keywords" content="metagenome, antimicrobial resistance" />
   <title>Identifying possibly novel sources of antimicrobial resistance in uncultivated bacterial and archeal metagenome-assembled genomes</title>
   <style>
@@ -23,17 +23,51 @@
 <header id="title-block-header">
 <h1 class="title">Identifying possibly novel sources of antimicrobial resistance in uncultivated bacterial and archeal metagenome-assembled genomes</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://jackiepurdue.github.io/paper-2019-amr-uba/v/59b4fb8a56e5c64d6b5eb104a07033ca157bf2dd/">permalink</a>) was automatically generated from <a href="https://github.com/jackiepurdue/paper-2019-amr-uba/tree/59b4fb8a56e5c64d6b5eb104a07033ca157bf2dd">jackiepurdue/paper-2019-amr-uba@59b4fb8</a> on June 10, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://jackiepurdue.github.io/paper-2019-amr-uba/v/c9599f5a04944541d7bac26056b5e5c844fca493/">permalink</a>) was automatically generated from <a href="https://github.com/jackiepurdue/paper-2019-amr-uba/tree/c9599f5a04944541d7bac26056b5e5c844fca493">jackiepurdue/paper-2019-amr-uba@c9599f5</a> on July 24, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Jackie Purdue</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-3131-0688">0000-0003-3131-0688</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/jackiepurdue">jackiepurdue</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/jackiepurdue">jackiepurdue</a><br> <small> Department of Computer Science, Dalhousie University · Funded by Grant XXXXXXXX </small></p></li>
 <li><p><strong>Jane Roe</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/janeroe">janeroe</a><br> <small> Department of Something, University of Whatever; Department of Whatever, University of Something </small></p></li>
 </ul>
 <h2 id="abstract" class="page_break_before">Abstract</h2>
+<p>Antimicrobial resistance (AMR) is a global threat to human health. Efforts to prevent the spread of AMR rely on surveillance of possible AMR determinants. Under-sampled, and uncultured microbial genomes in the form of metagenome data, are a potential source for AMR gene discovery. The Resistance Gene Identifier (RGI) and the Comprehensive Antibiotic Resistance Database (CARD) <span class="citation" data-cites="1ByMfX8Y1"><a href="#ref-1ByMfX8Y1" role="doc-biblioref">1</a></span> were used to predict resistomes in a data set of 7903 draft quality metagenome assembled genomes <span class="citation" data-cites="wrBRBdFb"><a href="#ref-wrBRBdFb" role="doc-biblioref">2</a></span> (MAGs) from various uncultivated bacterial and archeal sources (UBAs). Genes associated with mobile colistin resistance (MCR), and carbapenem resistance, such as Metallo-β-Lactamases (NDM), Klebsiella pneumoniae carbapenemases (KPC), and OXA β-lactamases were found to be represented in the UBAs. [TODO: findings] [TODO: conclusion]</p>
+<h2 id="introduction">Introduction</h2>
+<p>An important part of the microbial adaptive process is an organisms ability to adapt to pressure from antibiotic agents in the environment. In the context of pathogenic microbes and pharmaceutical antibiotics, this process is a threat to our treatment of infectious diseases. In both healthcare, and agricultural settings, many antibiotic drugs are becoming less effective due to this antimicrobial resistance. AMR is becoming more prevalent, and is even starting to become an issue with last-line antibiotics such as colistins, and carbapenemases. This problem is arising due to irresponsible practices in healthcare, and in agriculture. Much of this problem is due to indiscriminate application of antibiotics, without regard for current knowledge on the matter. Another portion of this problem is due to a lack of insight into the constantly changing pathogenic resistomes, where bad practices could be carried out in ignorance. In an effort to control the spread of AMR, it is important that we collect as much information as possible about this process. Surveillance and characterization of many AMR genes is currently done through curated databases such as the Comprehensive Antibiotic Resistance Database (CARD). These databases contain plenty of AMR information about resistomes which are commonly studied, but it is possible that a lack of important information exists in the rest of the environment. Observing potential AMR genes for antibiotics such as carbapenemases and colistins, outside of a clinical setting, could lead to valuable new information.</p>
+<p>A potential source of discovery of new AMR determinants is an examination of Under-sampled, and uncultured microbial genomes in the form of metagenome data. The Resistance Gene Identifier (RGI) uses the Comprehensive Antibiotic Resistance Database (CARD) <span class="citation" data-cites="1ByMfX8Y1"><a href="#ref-1ByMfX8Y1" role="doc-biblioref">1</a></span> to predict potential AMR genes from sequence data, would be a useful tool in examining such data. Using canonical reference genes associated with colistin and carbapenem resistance, we can use current knowledge to query these metagenomes, an perhaps glean new knowledge from the phylogenetic relationships.</p>
+<p>TODO: introduce MCR, OXA <span class="citation" data-cites="M2fYhdAU"><a href="#ref-M2fYhdAU" role="doc-biblioref">3</a></span>, KPC, and NDM</p>
+<h2 id="methods">Methods</h2>
+<h3 id="amr-prediction">AMR Prediction</h3>
+<p>A dataset of 7903 draft quality MAGs which were recovered from the Sequence Read Archive by Parks <span class="citation" data-cites="wrBRBdFb"><a href="#ref-wrBRBdFb" role="doc-biblioref">2</a></span>. TODO: source of UBA sequence files RGI version 5.0 with CARD database version 3.02 <span class="citation" data-cites="1ByMfX8Y1"><a href="#ref-1ByMfX8Y1" role="doc-biblioref">1</a></span> was run on the contigs of the 7903 MAGS with the inclusion of loose, perfect, and strict hits.</p>
+<h3 id="phylogenetic-analysis">Phylogenetic Analysis</h3>
+<h4 id="mcr">MCR</h4>
+<h5 id="obtaining-candidatea-and-reference-mcr-genes">Obtaining candidatea and reference MCR genes</h5>
+<p>24 canonical sequence variants as indicated by CARD for the MCR phosphoethanolamine transferase [AMR Gene Family], MCR 3.11, 6.1, 2.2, 3.6, 3.10, 3.5, 1.10, 1.9, 3.9, 3.8, 3.7, 3.2, 3.1, 1.6, 1, 2, 3, 1.2, 1.3, 1.4, 8, 4, 5, 7.1 were obtained from the CARD database.</p>
+<p>Output containing only AMR gene prediction data for the MCR phosphoethanolamine transferase gene family was produced by filtering RGI output based on a ‘MCR phosphoethanolamine’ string search. The filtered data were translated to a blast database. The 24 CARD canonical sequences were used to perform a multiple query BLASTP against the UBA blast database with a e-value threshold of 1e-180 and a query coverage of 90%. Redundant results were filtered from these BLASTP results by retrieving only the longest sequence for each uniquely labeled result.</p>
+<p>Additional putative MCR phosphoethanolamine transferase gene family sequences were accumulated by querying the CARD prevalence data version 3.0.4 (“based on sequence data acquired from NCBI on 28-Feb-2019, analyzed using RGI 4.2.2 (DIAMOND homolog detection) and CARD 3.0.1”). The prevalence data was translated to a BLAST database. The 24 CARD canonical sequences were used to perform a multiple query BLASTP against the prevalence blast database with a e-value threshold of 1e-180 and a query coverage of 90%. Redundant results were filtered from these BLAST results by retrieving only the longest sequence for each uniquely labeled result.</p>
+<p>The 24 CARD canonical sequences were used to perform a multiple query BLASTP against the NCBI non-redundant database blast database with a e-value threshold of 1e-180 and a query coverage of 90%. Redundant results were filtered from these BLAST results by retrieving only the longest sequence for each uniquely labeled result.</p>
+<p>The filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences. These the concatenated amino acid sequences were aligned with MAFFT FFT-NS-2. TODO: re-run MAFFT with best parameters and update this file. The aligned sequences were trimmed by trimal using the automated1 option. IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the LG+R10 model of substitution. all leaves of the trees were labeled with as much taxonomic information as possible for each rank, based on information from metadata.</p>
+<p>The result was carried to subsequent analysis.</p>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
-
+<div id="ref-1ByMfX8Y1">
+<p>1. <strong>CARD 2017: expansion and model-centric curation of the comprehensive antibiotic resistance database</strong><br />
+Baofeng Jia, Amogelang R. Raphenya, Brian Alcock, Nicholas Waglechner, Peiyao Guo, Kara K. Tsang, Briony A. Lago, Biren M. Dave, Sheldon Pereira, Arjun N. Sharma, … Andrew G. McArthur<br />
+<em>Nucleic Acids Research</em> (2016-10-26) <a href="https://doi.org/f9wbjs">https://doi.org/f9wbjs</a><br />
+DOI: <a href="https://doi.org/10.1093/nar/gkw1004">10.1093/nar/gkw1004</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27789705">27789705</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5210516">PMC5210516</a></p>
+</div>
+<div id="ref-wrBRBdFb">
+<p>2. <strong>Recovery of nearly 8,000 metagenome-assembled genomes substantially expands the tree of life</strong><br />
+Donovan H. Parks, Christian Rinke, Maria Chuvochina, Pierre-Alain Chaumeil, Ben J. Woodcroft, Paul N. Evans, Philip Hugenholtz, Gene W. Tyson<br />
+<em>Nature Microbiology</em> (2017-09-11) <a href="https://doi.org/cczd">https://doi.org/cczd</a><br />
+DOI: <a href="https://doi.org/10.1038/s41564-017-0012-7">10.1038/s41564-017-0012-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28894102">28894102</a></p>
+</div>
+<div id="ref-M2fYhdAU">
+<p>3. <strong>OXA  -Lactamases</strong><br />
+B. A. Evans, S. G. B. Amyes<br />
+<em>Clinical Microbiology Reviews</em> (2014-04-01) <a href="https://doi.org/f5zp8b">https://doi.org/f5zp8b</a><br />
+DOI: <a href="https://doi.org/10.1128/cmr.00117-13">10.1128/cmr.00117-13</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24696435">24696435</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3993105">PMC3993105</a></p>
+</div>
 </div>
 <!-- default theme -->
 
