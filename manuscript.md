@@ -2,7 +2,7 @@
 author-meta:
 - Jackie Purdue
 - Jane Roe
-date-meta: '2019-09-21'
+date-meta: '2019-09-26'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -18,10 +18,10 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/1897a8f05947c9d1fd324d3f0c06f279b37628d6/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/85770822903871c85ac999637635edadfa2d7e59/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@1897a8f](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/1897a8f05947c9d1fd324d3f0c06f279b37628d6)
-on September 21, 2019.
+from [jackiepurdue/paper-2019-amr-uba@8577082](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/85770822903871c85ac999637635edadfa2d7e59)
+on September 26, 2019.
 </em></small>
 
 ## Authors
@@ -65,21 +65,54 @@ Genes associated with mobile colistin resistance (MCR), and carbapenem resistanc
 
 ## Introduction
 
-Antimicrobials are substances that can halt the growth of and kill microorganisms @Zvf1VhKR. An important part of the microbial adaptive process is the ability to adapt to pressure from antimicrobial agents within the environment. This ability allows microbes to continue to live and grow in the presence of antimicrobial compounds. This is known as antimicrobial resistance (AMR) https://www.cdc.gov/drugresistance/about.html. The abuse and misuse of antimicrobials has led to increasing levels of AMR within clinical settings @1ByMfX8Y1.
+Antimicrobials are substances that can halt the growth of and kill microorganisms @Zvf1VhKR. 
+An important part of the microbial adaptive process is the ability to adapt to pressure from antimicrobial agents within the environment. 
+This ability allows microbes to continue to live and grow in the presence of antimicrobial compounds. 
+This is known as antimicrobial resistance (AMR) https://www.cdc.gov/drugresistance/about.html. 
+The abuse and misuse of antimicrobials has led to increasing levels of AMR within clinical settings @1ByMfX8Y1.
 
-The spread of AMR is a growing global health crisis. AMR within pathogenic microbes is a threat to our treatment of infectious diseases, reducing the efficacy of antibiotics, allowing for prolonged and more severe infections, and an increase in morbidity @kDtOJsGI. The European Centre for Disease Prevention and Control estimate that 25 000 people die per year due to infections related to AMR @OLzrpsK4, with reports showing the annual cost to combat AMR infections in just the USA alone to be between $21 billion and $34 billion @17zndNa0I.
+The spread of AMR is a growing global health crisis. 
+AMR within pathogenic microbes is a threat to our treatment of infectious diseases, reducing the efficacy of antibiotics, allowing for prolonged and more severe infections, and an increase in morbidity @kDtOJsGI. 
+The European Centre for Disease Prevention and Control estimate that 25,000 people die per year due to infections related to AMR @OLzrpsK4, with reports showing the annual cost to combat AMR infections in just the USA alone to be between $21 billion and $34 billion @17zndNa0I.
 
-A microbe can acquire AMR through a variety of mechanisms such as intrinsic resistance or lateral gene transfer @2xaXclNM. These mechanisms allow for the constant change of the resistome, making determining the scope of AMR within both pathogenic and non-pathogenic bacteria difficult @1ByMfX8Y1. To impede the spread of AMR the World Health Organization (WHO) created an action plan which emphasizes the need to strengthen the knowledge and surveillance of AMR. An important aspect of this research is to examine the spread of AMR between environmental and clinical samples url: https://www.who.int/antimicrobial-resistance/global-action-plan/en/. Characterization of many AMR genes is currently being done through curated databases. The Comprehensive Antibiotic Resistance Database (CARD) is an example of one of these curated databases. CARD contains reference data pertaining to the genes, proteins and mutations involved in AMR. CARD allows for the identification of resistance genes within a genome using the Resistance Gene Identifier (RGI). @1ByMfX8Y1.
+A microbe can acquire AMR through a variety of mechanisms such as intrinsic resistance or lateral gene transfer @2xaXclNM. These mechanisms allow for the constant change of the resistome, making determining the scope of AMR within both pathogenic and non-pathogenic bacteria difficult @1ByMfX8Y1. 
+To impede the spread of AMR the World Health Organization (WHO) created an action plan which emphasizes the need to strengthen the knowledge and surveillance of AMR. An important aspect of this research is to examine the spread of AMR between environmental and clinical samples url: https://www.who.int/antimicrobial-resistance/global-action-plan/en/. 
+Characterization of many AMR genes is currently being done through curated databases. The Comprehensive Antibiotic Resistance Database (CARD) is an example of one of these curated databases. 
+CARD contains reference data pertaining to the genes, proteins and mutations involved in AMR. 
+CARD allows for the identification of resistance genes within a genome using the Resistance Gene Identifier (RGI). @1ByMfX8Y1.
 
-These curated databases contain a large amount of information on the resistomes that are most commonly studied, especially those pertaining to Staphylococcus aureus, Escherichia coli, Klebsiella pneumoniae, Acinetobacter baumannii, and Pseudomonas aeruginosa. These pathogens are multidrug resistant and are the leading cause of hospital acquired infections @b2c0QSMI. Most antibiotics have no efficacy on these infections and are therefore treated with carbapenems or polymyxins @OLzrpsK4.
+These curated databases contain a large amount of information on the resistomes that are most commonly studied, especially those pertaining to _Staphylococcus aureus_, _Escherichia coli_, _Klebsiella pneumoniae_, _Acinetobacter baumannii_, and _Pseudomonas aeruginosa_. 
+These pathogens are multidrug resistant and are the leading cause of hospital acquired infections @b2c0QSMI. 
+Most antibiotics have no efficacy on these infections and are therefore treated with carbapenems or polymyxins @OLzrpsK4.
 
-Carbapenems are broad spectrum beta-lactam antibiotics typically used to treat life threatening, high risk, and multidrug resistant bacterial infections. beta-lactamase producing bacteria have difficulty degrading carbapenems when combined with beta-lactamase inhibitors making them effective treatments against pathogens with multi-drug resistance @OLzrpsK4. However, there has been a recent emergence of resistance to these antimicrobials, presenting a new threat to public health. One way microbes can develop carbapenem resistance is through the acquisition of carbapenamase genes. @OLzrpsK4. Three main carbapenamase genes of concern are Klebsiella pneumoniae carbapenemase (KPC), New Delhi metallo-beta-lactamase (NDM) and OXA beta-lactamases @OLzrpsK4.
+Carbapenems are broad spectrum beta-lactam antibiotics typically used to treat life threatening, high risk, and multidrug resistant bacterial infections. 
+beta-lactamase producing bacteria have difficulty degrading carbapenems when combined with beta-lactamase inhibitors making them effective treatments against pathogens with multi-drug resistance @OLzrpsK4. 
+However, there has been a recent emergence of resistance to these antimicrobials, presenting a new threat to public health. 
+One way microbes can develop carbapenem resistance is through the acquisition of carbapenamase genes. @OLzrpsK4. 
+Three main carbapenamase genes of concern are Klebsiella pneumoniae carbapenemase (KPC), New Delhi metallo-beta-lactamase (NDM) and OXA beta-lactamases @OLzrpsK4.
 
-Carbapenamases are classified as one of four classes (A-D) based on their molecular structure @16ZzmUN7q. Class A, C, and D both use a serine residue to hydrolyze beta-lactam antibiotics @2p1n2mr5. KPC genes are a part of class A. Many variants of KPC are spreading and being discovered, however carbapenamases within this class are more rare than the other three classes @OLzrpsK4. Class D contains the OXA family of beta-lactamases. Unlike KPC and NDM, this family is characterized by phenotype rather than genotype. This family is characterized by specific hydrolases that can hydrolyze oxacillin and cloxacillin, with the enzyme being poorly inhibited by clavulanic acid https://card.mcmaster.ca/ontology/36026. This results in a low amount of sequence homology within the family. A subset of this family, OXA-48 possesses carbapenem hydrolyzing activity @UV1QqTS8. The OXA-48 subfamily consists of five variants: OXA-48, OXA-162, OXA-163, OXA-181, OXA-204, and OXA-232 @FqGNAObZ. Class B beta-lactamases are metalloenzymes that use a zinc active site to hydrolyze beta-lactam antibiotics. The NDM gene is classified as a class B beta-lactamase @OLzrpsK4.
+Carbapenamases are classified as one of four classes (A-D) based on their molecular structure @16ZzmUN7q. 
+Class A, C, and D both use a serine residue to hydrolyze beta-lactam antibiotics @2p1n2mr5. 
+KPC genes are a part of class A. 
+Many variants of KPC are spreading and being discovered, however carbapenamases within this class are more rare than the other three classes @OLzrpsK4. 
+Class D contains the OXA family of beta-lactamases. 
+Unlike KPC and NDM, this family is characterized by phenotype rather than genotype. 
+This family is characterized by specific hydrolases that can hydrolyze oxacillin and cloxacillin, with the enzyme being poorly inhibited by clavulanic acid https://card.mcmaster.ca/ontology/36026. 
+This results in a low amount of sequence homology within the family. 
+A subset of this family, OXA-48 possesses carbapenem hydrolyzing activity @UV1QqTS8. 
+The OXA-48 subfamily consists of five variants: OXA-48, OXA-162, OXA-163, OXA-181, OXA-204, and OXA-232 @FqGNAObZ. 
+Class B beta-lactamases are metalloenzymes that use a zinc active site to hydrolyze beta-lactam antibiotics. 
+The NDM gene is classified as a class B beta-lactamase @OLzrpsK4.
 
-When pathogens become resistant to carbapenems, the last line of defense is colistin. Colistin is a polymyxin antibiotic. Polymyxins act via disrupting membrane permeability @17k3PVuIy. Colistin is limited to a last line defense against carbapenem resistant infections due to its neurotoxic and nephrotoxic effects @17k3PVuIy. Despite its already limited use, mobilized colistin resistance (MCR) have been discovered @vQTzfitx. Due to the emergence of resistance to many last-line antibiotics, it is important to characterize the total diversity and spread of these resistance determinants.
+When pathogens become resistant to carbapenems, the last line of defense is colistin. 
+Colistin is a polymyxin antibiotic. 
+Polymyxins act via disrupting membrane permeability @17k3PVuIy. 
+Colistin is limited to a last line defense against carbapenem resistant infections due to its neurotoxic and nephrotoxic effects @17k3PVuIy. 
+Despite its already limited use, mobilized colistin resistance (MCR) have been discovered @vQTzfitx. Due to the emergence of resistance to many last-line antibiotics, it is important to characterize the total diversity and spread of these resistance determinants.
 
-The UBA dataset contains the data needed to expand AMR surveillance to a wide range of environmental samples. Coupling RGI predictions of the UBA metagenomes with phylogenetic analysis of the predicted AMR genes enables the possibility to discover previously unseen AMR diversity in genomes not yet analyzed for AMR, and provides insight into the diversity of AMR across non-clinical samples.
+The UBA dataset contains the data needed to expand AMR surveillance to a wide range of environmental samples. 
+Coupling RGI predictions of the UBA metagenomes with phylogenetic analysis of the predicted AMR genes enables the possibility to discover previously unseen AMR diversity in genomes not yet analyzed for AMR, and provides insight into the diversity of AMR across non-clinical samples.
+
 
 ## Methods
 
