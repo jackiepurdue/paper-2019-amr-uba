@@ -2,7 +2,7 @@
 author-meta:
 - Jackie Purdue
 - Jane Roe
-date-meta: '2019-09-26'
+date-meta: '2019-09-27'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -18,10 +18,10 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/85770822903871c85ac999637635edadfa2d7e59/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/0ae0229859801ed97c26c6c6871d38db44f4ccb9/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@8577082](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/85770822903871c85ac999637635edadfa2d7e59)
-on September 26, 2019.
+from [jackiepurdue/paper-2019-amr-uba@0ae0229](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/0ae0229859801ed97c26c6c6871d38db44f4ccb9)
+on September 27, 2019.
 </em></small>
 
 ## Authors
@@ -65,17 +65,18 @@ Genes associated with mobile colistin resistance (MCR), and carbapenem resistanc
 
 ## Introduction
 
-Antimicrobials are substances that can halt the growth of and kill microorganisms @Zvf1VhKR. 
+Antimicrobials are substances that can halt the growth of and/or kill microorganisms @Zvf1VhKR. 
 An important part of the microbial adaptive process is the ability to adapt to pressure from antimicrobial agents within the environment. 
 This ability allows microbes to continue to live and grow in the presence of antimicrobial compounds. 
 This is known as antimicrobial resistance (AMR) https://www.cdc.gov/drugresistance/about.html. 
 The abuse and misuse of antimicrobials has led to increasing levels of AMR within clinical settings @1ByMfX8Y1.
 
 The spread of AMR is a growing global health crisis. 
-AMR within pathogenic microbes is a threat to our treatment of infectious diseases, reducing the efficacy of antibiotics, allowing for prolonged and more severe infections, and an increase in morbidity @kDtOJsGI. 
-The European Centre for Disease Prevention and Control estimate that 25,000 people die per year due to infections related to AMR @OLzrpsK4, with reports showing the annual cost to combat AMR infections in just the USA alone to be between $21 billion and $34 billion @17zndNa0I.
+AMR within pathogenic microbes is a threat to our treatment of infectious diseases, reducing the efficacy of antibiotics, allowing for prolonged and more severe infections, and increased mortality @kDtOJsGI. 
+The European Centre for Disease Prevention and Control estimates that 25,000 people die per year due to infections related to AMR @OLzrpsK4, with reports showing the annual cost to combat AMR infections in just the USA alone to be between $21 billion and $34 billion @17zndNa0I.
 
-A microbe can acquire AMR through a variety of mechanisms such as intrinsic resistance or lateral gene transfer @2xaXclNM. These mechanisms allow for the constant change of the resistome, making determining the scope of AMR within both pathogenic and non-pathogenic bacteria difficult @1ByMfX8Y1. 
+Microbes can be intrinsically resistant to AMR or acquire resistance via lateral gene transfer @2xaXclNM. 
+These mechanisms allow for the constant change of the resistome, making determining the scope of AMR within both pathogenic and non-pathogenic bacteria difficult @1ByMfX8Y1. 
 To impede the spread of AMR the World Health Organization (WHO) created an action plan which emphasizes the need to strengthen the knowledge and surveillance of AMR. An important aspect of this research is to examine the spread of AMR between environmental and clinical samples url: https://www.who.int/antimicrobial-resistance/global-action-plan/en/. 
 Characterization of many AMR genes is currently being done through curated databases. The Comprehensive Antibiotic Resistance Database (CARD) is an example of one of these curated databases. 
 CARD contains reference data pertaining to the genes, proteins and mutations involved in AMR. 
