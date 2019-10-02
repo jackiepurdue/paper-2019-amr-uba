@@ -2,7 +2,7 @@
 author-meta:
 - Jackie Purdue
 - Jane Roe
-date-meta: '2019-09-27'
+date-meta: '2019-10-02'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -18,10 +18,10 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/0ae0229859801ed97c26c6c6871d38db44f4ccb9/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/da92f0b8f585c221f4288841ded2b7964162079a/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@0ae0229](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/0ae0229859801ed97c26c6c6871d38db44f4ccb9)
-on September 27, 2019.
+from [jackiepurdue/paper-2019-amr-uba@da92f0b](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/da92f0b8f585c221f4288841ded2b7964162079a)
+on October 2, 2019.
 </em></small>
 
 ## Authors
@@ -119,37 +119,166 @@ Coupling RGI predictions of the UBA metagenomes with phylogenetic analysis of th
 
 ### AMR Prediction
 
-A dataset of 7903 draft quality MAGs which were recovered from the Sequence Read Archive by Parks @wrBRBdFb were used for this analyisis.
+A data-set of 7903 draft quality MAGs which were recovered from the Sequence Read Archive by Parks @wrBRBdFb were used for this analysis.
 RGI version 5.0 with CARD database version 3.02  @1ByMfX8Y1 was run on the contigs of the 7903 MAGS with the inclusion of loose, perfect, and strict hits.
 
 ### Phylogenetic Analysis
 
+### Materials
+
+CARD prevalence data version 3.0.4 ("based on sequence data acquired from NCBI on 28-Feb-2019, analyzed using RGI 4.2.2 (DIAMOND homolog detection) and CARD 3.0.1") was used to query the UBA data.
+[TODO: Other versions of software]
+
 #### MCR
 
-##### Obtaining candidatea and reference MCR genes
+##### Obtaining reference MCR genes
 
-24 canonical sequence variants as indicated by CARD for the MCR phosphoethanolamine transferase [AMR Gene Family], MCR 3.11, 6.1, 2.2, 3.6, 3.10, 3.5, 1.10, 1.9, 3.9, 3.8, 3.7, 3.2, 3.1, 1.6, 1, 2, 3, 1.2, 1.3, 1.4, 8, 4, 5, 7.1 were obtained from the CARD database.
+24 canonical sequence variants (see Table S1) as indicated by CARD for the MCR phosphoethanolamine transferase [AMR Gene Family], were obtained from the CARD database.
 
-Output containing only AMR gene prediction data for the MCR phosphoethanolamine transferase gene family was produced by filtering RGI output based on the its association with 'MCR phosphoethanolamine'.
-The filtered data were translated to a blast database.
-The 24 CARD canonical sequences were used to perform a multiple query BLASTP against the UBA blast database with a e-value threshold of 1e-170 and a query coverage of 99%.
-Redundant results were filtered from these BLASTP results by retrieving only the longest sequence for each uniquely labeled result. 
-
-Additional putative MCR phosphoethanolamine transferase gene family sequences were accumulated by querying the CARD prevalence data version 3.0.4 ("based on sequence data acquired from NCBI on 28-Feb-2019, analyzed using RGI 4.2.2 (DIAMOND homolog detection) and CARD 3.0.1").
+Additional putative MCR phosphoethanolamine transferase gene family sequences were accumulated by querying the CARD prevalence data.
 The prevalence data was translated to a BLAST database.
 The 24 CARD canonical sequences were used to perform a multiple query BLASTP against the prevalence blast database with a e-value threshold of 1e-180 and a query coverage of 99%.
 Redundant results were filtered from these BLAST results by retrieving only the longest sequence for each uniquely labeled result.
+Many of the sequences are nearly identical, thus they were further processed by clustering with CD-HIT at a minimum sequence identity of 99%
 
-The 24 CARD canonical sequences were used to perform a multiple query BLASTP against the NCBI non-redundant database blast database with a e-value threshold of 1e-180 and a query coverage of 90%.
+The 24 CARD canonical sequences were used to perform a multiple query BLASTP against the NCBI non-redundant database blast database with a e-value threshold of 1e-180 and a query coverage of 99%.
 Redundant results were filtered from these BLAST results by retrieving only the longest sequence for each uniquely labeled result.
+There are many highly sampled taxa and genes in the non-redundant database. To balance the distribution, and reduce the size of the non-redundant sequence set, CD-HIT was used to cluster the data at 70%.
+ 
 
-The filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences.
-These the concatenated amino acid sequences were aligned with MAFFT FFT-NS-2.
+##### Obtaining candidate MCR genes from the UBA data
+
+Sequences possibly containing AMR gene prediction data for the MCR phosphoethanolamine transferase gene family was produced by filtering RGI output based on the its association with 'MCR phosphoethanolamine'.
+The filtered data were translated to a blast database.
+The 24 CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold of 1e-170 and a query coverage of 99%.
+For simplicity in identifying the taxonomic history of the non-redundant hits, MULTISPECIES sequences were removed from the analyses.
+Redundant results were filtered from these BLASTP results by retrieving only the longest sequence for each uniquely labeled result.
+
+##### Phylogenetic analysis of the MCR genes
+
+To compare the phylogenetic relationship of only the putative sequences, the sequences from the CARD prevalence data were concatenated to one multi-FASTA format file with the canonical sequences.
+These the concatenated amino acid sequences were aligned with MAFFT-LINSI.
 The aligned sequences were trimmed by trimal using the automated1 option.
-IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the LG+R10 model of substitution.
-all leaves of the trees were labeled with as much taxonomic information as possible for each rank, based on information from metadata.
+IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the G+I+G4 model of substitution.
 
-The result was carried to subsequent analysis.
+For the overall comparison of sequences, the filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences.
+These the concatenated amino acid sequences were aligned with MAFFT-LINSI.
+The aligned sequences were trimmed by trimal using the automated1 option.
+IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the G+I+G4 model of substitution.
+
+#### NDM
+
+##### Obtaining reference NDM genes
+
+14 canonical sequence variants (see Table S1) as indicated by CARD for the NDM beta-lactamase [AMR Gene Family], were obtained from the CARD database.
+
+Additional putative NDM beta-lactamase gene family sequences were accumulated by querying the CARD prevalence data.
+The prevalence data was translated to a BLAST database.
+The 14 CARD canonical sequences were used to perform a multiple query BLASTP against the prevalence blast database with a e-value threshold of 1e-180 and a query coverage of 99%.
+Redundant results were filtered from these BLAST results by retrieving only the longest sequence for each uniquely labeled result.
+Many of the sequences are nearly identical, thus they were further processed by clustering with CD-HIT at a minimum sequence identity of 99%
+
+The 14 CARD canonical sequences were used to perform a multiple query BLASTP against the NCBI non-redundant database blast database with a e-value threshold of 1e-180 and a query coverage of 99%.
+Redundant results were filtered from these BLAST results by retrieving only the longest sequence for each uniquely labeled result.
+CD-HIT was used to cluster the data at 70%.
+
+##### Obtaining candidate NDM genes from the UBA data
+
+Sequences possibly containing AMR gene prediction data for the NDM beta-lactamase gene family was produced by filtering RGI output based on the its association with 'NDM beta-lactamase'.
+The filtered data were translated to a blast database.
+The 14 CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold of 1e-10 and a query coverage of 60%.
+These values were loosened more for this analysis because at higher thresholds, there were no hits for UBA sequences in the results.
+For simplicity in identifying the taxonomic history of the non-redundant hits, MULTISPECIES sequences were removed from the analyses.
+Redundant results were filtered from these BLASTP results by retrieving only the longest sequence for each uniquely labeled result.
+
+##### Phylogenetic analysis of the NDM genes
+
+To compare the phylogenetic relationship of only the putative sequences, the sequences from the CARD prevalence data were concatenated to one multi-FASTA format file with the canonical sequences.
+These the concatenated amino acid sequences were aligned with MAFFT-LINSI.
+The aligned sequences were trimmed by trimal using the automated1 option.
+IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the LG+I+G4 model of substitution.
+
+For the overall comparison of sequences, the filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences.
+These the concatenated amino acid sequences were aligned with MAFFT-LINSI.
+The aligned sequences were trimmed by trimal using the automated1 option.
+IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the LG+I+G4 model of substitution.
+
+#### OXA-48
+
+##### Obtaining reference OXA-48-like genes
+
+Because of the genetic diversity of the OXA gene family, only the OXA-48 like genes were used for analysis.
+6 canonical sequence variants doi:10/db7w (see Table S1) OXA beta-lactamase [AMR Gene Family], were obtained from the CARD database.
+
+Additional putative OXA beta-lactamase gene family sequences were accumulated by querying the CARD prevalence data.
+The prevalence data was translated to a BLAST database.
+The 6 CARD canonical sequences were used to perform a multiple query BLASTP against the prevalence blast database with a e-value threshold of 1e-100 and a query coverage of 99%.
+Redundant results were filtered from these BLAST results by retrieving only the longest sequence for each uniquely labeled result.
+Many of the sequences are nearly identical, thus they were further processed by clustering with CD-HIT at a minimum sequence identity of 99%
+
+The 6 CARD canonical sequences were used to perform a multiple query BLASTP against the NCBI non-redundant database blast database with a e-value threshold of 1e-100 and a query coverage of 99%.
+Redundant results were filtered from these BLAST results by retrieving only the longest sequence for each uniquely labeled result.
+CD-HIT was used to cluster the data at 70%.
+
+##### Obtaining candidate OXA-48-like genes from the UBA data
+
+Sequences possibly containing AMR gene prediction data for the OXA beta-lactamase gene family was produced by filtering RGI output based on the its association with 'OXA beta-lactamase'.
+The filtered data were translated to a blast database.
+The 6 CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold of 1e-10 and a query coverage of 95%.
+For simplicity in identifying the taxonomic history of the non-redundant hits, MULTISPECIES sequences were removed from the analyses.
+Redundant results were filtered from these BLASTP results by retrieving only the longest sequence for each uniquely labeled result.
+
+##### Phylogenetic analysis of OXA-48-like genes
+
+To compare the phylogenetic relationship of only the putative sequences, the sequences from the CARD prevalence data were concatenated to one multi-FASTA format file with the canonical sequences.
+These the concatenated amino acid sequences were aligned with MAFFT-LINSI.
+The aligned sequences were trimmed by trimal using the automated1 option.
+IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the LG+I+G4 model of substitution.
+
+For the overall comparison of sequences, the filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences.
+These the concatenated amino acid sequences were aligned with MAFFT-LINSI.
+The aligned sequences were trimmed by trimal using the automated1 option.
+IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the LG+I+G4 model of substitution.
+
+#### KPC
+
+##### Obtaining reference KPC genes
+
+18 canonical sequence variants (see Table S1) KPC beta-lactamase [AMR Gene Family], as indicated by the card database, were obtained.
+
+Additional putative KPC beta-lactamase gene family sequences were accumulated by querying the CARD prevalence data.
+The prevalence data was translated to a BLAST database.
+The 6 CARD canonical sequences were used to perform a multiple query BLASTP against the prevalence blast database with a e-value threshold of 1e-100 and a query coverage of 99%.
+Redundant results were filtered from these BLAST results by retrieving only the longest sequence for each uniquely labeled result.
+Many of the sequences are nearly identical, thus they were further processed by clustering with CD-HIT at a minimum sequence identity of 99%
+
+The 6 CARD canonical sequences were used to perform a multiple query BLASTP against the NCBI non-redundant database blast database with a e-value threshold of 1e-40 and a query coverage of 99%.
+Redundant results were filtered from these BLAST results by retrieving only the longest sequence for each uniquely labeled result.
+CD-HIT was used to cluster the data at 70%.
+
+##### Obtaining candidate KPC genes from the UBA data
+
+Sequences possibly containing AMR gene prediction data for the KPC beta-lactamase gene family was produced by filtering RGI output based on the its association with 'KPC beta-lactamase'.
+The filtered data were translated to a blast database.
+The 6 CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold of 1e-10 and a query coverage of 60%.
+For simplicity in identifying the taxonomic history of the non-redundant hits, MULTISPECIES sequences were removed from the analyses.
+Redundant results were filtered from these BLASTP results by retrieving only the longest sequence for each uniquely labeled result.
+
+##### Phylogenetic analysis of KPC genes
+
+To compare the phylogenetic relationship of only the putative sequences, the sequences from the CARD prevalence data were concatenated to one multi-FASTA format file with the canonical sequences.
+These the concatenated amino acid sequences were aligned with MAFFT-LINSI.
+The aligned sequences were trimmed by trimal using the automated1 option.
+IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the LG+I+G4 model of substitution.
+
+For the overall comparison of sequences, the filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences.
+These the concatenated amino acid sequences were aligned with MAFFT-LINSI.
+The aligned sequences were trimmed by trimal using the automated1 option.
+IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the LG+I+G4 model of substitution.
+
+##### Labeling of phylogenies with metadata
+
+All leaves of the trees were labeled with as much taxonomic information as possible for each rank, based on information from metadata as per table S2.
 
 
 ## Results
@@ -157,7 +286,7 @@ The result was carried to subsequent analysis.
 ### Phylogenetic analysis of putative MCR sequences
 
 The phylogenetic relationships of the CARD canonical sequences, and the CARD prevalence sequences involving the MCR family were investigated.
-A total of 30 genes, an out-group, the 23 canonical sequences, and the 6 prevalence sequences, were selected for analyses.
+A total of 30 genes, an out-group, the 23 canonical sequences, and the 6 prevalence sequences (clustered as per table S3), were selected for analyses.
 The tree in Figure {@fig:canon-prev-tree} shows several distinct clades.
 Each MCR variant forms its own clade.
 MCR-1, MCR-2, and MCR-6 form a clade, appearing to more closely related to one another than with the other MCR family members.
@@ -214,12 +343,62 @@ This clade contains 8 UBAs from the loose CARD hits under the given constraints,
 These /Leclercia/ branch below the common ancestor of MCR-9 and MCR-3 which are well supported. The /Leclercia/ UBAs were all sampled from New York City MTA subway samples Metagenome.
 Acinetobacter is another opportunistic pathogen  @8uz5m0fP which is becoming resistant to many antimicrobials.
 
+### Phylogenetic analysis of NDM
+
+The phylogenetic relationships of the NDM family were investigated. The 14 canonical sequences were used to query the same databases as in the phylogenetic analyses of MCR.
+
+|  lcl prev 2   | lcl prev 3    |
+| ------------- |:-------------:|
+| lcl prev 4 at 99.63% | lcl prev 6 at 99.26% |
+| lcl prevd 5 at 99.26% | lcl prev 7 at 99.25% |
+| lcl prev 8 at 99.26% | - |
+| lcl prev 9 at 99.63% | - |
+
+Table: Example table(TODO: supplemental?). {#tbl:example-id}
+
+The genes retained for the phylogeny were the 14 canonical sequences, 3 prevalence sequences ((clustered as per table S3)), 7 non-redundant sequences, 1 UBA sequence, and 1 out-group.
+
+This total of 27 resulted in the phylogeny in Figure {@fig:ndm-tree}. 
+
+
+![Phylogenetic relationship (lcl_canon) NDM family sequences along with 14  prevalence (lcl_prev) sequences.](images/ndm190930_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg){#fig:ndm-tree}
+
+The 7 sequences resulting from the NCBI data included 3 genes reported to be NDM-1, NDM-3, and NDM-5.
+The other 4 genes were reported to be general beta lactamase/carbapenemase hits.
+These sequences form a closely related multifurcation (due to poor support values) with the prevalence and canonical data.
+The only phylogenetically resolved gene in this clade was a prevalence hit for NDM-1 found in Shigella sonnei representing only itself in the cd-hit cluster.
+Interestingly other representatives from other purported NDM families are more closely related to each other, including the canonical NDM-1 sequence from Klebsiella pneumoniae.
+The one  UBA BLAST result branches far from the clade containing the canonical indicating that under the coverage queried, there are no reasonably detectable NDM homologues in the UBA data. The alignment of this UBA under this relaxed query coverage of 60% is already pushing the limits of a "good alignment", and reducing this further would produce meaningless results.
+
+### Phylogenetic analysis of OXA-48
+
+In investigating the phylogenetic relationship of OXA-48, the result was similar to that of NDM.
+There were multiple BLAST results for UBA sequences, but the hits were too phylogenetically dissimilar to draw a conjecture about their relationship to the OXA family. 6 canonical sequences, and the 5 prevalence sequences (clustered according to Table S3), 11 non-redundant sequences, and 112 UBA sequences were combined in the phylogeny in Figure {@fig:oxa-tree}
+
+![Phylogenetic relationship (lcl_canon) NDM family sequences along with 14  prevalence (lcl_prev) sequences.](images/oxa191001_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg){#fig:oxa-tree}
+
+The OXA-48 prevalence hits added further diversity to the referecne OXA-48-like sequences. OXA-436 @KEhNzdys was found, clustered with no other gene, in the prevalence data, and OXA-514 and OXA-515 were found in the non-redundant data.
+
+### Phylogenetic analysis of KPC
+
+18 canonical sequences, and the 8 prevalence sequences (clustered according to Table S3), non-redundant sequences, and 7 UBA sequences were combined in the phylogeny in Figure {@fig:oxa-tree}
+In investigating the phylogenetic relationship of KPC also resulted in UBA sequences which were too distant from the canonical sequences to make a conjecture regarding their relationship to KPC family. 
+In Figure {@fig:kpc-tree} the 7 resulting UBA sequences branch with class A beta-lactamases as reported by the non-redundant BLAST.
+
+
+![Phylogenetic relationship (lcl_canon) NDM family sequences along with 14  prevalence (lcl_prev) sequences.](images/kpc191001_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg){#fig:kpc-tree}
+
+
 ## Discussion
 
 
 
 ## Conclusion
 
+
+
+S1: 
+MCR 3.11, 6.1, 2.2, 3.6, 3.10, 3.5, 1.10, 1.9, 3.9, 3.8, 3.7, 3.2, 3.1, 1.6, 1, 2, 3, 1.2, 1.3, 1.4, 8, 4, 5, 7.1
 
 
 ## References {.page_break_before}
