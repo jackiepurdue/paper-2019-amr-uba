@@ -18,9 +18,9 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/da92f0b8f585c221f4288841ded2b7964162079a/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/f27fdc38bb9c971558cae6912dfccc5b25c79b05/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@da92f0b](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/da92f0b8f585c221f4288841ded2b7964162079a)
+from [jackiepurdue/paper-2019-amr-uba@f27fdc3](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/f27fdc38bb9c971558cae6912dfccc5b25c79b05)
 on October 2, 2019.
 </em></small>
 
@@ -375,7 +375,7 @@ The one  UBA BLAST result branches far from the clade containing the canonical i
 In investigating the phylogenetic relationship of OXA-48, the result was similar to that of NDM.
 There were multiple BLAST results for UBA sequences, but the hits were too phylogenetically dissimilar to draw a conjecture about their relationship to the OXA family. 6 canonical sequences, and the 5 prevalence sequences (clustered according to Table S3), 11 non-redundant sequences, and 112 UBA sequences were combined in the phylogeny in Figure {@fig:oxa-tree}
 
-![Phylogenetic relationship (lcl_canon) NDM family sequences along with 14  prevalence (lcl_prev) sequences.](images/oxa191001_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg){#fig:oxa-tree}
+![Phylogenetic relationship (lcl_canon) OXA-48 family sequences along with 14  prevalence (lcl_prev) sequences.](images/oxa191001_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg){#fig:oxa-tree}
 
 The OXA-48 prevalence hits added further diversity to the referecne OXA-48-like sequences. OXA-436 @KEhNzdys was found, clustered with no other gene, in the prevalence data, and OXA-514 and OXA-515 were found in the non-redundant data.
 
@@ -386,7 +386,7 @@ In investigating the phylogenetic relationship of KPC also resulted in UBA seque
 In Figure {@fig:kpc-tree} the 7 resulting UBA sequences branch with class A beta-lactamases as reported by the non-redundant BLAST.
 
 
-![Phylogenetic relationship (lcl_canon) NDM family sequences along with 14  prevalence (lcl_prev) sequences.](images/kpc191001_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg){#fig:kpc-tree}
+![Phylogenetic relationship (lcl_canon) KPC family sequences along with 14  prevalence (lcl_prev) sequences.](images/kpc191001_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg){#fig:kpc-tree}
 
 
 ## Discussion
