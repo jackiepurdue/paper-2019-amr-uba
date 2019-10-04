@@ -2,7 +2,7 @@
 author-meta:
 - Jackie Purdue
 - Jane Roe
-date-meta: '2019-10-02'
+date-meta: '2019-10-04'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -18,10 +18,10 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/f27fdc38bb9c971558cae6912dfccc5b25c79b05/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/b65d6e941150a7b48d86a910b091847f70b622d4/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@f27fdc3](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/f27fdc38bb9c971558cae6912dfccc5b25c79b05)
-on October 2, 2019.
+from [jackiepurdue/paper-2019-amr-uba@b65d6e9](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/b65d6e941150a7b48d86a910b091847f70b622d4)
+on October 4, 2019.
 </em></small>
 
 ## Authors
@@ -55,10 +55,13 @@ on October 2, 2019.
 
 Antimicrobial resistance (AMR) is a global threat to human health.
 Efforts to prevent the spread of AMR rely on surveillance of possible AMR determinants.
-Under-sampled, and uncultured microbial genomes in the form of metagenome data, are a potential source for AMR gene discovery.
-The Resistance Gene Identifier (RGI) and the Comprehensive Antibiotic Resistance Database (CARD) @1ByMfX8Y1 were used to predict resistomes in a data set of 7903 draft quality metagenome assembled genomes @wrBRBdFb  (MAGs) from various uncultivated bacterial and archeal sources (UBAs).
-Genes associated with mobile colistin resistance (MCR), and carbapenem resistance, such as Metallo-beta-lactamases (NDM), Klebsiella pneumoniae carbapenemases (KPC), and OXA beta-lactamases were found to be represented in the UBAs.
-[TODO: findings]
+Using phylogenetics to highlight potential sources of AMR could guide researchers in chosing organisms for phenotypic resistance testing. 
+A systematic way of classifying AMR gene variants is an important in comparing these phylogenetic relationshits, facilitating research in the feild.
+This study examines relationshipts within sets of previously classified canonical AMR family variants to demonstrate their usefulness in identifying AMR candidates.
+Canonical sequence data from the Comprehensive Antibiotic Resistance Database (CARD) was used to query CARD prevalence data, NCBI sequence data, and predicted resistomes in in a data set of 7903 draft quality metagenome assembled genomes @wrBRBdFb  (MAGs) from various uncultivated bacterial and archeal sources (UBAs).
+Genes associated potentially associated with mobile colistin resistance (MCR) were found in the UBA sources.
+New Dheli beta-lactamases (NDM), Klebsiella pneumoniae carbapenemases (KPC), and OXA beta-lactamases were not found to be represented in the UBAs, but
+[TODO: "gradient of the AMR trees"]
 [TODO: conclusion]
 
 
@@ -119,12 +122,10 @@ Coupling RGI predictions of the UBA metagenomes with phylogenetic analysis of th
 
 ### AMR Prediction
 
+### Materials
+
 A data-set of 7903 draft quality MAGs which were recovered from the Sequence Read Archive by Parks @wrBRBdFb were used for this analysis.
 RGI version 5.0 with CARD database version 3.02  @1ByMfX8Y1 was run on the contigs of the 7903 MAGS with the inclusion of loose, perfect, and strict hits.
-
-### Phylogenetic Analysis
-
-### Materials
 
 CARD prevalence data version 3.0.4 ("based on sequence data acquired from NCBI on 28-Feb-2019, analyzed using RGI 4.2.2 (DIAMOND homolog detection) and CARD 3.0.1") was used to query the UBA data.
 [TODO: Other versions of software]
@@ -300,7 +301,7 @@ Sequences from the NCBI non-redundant data were added to the analysis to be comp
 This resulted in a total of 409 sequences for subsequent analysis, all labeled as phosphoethanolamine lipid A transferase genes, where 104 hits were labeled as MCR family genes.
 
 One of the BLAST results was a variant which was not included in the CARD canonical or prevalence sequences.
-The variant, MCR-9, was reported in the literature to be a novel MCR homologue with similarity to MCR-3 @jvh3ZYRM. The gene was shown to confer resistance to colistin when expressed in *Escherichia coli*.
+The variant, MCR-9, was reported in the literature to be a novel MCR homologue with similarity to MCR-3 @jvh3ZYRM. The gene was shown to confer resistance to colistin when expressed in *Escherichia coli*. The minimum inhibitory concentration (MIC) was inferred by broth microdilution as per the European Committee on Antimicrobial Susceptibility Testing (EUCAST; http://www.eucast.org)
 
 The phylogeny in Figure {@fig:canon-prev-nrdb-uba-tree} shows that the, the MCR 3 clade branches with MCR-9.
 This MCR-3 and MCR-9 clade is separated by a large amount diversity from the MCR 1,2,4,5, and 8 clades.
