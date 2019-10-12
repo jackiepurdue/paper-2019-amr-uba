@@ -2,7 +2,7 @@
 author-meta:
 - Jackie Purdue
 - Jane Roe
-date-meta: '2019-10-04'
+date-meta: '2019-10-12'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -18,10 +18,10 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/b65d6e941150a7b48d86a910b091847f70b622d4/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/27c7a508bb31b782e5ecd3e6fabd5d847c582da2/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@b65d6e9](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/b65d6e941150a7b48d86a910b091847f70b622d4)
-on October 4, 2019.
+from [jackiepurdue/paper-2019-amr-uba@27c7a50](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/27c7a508bb31b782e5ecd3e6fabd5d847c582da2)
+on October 12, 2019.
 </em></small>
 
 ## Authors
@@ -56,8 +56,8 @@ on October 4, 2019.
 Antimicrobial resistance (AMR) is a global threat to human health.
 Efforts to prevent the spread of AMR rely on surveillance of possible AMR determinants.
 Using phylogenetics to highlight potential sources of AMR could guide researchers in chosing organisms for phenotypic resistance testing. 
-A systematic way of classifying AMR gene variants is an important in comparing these phylogenetic relationshits, facilitating research in the feild.
-This study examines relationshipts within sets of previously classified canonical AMR family variants to demonstrate their usefulness in identifying AMR candidates.
+A systematic way of classifying AMR gene variants is important in comparing these phylogenetic relationships.
+Canonical AMR family sequences are compared to homologues from diverse sources, as a way of
 Canonical sequence data from the Comprehensive Antibiotic Resistance Database (CARD) was used to query CARD prevalence data, NCBI sequence data, and predicted resistomes in in a data set of 7903 draft quality metagenome assembled genomes @wrBRBdFb  (MAGs) from various uncultivated bacterial and archeal sources (UBAs).
 Genes associated potentially associated with mobile colistin resistance (MCR) were found in the UBA sources.
 New Dheli beta-lactamases (NDM), Klebsiella pneumoniae carbapenemases (KPC), and OXA beta-lactamases were not found to be represented in the UBAs, but
