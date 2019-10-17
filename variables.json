@@ -50,13 +50,13 @@
     "repo_slug": "jackiepurdue/paper-2019-amr-uba",
     "repo_owner": "jackiepurdue",
     "repo_name": "paper-2019-amr-uba",
-    "commit": "5ce6fb02eadb72ece00a357620c76b25dea12ce6"
+    "commit": "a512db6e1c8ad68894e0e9b7b9d212b10f688448"
   },
   "manuscript_stats": {
     "reference_counts": {
       "doi": 20,
       "total": 20
     },
-    "word_count": 3726
+    "word_count": 3732
   }
 }

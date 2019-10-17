@@ -18,9 +18,9 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/5ce6fb02eadb72ece00a357620c76b25dea12ce6/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/a512db6e1c8ad68894e0e9b7b9d212b10f688448/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@5ce6fb0](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/5ce6fb02eadb72ece00a357620c76b25dea12ce6)
+from [jackiepurdue/paper-2019-amr-uba@a512db6](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/a512db6e1c8ad68894e0e9b7b9d212b10f688448)
 on October 17, 2019.
 </em></small>
 
@@ -172,7 +172,7 @@ The CARD canonical sequences were used to perform a multiple query BLASTP agains
 <td>
 ||
 |-|
-Table: e-value, query coverage, and cluster percentage used for each AMR family experiment for the prevalence, ncbi non-redundant, and UBA databases. {#tbl:exp-params}
+Table: [TODO: fill in the actual values] e-value, query coverage, and cluster percentage used for each AMR family experiment for the prevalence, ncbi non-redundant, and UBA databases. {#tbl:exp-params}
 </td>
 <tr><th>(A) MCR phosphoethanolamine transferase </th>
 <th>(B) NDM beta-lactamase</th>
