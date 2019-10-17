@@ -2,7 +2,7 @@
 author-meta:
 - Jackie Purdue
 - Jane Roe
-date-meta: '2019-10-16'
+date-meta: '2019-10-17'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -18,10 +18,10 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/a4192ecfa2b967739270ed3d58cece0b613edafd/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/5ce6fb02eadb72ece00a357620c76b25dea12ce6/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@a4192ec](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/a4192ecfa2b967739270ed3d58cece0b613edafd)
-on October 16, 2019.
+from [jackiepurdue/paper-2019-amr-uba@5ce6fb0](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/5ce6fb02eadb72ece00a357620c76b25dea12ce6)
+on October 17, 2019.
 </em></small>
 
 ## Authors
@@ -146,7 +146,7 @@ CARD prevalence data version 3.0.4 ("based on sequence data acquired from NCBI o
 
 ### Obtaining reference sequences
 
-24 canonical MCR sequence variants, 14 canonical NDM sequence variants, 6 canonical OXA-48-like sequence variants, and 18 canonical KPC sequence variants (see Table S1) as indicated by CARD for the , were obtained from the CARD database. 
+32 canonical MCR sequence variants, 14 canonical NDM sequence variants, 6 canonical OXA-48-like sequence variants, and 18 canonical KPC sequence variants (see Table S1) as indicated by CARD for the , were obtained from the CARD database. 
 
 In the case of OXA beta-lactamase, only OXA-48-like genes were used for analysis. The OXA family is characterized by phenotype rather than genotype, and results in a low amount of sequence homology within the family. 
 The phenotype of OXA-48 results from carbapenem hydrolyzing activity @UV1QqTS8.
