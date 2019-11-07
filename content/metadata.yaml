@@ -13,14 +13,32 @@ author_info:
     twitter: jackiepurdue
     email: jpurdue@dal.ca
     affiliations:
-      - Department of Computer Science, Dalhousie University
-    funders: Grant XXXXXXXX
-  -
-    github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Faculty of Computer Science, Dalhousie University
+  - 
+    name: Jocelyn McDonald
+    initials: JM
+    email: jc210282@dal.ca
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Faculty of Computer Science, Dalhousie University
+  - 
+    name: Dayna Mikkelsen
+    initials: DM
+    email: dy476861@dal.ca
+    affiliations:
+      - Faculty of Computer Science, Dalhousie University
+  - 
+    github: fmaguire
+    name: Finlay Maguire
+    initials: fm
+    orcid: 0000-0002-1203-9514
+    twitter: finlaym
+    email: finlaymaguire@gmail.com
+    affiliations:
+      - Faculty of Computer Science, Dalhousie University
+    funders: Donald Hill Family Fellowship in Computer Science
+  - 
+    name: Robert G. Beiko
+    initials: RGB
+    email: rbeiko@dal.ca
+    affiliations:
+      - Faculty of Computer Science, Dalhousie University
