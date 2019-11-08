@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">Identifying possibly novel sources of antimicrobial resistance in uncultivated bacterial and archeal metagenome-assembled genomes</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://jackiepurdue.github.io/paper-2019-amr-uba/v/e7fdcaffb1236677f80672e538c658fc04e64be0/">permalink</a>) was automatically generated from <a href="https://github.com/jackiepurdue/paper-2019-amr-uba/tree/e7fdcaffb1236677f80672e538c658fc04e64be0">jackiepurdue/paper-2019-amr-uba@e7fdcaf</a> on November 8, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://jackiepurdue.github.io/paper-2019-amr-uba/v/3969d06018729f1f61c4dac62d96a96b6b431b33/">permalink</a>) was automatically generated from <a href="https://github.com/jackiepurdue/paper-2019-amr-uba/tree/3969d06018729f1f61c4dac62d96a96b6b431b33">jackiepurdue/paper-2019-amr-uba@3969d06</a> on November 8, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Jackie Purdue</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-3131-0688">0000-0003-3131-0688</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/jackiepurdue">jackiepurdue</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/jackiepurdue">jackiepurdue</a><br> <small> Faculty of Computer Science, Dalhousie University </small></p></li>
@@ -47,16 +47,14 @@
 <p>However, this is still limited to a subset of all genomes currently available in central repositories like NCBI. If we want to thoroughly understand the evolution and spread of AMR genes we need to analyse as many genomes as possible. Unfortunately, the genomes in databases are largely sequenced from microbes that can be easily cultured. As only a subset of microbial diversity can be cultured, this means many of our existing genomes aren’t necessarily representative of the environment from which they were sampled. Recently, techniques have been developed that allow the recovery of genomes from metagenomic data e.g. <span class="citation" data-cites="DTtDOvle">[<a href="#ref-DTtDOvle" role="doc-biblioref">14</a>]</span>. As metagenomic sequencing, the direct sequencing of all DNA in a sample, doesn’t require culturing these metagenome-assembled genomes (MAGs) represent a huge source of novel microbial diversity. Parks et. al. <span class="citation" data-cites="wapKbEHA">[<a href="#ref-wapKbEHA" role="doc-biblioref">16</a>]</span>, generated new 7,903 bacterial and archael (Uncultured Bacteria and Archaea; UBA) MAGs representing &gt;30% increase in the sampled phylogenetic diversity of the bacteria and archaea.</p>
 <p>Identifying and phylogenetically analysing key carbapenemase and colistin resistance genes in this dataset, CARD, CARD-prevalence and NCBI genomes, could greatly improve AMR surveillance of these genes. We would characterise previously unseen diversity in genomes not yet analyzed for AMR, and provide insights into the diversity of AMR across non-clinical samples. This could inform our understanding of the transmission of these mobile critical AMR genes and help refine their current nomenclature. Therefore, in this work we present a comprehensive phylogenetic survey and analysis of KPC, NDM, OXA-48, and MCR across all currently sequenced genomes and large sets of previously uncharacterised metagenome-assembled genomes.</p>
 <h2 id="methods">Methods</h2>
-<p>A data-set of 7903 draft quality MAGs which were recovered from the Sequence Read Archive by Parks @wrBRBdFb were used for this analysis. These genomes were chosen specifically because they were likely to be from lineages which were under-sampled. Environmental and non-human gastrointestinal samples were the main focus of these samples.</p>
-<p>RGI version 5.0 with CARD database version 3.02 <span class="citation" data-cites="1ByMfX8Y1"><a href="#ref-1ByMfX8Y1" role="doc-biblioref">3</a></span> was run on the contigs of the 7903 MAGS with the inclusion of loose, perfect, and strict hits.</p>
-<p>CARD prevalence data version 3.0.4 (“based on sequence data acquired from NCBI on 28-Feb-2019, analyzed using RGI 4.2.2 (DIAMOND homolog detection) and CARD 3.0.1”) was used to query the UBA data. [TODO: Other versions of software]</p>
-<p>32 canonical MCR sequence variants, 14 canonical NDM sequence variants, 6 canonical OXA-48-like sequence variants, and 18 canonical KPC sequence variants (see Table S1) as indicated by CARD for the , were obtained from the CARD database.</p>
-<p>In the case of OXA beta-lactamase, only OXA-48-like genes were used for analysis. The OXA family is characterized by phenotype rather than genotype, and results in a low amount of sequence homology within the family. The phenotype of OXA-48 results from carbapenem hydrolyzing activity <span class="citation" data-cites="UV1QqTS8"><a href="#ref-UV1QqTS8" role="doc-biblioref">9</a></span>. This subfamily of OXA contains homologous sequences suitable for this study. Incorperating other subfamilies of OXA proved to be too cumbersome.</p>
-<p>Additional putative AMR gene family sequences were accumulated by querying the CARD prevalence data. The prevalence data was translated to a BLAST database. The CARD canonical sequences from each family were used to perform a multiple query BLASTP against the prevalence blast database with a e-value threshold and query coverages shown in Table <a href="#tbl:exp-params">1</a></p>
-<p>Many of the sequences are nearly identical, thus they were further processed by clustering with CD-HIT at a minimum sequence identities indicated also in Table <a href="#tbl:exp-params">1</a></p>
-<p>The CARD canonical sequences were also used to perform a multiple query BLASTP against the NCBI non-redundant database with a e-value threshold, and query coverage indicated in Table <a href="#tbl:exp-params">1</a></p>
-<p>For simplicity in identifying the taxonomic history of the non-redundant hits, MULTISPECIES sequences were removed from the analyses. [TODO: In discussing taxonomy this may be a problem, for example, Acinetobacter is not showing up in the phylogeny and may be relevant ] There are many highly sampled taxa and genes in the non-redundant database. To balance the distribution, and reduce the size of the non-redundant sequence set, CD-HIT was used to cluster the data as per table <a href="#tbl:exp-params">1</a>.</p>
-<p>Sequences possibly containing AMR gene prediction data for each gene family was produced by filtering RGI output based on the its association with the search strings for each determinant in Table <a href="#tbl:exp-params">1</a> The filtered data were translated to a blast database. The CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold and query coverage in Table <a href="#tbl:exp-params">1</a>.</p>
+<h3 id="data">Data</h3>
+<p>To sample diverse sources for AMR, various sequence databases were sampled for phylogenetic analyses. These sources include CARD canonical and prevalence sequences for the AMR genes under study, and associated homologs from NCBI non-redundant data and metagenomic data. The 32 canonical MCR sequence variants (table <a href="#tbl:mcr-variants">2</a>), 14 canonical NDM sequence variants (table <a href="#tbl:ndm-variants">4</a>), 6 canonical OXA-48-like sequence variants(table <a href="#tbl:oxa-variants">5</a>), and 18 canonical KPC sequence variants (table <a href="#tbl:kpc-variants">3</a>) as labeled in the CARD database, were obtained as a reference. The AMR prevalence data was queried from CARD Prevalence 3.0.5. The NCBI non-redundant data was queried from all non-redundant GenBank, PDB, SwissProt, PDB, PIR, and PRF on May 17, 2019. The metagenomic data came from a data-set of 7903 draft quality MAGs which were recovered from the Sequence Read Archive by Parks <span class="citation" data-cites="wrBRBdFb"><a href="#ref-wrBRBdFb" role="doc-biblioref">17</a></span>. These genomes were chosen specifically because they were likely to be from lineages which were under-sampled, environmental and non-human gastrointestinal samples being the main focus.</p>
+<p>In the case of OXA beta-lactamase, only OXA-48-like genes were used for analysis. The OXA family is characterized by phenotype rather than genotype, and results in a low amount of sequence homology within the family. The phenotype of OXA-48 results from carbapenem hydrolyzing activity <span class="citation" data-cites="UV1QqTS8"><a href="#ref-UV1QqTS8" role="doc-biblioref">9</a></span>. This subfamily of OXA contains homologous sequences suitable for this study. Incorporating other subfamilies of OXA proved to be too cumbersome.</p>
+<h3 id="querying-the-data">Querying the data</h3>
+<p>The CARD canonical sequences from each family were used to perform a multiple query BLASTP (version 2.5.0 <span class="citation" data-cites="s9ycaHcq"><a href="#ref-s9ycaHcq" role="doc-biblioref">18</a></span>) against the prevalence BLAST database with a e-value threshold and query coverages shown in Table <a href="#tbl:exp-params">1</a>. Many of the sequences are nearly identical, thus they were further processed by clustering with CD-HIT version 4.8.1 at a minimum sequence identities as per table <a href="#tbl:exp-params">1</a></p>
+<p>The reference CARD canonical sequences were also used to perform a multiple query BLASTP against the NCBI non-redundant database with a e-value threshold, and query coverage, also indicated in Table <a href="#tbl:exp-params">1</a> For simplicity in identifying the taxonomic history of the non-redundant hits, MULTISPECIES sequences were removed from the analyses. There are many highly sampled taxa and genes in the non-redundant database. To balance the distribution, and reduce the size of the non-redundant sequence set, CD-HIT version 4.8.1 was also used to cluster the data as per table <a href="#tbl:exp-params">1</a>.</p>
+<p>For the metagenomic data, RGI version 5.0 with CARD database version 3.02 <span class="citation" data-cites="1ByMfX8Y1"><a href="#ref-1ByMfX8Y1" role="doc-biblioref">3</a></span> was run on the contigs of the 7903 MAGS with the inclusion of loose, perfect, and strict hits. Sequences possibly containing AMR gene prediction data for each gene family was produced by filtering RGI output based on the its association with the search strings for each determinant in Table <a href="#tbl:exp-params">1</a> The filtered data were translated to a blast database. The CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold and query coverage in Table <a href="#tbl:exp-params">1</a>.</p>
+<p>For all sequence variants obtained from each data source, redundant results for the prevalence, NCBI, and UBA queries were filtered from these BLASTP results by retrieving only the longest sequence for each uniquely labeled result.</p>
 <table>
 <td>
 <a name="tbl:exp-params"></a>
@@ -275,12 +273,15 @@
 </td>
 </tr>
 </table>
-<p>Redundant results for the prevalence, NCBI, and UBA queries were filtered from these BLASTP results by retrieving only the longest sequence for each uniquely labeled result.</p>
-<p>To compare the phylogenetic relationship of only the putative sequences, the sequences from the CARD prevalence data were concatenated to one multi-FASTA format file with the canonical sequences. These the concatenated amino acid sequences were aligned with MAFFT-LINSI. The aligned sequences were trimmed by trimal using the automated1 option. IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the G+I+G4 model of substitution.</p>
-<p>For the overall comparison of sequences, the filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences. These the concatenated amino acid sequences were aligned with MAFFT-LINSI. The aligned sequences were trimmed by trimal using the automated1 option. IQ-TREE was then used to build a bootstrapped tree with -bb 1000 with the G+I+G4 model of substitution. All leaves of the trees were labeled with as much taxonomic information as possible for each rank, based on information from metadata [TODO: supplemental].</p>
+<h3 id="sequence-alignmnet">Sequence Alignmnet</h3>
+<p>Two alignments were created for each AMR determinant under study. The first alignment was created to compare the phylogenetic relationship of only the putative sequences. The second alignment was created for an overall comparison of sequences.</p>
+<p>The putative AMR alignment was made up of the sequences from the CARD prevalence data were concatenated in one multi-FASTA format file with the canonical sequences and an outgroup chosen for each AMR family as per table {<span class="citation" data-cites="tbl:outgroups">[<span class="citeproc-not-found" data-reference-id="tbl:outgroups"><strong>???</strong></span>]</span>}. In the second, more diverse alignment, The filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences with the same outgroup sequences (table {<span class="citation" data-cites="tbl:outgroups">[<span class="citeproc-not-found" data-reference-id="tbl:outgroups"><strong>???</strong></span>]</span>}).</p>
+<p>This set of concatenated amino acid sequences were aligned with MAFFT-LINSI version 7.40 and trimmed by trimal version 1.4.rev22 using the automated1 option.</p>
+<h3 id="creation-of-phylogenies">Creation of phylogenies</h3>
+<p>For each alignment under each AMR family under study, IQ-TREE multicore version 1.6.9 <span class="citation" data-cites="JOWSuu8G"><a href="#ref-JOWSuu8G" role="doc-biblioref">19</a></span> was used to build a bootstrapped tree with -bb 1000 with the G+I+G4 model of substitution. Tree visualizations were created with ETE Toolkit version 3, and annotated with taxonomic information for each rank, and environmental and AMR data, based on information from the various metadata. (See supplemental).</p>
 <h2 id="results">Results</h2>
 <h3 id="phylogenetic-analysis-of-mcr-sequences">Phylogenetic analysis of MCR sequences</h3>
-<p>The phylogenetic relationships of the CARD canonical sequences, and the CARD prevalence sequences involving the MCR family were investigated to show the pylogenetic relationship of only the putative MCR sequences without the noise of additional sequences. A total of 87 genes, an out-group, the 32 canonical sequences, and the 54 prevalence sequences (clustered as per Table <a href="#tbl:exp-params">1</a>), were selected for analyses. The tree in Figure <a href="#fig:canon-prev-tree">1</a> shows several distinct clades. Each MCR variant forms a clade. MCR-1, MCR-2, and MCR-6 form a clade, appearing to more closely related to one another than with the other MCR family members. This clade is also closely related to the ICR-Mc clade. ICR-Mc <span class="citation" data-cites="JT9eRkR8"><a href="#ref-JT9eRkR8" role="doc-biblioref">17</a></span> is another phosphoethanolamine transferase which confers colistin resistance.</p>
+<p>The phylogenetic relationships of the CARD canonical sequences, and the CARD prevalence sequences involving the MCR family were investigated to show the pylogenetic relationship of only the putative MCR sequences without the noise of additional sequences. A total of 87 genes, an out-group, the 32 canonical sequences, and the 54 prevalence sequences (clustered as per Table <a href="#tbl:exp-params">1</a>), were selected for analyses. The tree in Figure <a href="#fig:canon-prev-tree">1</a> shows several distinct clades. Each MCR variant forms a clade. MCR-1, MCR-2, and MCR-6 form a clade, appearing to more closely related to one another than with the other MCR family members. This clade is also closely related to the ICR-Mc clade. ICR-Mc <span class="citation" data-cites="JT9eRkR8"><a href="#ref-JT9eRkR8" role="doc-biblioref">20</a></span> is another phosphoethanolamine transferase which confers colistin resistance.</p>
 <figure>
 <img src="images/mcr191004_canon_prev.fasta.aln.trim.treefile.collapsed.svg" alt="Figure 1: Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, and an outgroup from Betaproteobacteria (lcl_prev_ in tan) Each MCR variant is coloured based on its primary numerical value." id="fig:canon-prev-tree" /><figcaption><span>Figure 1:</span> Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, and an outgroup from Betaproteobacteria (lcl_prev_ in tan) Each MCR variant is coloured based on its primary numerical value.</figcaption>
 </figure>
@@ -291,13 +292,13 @@
 </figure>
 <p>In an attempt to discover these potential clades between these named MCR families, sequences from the NCBI non-redundant data were added to the analysis to be compared with the canonical and prevalence sequences. This resulted in a total of 409 sequences for subsequent analysis, all labeled as phosphoethanolamine lipid A transferase genes, where 104 hits were labeled as MCR family genes.</p>
 <p>In addition, the 7903 draft quality MAGs were queried for AMR genes with RGI. RGI produced 1457246 results AMR determinants under the loose cutoff from the UBA data, 7171 for the strict cutoff,and 310 for the loose cutoff. It was hoped that pyhlogenetic analysis could find AMR determinants would be found in under the loose criterion that may have been missed by RGI-CARD. The UBA BLAST results were included in the phylogeny in Figure <a href="#fig:canon-prev-nrdb-uba-tree">8</a> for the analysis. The remainder of the analysis deals with relationships which are deemed to be interesting based on the locations of the UBAs between MCR family clades.</p>
-<p>Between the clade containing MCR 3, and the most recent common ancestor of MCR 3 and MCR 7 clades (figure <a href="#fig:mcr-3-9">3</a>), there is a clade of sequences from NCBI which have been reported as MCR 3 [TODO: look at linked literature]. Present within this clade is a single UBA result, UBA705, which the Parks data <span class="citation" data-cites="wrBRBdFb"><a href="#ref-wrBRBdFb" role="doc-biblioref">18</a></span> reports as a Comparative metagenome analyses of anode-associated microbial communities developed in rice paddy field-soil microbial fuel cells, is reported to be <em>Aeromonas hydrophilia</em>. This present within the clade alone with several other canonical and non-redundant Aeromonadalacea. Aeromonas hydrophilia is a species which has been found to have an MCR-3 gene. Even though qualities vary (Table ??), the sequences branch in the expected location.</p>
-<p>Between the clade containing MCR 7, and the most recent common ancestor of MCR 3 and MCR 7 clades, a clade of phosphoethanolamine lipid A transferase clade appears. This clade consists of the genus of gram negative bacteria, <em>Aeromonas</em>, <span class="citation" data-cites="16EwPCiJT"><a href="#ref-16EwPCiJT" role="doc-biblioref">19</a></span> which is sometimes involved in human infection. This clade also includes an <em>Aeromonas veroni</em> hit from from epidermal mucus of <em>Anguilla anguilla</em> in the UBA data. Between MCR 9 and the most recent common ancestor of MCR 3 and 9, a clade of <em>Aeromonas</em> associated phosphoethanolamine lipid A transferases appear.</p>
-<p>The MCR 9 containing clade contains 8 UBAs and several NCBI non-redundant hits not reported as MCR family genes. 5 Loose hits for MCR in a <em>Leclercia adecarboxyla</em> branch within this clade. These <em>Leclercia</em> branch below the common ancestor of MCR-9 and MCR-3 which are well supported. The <em>Leclercia</em> UBAs were all sampled from New York City MTA subway samples Metagenome. Acinetobacter is another opportunistic pathogen <span class="citation" data-cites="8uz5m0fP"><a href="#ref-8uz5m0fP" role="doc-biblioref">20</a></span> which is becoming resistant to many antimicrobials.</p>
+<p>Between the clade containing MCR 3, and the most recent common ancestor of MCR 3 and MCR 7 clades (figure <a href="#fig:mcr-3-9">3</a>), there is a clade of sequences from NCBI which have been reported as MCR 3 [TODO: look at linked literature]. Present within this clade is a single UBA result, UBA705, which the Parks data <span class="citation" data-cites="wrBRBdFb"><a href="#ref-wrBRBdFb" role="doc-biblioref">17</a></span> reports as a Comparative metagenome analyses of anode-associated microbial communities developed in rice paddy field-soil microbial fuel cells, is reported to be <em>Aeromonas hydrophilia</em>. This present within the clade alone with several other canonical and non-redundant Aeromonadalacea. Aeromonas hydrophilia is a species which has been found to have an MCR-3 gene. Even though qualities vary (Table ??), the sequences branch in the expected location.</p>
+<p>Between the clade containing MCR 7, and the most recent common ancestor of MCR 3 and MCR 7 clades, a clade of phosphoethanolamine lipid A transferase clade appears. This clade consists of the genus of gram negative bacteria, <em>Aeromonas</em>, <span class="citation" data-cites="16EwPCiJT"><a href="#ref-16EwPCiJT" role="doc-biblioref">21</a></span> which is sometimes involved in human infection. This clade also includes an <em>Aeromonas veroni</em> hit from from epidermal mucus of <em>Anguilla anguilla</em> in the UBA data. Between MCR 9 and the most recent common ancestor of MCR 3 and 9, a clade of <em>Aeromonas</em> associated phosphoethanolamine lipid A transferases appear.</p>
+<p>The MCR 9 containing clade contains 8 UBAs and several NCBI non-redundant hits not reported as MCR family genes. 5 Loose hits for MCR in a <em>Leclercia adecarboxyla</em> branch within this clade. These <em>Leclercia</em> branch below the common ancestor of MCR-9 and MCR-3 which are well supported. The <em>Leclercia</em> UBAs were all sampled from New York City MTA subway samples Metagenome. Acinetobacter is another opportunistic pathogen <span class="citation" data-cites="8uz5m0fP"><a href="#ref-8uz5m0fP" role="doc-biblioref">22</a></span> which is becoming resistant to many antimicrobials.</p>
 <figure>
 <img src="images/mcr3_mcr9_diversity.svg" alt="Figure 3: Clade containing putative MCR3 and MCR 9 clades pruned from Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey." id="fig:mcr-3-9" /><figcaption><span>Figure 3:</span> Clade containing putative MCR3 and MCR 9 clades pruned from Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey.</figcaption>
 </figure>
-<p>Between MCR 5 and ICR-Mc (figure {#fig:mcr-5-icr}), there appear clades of diversity in the genus <em>Psychrobacter</em>. Branching between these two clades, as a descendant to this ancestor, is a clade of <em>Psycrobacter</em> species bacteria. This clade includes several hits from the non-redundant database, and two hits from the UBA data. According to the Parks <span class="citation" data-cites="wrBRBdFb"><a href="#ref-wrBRBdFb" role="doc-biblioref">18</a></span> data, the identity of these samples are, UBA3068, A <em>Psychrobacter sp.</em>, sampled from Oil polluted marine microbial communities from Coal and Oil in Point Santa Barbara, California, USA and, UBA4193, a <em>Psychrobacter sp.</em>, sampled from the New York City MTA subway samples. The quality information for these sequences, shown in Table ??, shows that UBA3068 is near complete, while UBA4193 is only partial. It is encouraging to see that even with the quality difference, these two sequences branch in the expected clade. <em>Psychrobacter</em> <span class="citation" data-cites="BjoH1Vii"><a href="#ref-BjoH1Vii" role="doc-biblioref">21</a></span> is a Genus is widespread and includes many cold adapted bacteria, it is an opportunistic pathogen, and has been found sometimes be a cause of infections in humans, animals, and fish. Many new species of <em>Psychrobacter</em> have been discovered in cold climates <span class="citation" data-cites="WLzELTTa"><a href="#ref-WLzELTTa" role="doc-biblioref">22</a></span>. Some of the species have been shown to be resistant to colistin, like <em>Psychrobacter vallis ps. nov.</em> and <em>Psychrobacter aquaticus ps. nov.</em> <span class="citation" data-cites="2NZAmp2H"><a href="#ref-2NZAmp2H" role="doc-biblioref">23</a></span> and is sister to [TODO: display new tree such that <em>Acinetobacter</em> is shown] Another clade between these two variants contains phosphoethanolamine transferases from the genus <em>Stenotrophomonas</em>, including <em>Stenotrophomonas maltophilia</em> and <em>Stenotrophomonas acidaminiphila</em> which multidrug-resistant opportunistic pathogen <span class="citation" data-cites="Ovca71PG"><a href="#ref-Ovca71PG" role="doc-biblioref">24</a></span>. Several UBA hits for <em>Stenotrophomonas maltophilia</em> show up as shotgun sequencing of environmental samples. [TODO: quality information]</p>
+<p>Between MCR 5 and ICR-Mc (figure {#fig:mcr-5-icr}), there appear clades of diversity in the genus <em>Psychrobacter</em>. Branching between these two clades, as a descendant to this ancestor, is a clade of <em>Psycrobacter</em> species bacteria. This clade includes several hits from the non-redundant database, and two hits from the UBA data. According to the Parks <span class="citation" data-cites="wrBRBdFb"><a href="#ref-wrBRBdFb" role="doc-biblioref">17</a></span> data, the identity of these samples are, UBA3068, A <em>Psychrobacter sp.</em>, sampled from Oil polluted marine microbial communities from Coal and Oil in Point Santa Barbara, California, USA and, UBA4193, a <em>Psychrobacter sp.</em>, sampled from the New York City MTA subway samples. The quality information for these sequences, shown in Table ??, shows that UBA3068 is near complete, while UBA4193 is only partial. It is encouraging to see that even with the quality difference, these two sequences branch in the expected clade. <em>Psychrobacter</em> <span class="citation" data-cites="BjoH1Vii"><a href="#ref-BjoH1Vii" role="doc-biblioref">23</a></span> is a Genus is widespread and includes many cold adapted bacteria, it is an opportunistic pathogen, and has been found sometimes be a cause of infections in humans, animals, and fish. Many new species of <em>Psychrobacter</em> have been discovered in cold climates <span class="citation" data-cites="WLzELTTa"><a href="#ref-WLzELTTa" role="doc-biblioref">24</a></span>. Some of the species have been shown to be resistant to colistin, like <em>Psychrobacter vallis ps. nov.</em> and <em>Psychrobacter aquaticus ps. nov.</em> <span class="citation" data-cites="2NZAmp2H"><a href="#ref-2NZAmp2H" role="doc-biblioref">25</a></span> and is sister to [TODO: display new tree such that <em>Acinetobacter</em> is shown] Another clade between these two variants contains phosphoethanolamine transferases from the genus <em>Stenotrophomonas</em>, including <em>Stenotrophomonas maltophilia</em> and <em>Stenotrophomonas acidaminiphila</em> which multidrug-resistant opportunistic pathogen <span class="citation" data-cites="Ovca71PG"><a href="#ref-Ovca71PG" role="doc-biblioref">26</a></span>. Several UBA hits for <em>Stenotrophomonas maltophilia</em> show up as shotgun sequencing of environmental samples. [TODO: quality information]</p>
 <figure>
 <img src="images/mcr5_icrmc_diversity.svg" alt="Figure 4: Clade containing putative MCR 5 and ICR-Mc clades pruned from Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey." id="fig:mcr-5-icr" /><figcaption><span>Figure 4:</span> Clade containing putative MCR 5 and ICR-Mc clades pruned from Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey.</figcaption>
 </figure>
@@ -322,11 +323,7 @@
 <figure>
 <img src="images/oxa191001_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg" alt="Figure 7: Phylogenetic relationship (lcl_canon) OXA-48 family sequences along with 14 prevalence (lcl_prev) sequences." id="fig:oxa-tree" /><figcaption><span>Figure 7:</span> Phylogenetic relationship (lcl_canon) OXA-48 family sequences along with 14 prevalence (lcl_prev) sequences.</figcaption>
 </figure>
-<p>The OXA-48 prevalence hits added further diversity to the referecne OXA-48-like sequences. OXA-436 <span class="citation" data-cites="KEhNzdys"><a href="#ref-KEhNzdys" role="doc-biblioref">25</a></span> was found, clustered with no other gene, in the prevalence data, and OXA-514 and OXA-515 were found in the non-redundant data.</p>
-<h3 id="supplemental">Supplemental</h3>
-<figure>
-<img src="images/mcr191004_canon_prev_nrdb_uba.fasta.aln.trim.treefile.expanded.svg" alt="Figure 8: Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey." id="fig:canon-prev-nrdb-uba-tree" /><figcaption><span>Figure 8:</span> Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey.</figcaption>
-</figure>
+<p>The OXA-48 prevalence hits added further diversity to the referecne OXA-48-like sequences. OXA-436 <span class="citation" data-cites="KEhNzdys"><a href="#ref-KEhNzdys" role="doc-biblioref">27</a></span> was found, clustered with no other gene, in the prevalence data, and OXA-514 and OXA-515 were found in the non-redundant data.</p>
 <h2 id="discussion">Discussion</h2>
 <ul>
 <li>TODO: Discuss the following:
@@ -339,7 +336,63 @@
 </ul></li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>
-<p>S1: MCR 3.11, 6.1, 2.2, 3.6, 3.10, 3.5, 1.10, 1.9, 3.9, 3.8, 3.7, 3.2, 3.1, 1.6, 1, 2, 3, 1.2, 1.3, 1.4, 8, 4, 5, 7.1</p>
+<h1 id="supplemental">Supplemental</h1>
+<a name="tbl:mcr-variants"></a>
+<table>
+<caption><span>Table 2:</span> Names of the canonical MCR phosphoethanolamine transferase variants from CARD database </caption>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>MCR-9 MCR-1.8 MCR-1.11 MCR-3.4 MCR-3.11 MCR-6.1 MCR-3.3 MCR-2.2 MCR-1.5 MCR-3.6 MCR-3.10 MCR-3.5 MCR-1.10 MCR-1.9 MCR-3.9 MCR-3.8 MCR-3.7 MCR-3.2 MCR-1.6 MCR-1.2 MCR-1.3 MCR-1.4 MCR-8 MCR-7.1 MCR-1.7 MCR-1.12 MCR-1.13 MCR-3.12 MCR-4.2 MCR-4.3 MCR-4.4 MCR-4.5 MCR-5.2</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<a name="tbl:kpc-variants"></a>
+<table>
+<caption><span>Table 3:</span> Names of the canonical beta-lactamase variants from CARD database </caption>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>KPC-1 KPC-3 KPC-4 KPC-5 KPC-6 KPC-7 KPC-8 KPC-9 KPC-10 KPC-11 KPC-12 KPC-13 KPC-14 KPC-15 KPC-16 KPC-17 KPC-19 KPC-22 KPC-24</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<a name="tbl:ndm-variants"></a>
+<table>
+<caption><span>Table 4:</span> Names of the canonical NDM beta-lactamase variants from CARD database </caption>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>NDM-1 NDM-2 NDM-5 NDM-3 NDM-4 NDM-6 NDM-7 NDM-8 NDM-9 NDM-10 NDM-11 NDM-12 NDM-13 NDM-14 NDM-17</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<a name="tbl:oxa-variants"></a>
+<table>
+<caption><span>Table 5:</span> Names of the canonical OXA beta-lactamase variants from CARD database </caption>
+<thead>
+<tr class="header">
+<th>OXA-162 OXA-163 OXA-181 OXA-204 OXA-232 OXA-48</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<figure>
+<img src="images/mcr191004_canon_prev_nrdb_uba.fasta.aln.trim.treefile.expanded.svg" alt="Figure 8: Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey." id="fig:canon-prev-nrdb-uba-tree" /><figcaption><span>Figure 8:</span> Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey.</figcaption>
+</figure>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
@@ -439,56 +492,68 @@ Donovan H. Parks, Christian Rinke, Maria Chuvochina, Pierre-Alain Chaumeil, Ben 
 <em>Nature Microbiology</em> (2017-12-12) <a href="https://doi.org/c8rq">https://doi.org/c8rq</a><br />
 DOI: <a href="https://doi.org/10.1038/s41564-017-0083-5">10.1038/s41564-017-0083-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29234139">29234139</a></p>
 </div>
-<div id="ref-JT9eRkR8">
-<p>17. <strong>Substrate Recognition by a Colistin Resistance Enzyme from Moraxella catarrhalis</strong><br />
-Peter J. Stogios, Georgina Cox, Haley L. Zubyk, Elena Evdokimova, Zdzislaw Wawrzak, Gerard D. Wright, Alexei Savchenko<br />
-<em>ACS Chemical Biology</em> (2018-04-09) <a href="https://doi.org/gdnrmn">https://doi.org/gdnrmn</a><br />
-DOI: <a href="https://doi.org/10.1021/acschembio.8b00116">10.1021/acschembio.8b00116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29631403">29631403</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6197822">PMC6197822</a></p>
-</div>
 <div id="ref-wrBRBdFb">
-<p>18. <strong>Recovery of nearly 8,000 metagenome-assembled genomes substantially expands the tree of life</strong><br />
+<p>17. <strong>Recovery of nearly 8,000 metagenome-assembled genomes substantially expands the tree of life</strong><br />
 Donovan H. Parks, Christian Rinke, Maria Chuvochina, Pierre-Alain Chaumeil, Ben J. Woodcroft, Paul N. Evans, Philip Hugenholtz, Gene W. Tyson<br />
 <em>Nature Microbiology</em> (2017-09-11) <a href="https://doi.org/cczd">https://doi.org/cczd</a><br />
 DOI: <a href="https://doi.org/10.1038/s41564-017-0012-7">10.1038/s41564-017-0012-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28894102">28894102</a></p>
 </div>
+<div id="ref-s9ycaHcq">
+<p>18. <strong>Basic local alignment search tool</strong><br />
+Stephen F. Altschul, Warren Gish, Webb Miller, Eugene W. Myers, David J. Lipman<br />
+<em>Journal of Molecular Biology</em> (1990-10) <a href="https://doi.org/cnsjsz">https://doi.org/cnsjsz</a><br />
+DOI: <a href="https://doi.org/10.1016/s0022-2836(05)80360-2">10.1016/s0022-2836(05)80360-2</a></p>
+</div>
+<div id="ref-JOWSuu8G">
+<p>19. <strong>IQ-TREE: A Fast and Effective Stochastic Algorithm for Estimating Maximum-Likelihood Phylogenies</strong><br />
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, Bui Quang Minh<br />
+<em>Molecular Biology and Evolution</em> (2014-11-03) <a href="https://doi.org/f3srtd">https://doi.org/f3srtd</a><br />
+DOI: <a href="https://doi.org/10.1093/molbev/msu300">10.1093/molbev/msu300</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25371430">25371430</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4271533">PMC4271533</a></p>
+</div>
+<div id="ref-JT9eRkR8">
+<p>20. <strong>Substrate Recognition by a Colistin Resistance Enzyme from Moraxella catarrhalis</strong><br />
+Peter J. Stogios, Georgina Cox, Haley L. Zubyk, Elena Evdokimova, Zdzislaw Wawrzak, Gerard D. Wright, Alexei Savchenko<br />
+<em>ACS Chemical Biology</em> (2018-04-09) <a href="https://doi.org/gdnrmn">https://doi.org/gdnrmn</a><br />
+DOI: <a href="https://doi.org/10.1021/acschembio.8b00116">10.1021/acschembio.8b00116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29631403">29631403</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6197822">PMC6197822</a></p>
+</div>
 <div id="ref-16EwPCiJT">
-<p>19. <strong>The Genus Aeromonas: Taxonomy, Pathogenicity, and Infection</strong><br />
+<p>21. <strong>The Genus Aeromonas: Taxonomy, Pathogenicity, and Infection</strong><br />
 J. M. Janda, S. L. Abbott<br />
 <em>Clinical Microbiology Reviews</em> (2010-01-01) <a href="https://doi.org/cbnfww">https://doi.org/cbnfww</a><br />
 DOI: <a href="https://doi.org/10.1128/cmr.00039-09">10.1128/cmr.00039-09</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20065325">20065325</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2806660">PMC2806660</a></p>
 </div>
 <div id="ref-8uz5m0fP">
-<p>20. <strong>Natural antimicrobial susceptibility patterns and biochemical profiles of Leclercia adecarboxylata strains</strong><br />
+<p>22. <strong>Natural antimicrobial susceptibility patterns and biochemical profiles of Leclercia adecarboxylata strains</strong><br />
 I Stock, S Burak, B Wiedemann<br />
 <em>Clinical Microbiology and Infection</em> (2004-08) <a href="https://doi.org/b2zr9k">https://doi.org/b2zr9k</a><br />
 DOI: <a href="https://doi.org/10.1111/j.1469-0691.2004.00892.x">10.1111/j.1469-0691.2004.00892.x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/15301675">15301675</a></p>
 </div>
 <div id="ref-BjoH1Vii">
-<p>21. <strong>The Genus Psychrobacter</strong><br />
+<p>23. <strong>The Genus Psychrobacter</strong><br />
 Elliot Juni<br />
 <em>The Prokaryotes</em> (1992) <a href="https://doi.org/dbpr">https://doi.org/dbpr</a><br />
 DOI: <a href="https://doi.org/10.1007/978-1-4757-2191-1_12">10.1007/978-1-4757-2191-1_12</a></p>
 </div>
 <div id="ref-WLzELTTa">
-<p>22. <strong>Novel Psychrobacter Species from Antarctic Ornithogenic Soils</strong><br />
+<p>24. <strong>Novel Psychrobacter Species from Antarctic Ornithogenic Soils</strong><br />
 J. P. BOWMAN, J. CAVANAGH, J. J. AUSTIN, K. SANDERSON<br />
 <em>International Journal of Systematic Bacteriology</em> (1996-10-01) <a href="https://doi.org/fd9rb9">https://doi.org/fd9rb9</a><br />
 DOI: <a href="https://doi.org/10.1099/00207713-46-4-841">10.1099/00207713-46-4-841</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/8863407">8863407</a></p>
 </div>
 <div id="ref-2NZAmp2H">
-<p>23. <strong>Psychrobacter vallis sp. nov. and Psychrobacter aquaticus sp. nov., from Antarctica</strong><br />
+<p>25. <strong>Psychrobacter vallis sp. nov. and Psychrobacter aquaticus sp. nov., from Antarctica</strong><br />
 S. Shivaji<br />
 <em>INTERNATIONAL JOURNAL OF SYSTEMATIC AND EVOLUTIONARY MICROBIOLOGY</em> (2005-03-01) <a href="https://doi.org/cdq9w4">https://doi.org/cdq9w4</a><br />
 DOI: <a href="https://doi.org/10.1099/ijs.0.03030-0">10.1099/ijs.0.03030-0</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/15774658">15774658</a></p>
 </div>
 <div id="ref-Ovca71PG">
-<p>24. <strong>Stenotrophomonas maltophilia: an Emerging Global Opportunistic Pathogen</strong><br />
+<p>26. <strong>Stenotrophomonas maltophilia: an Emerging Global Opportunistic Pathogen</strong><br />
 J. S. Brooke<br />
 <em>Clinical Microbiology Reviews</em> (2012-01-01) <a href="https://doi.org/fxx2tt">https://doi.org/fxx2tt</a><br />
 DOI: <a href="https://doi.org/10.1128/cmr.00019-11">10.1128/cmr.00019-11</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22232370">22232370</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3255966">PMC3255966</a></p>
 </div>
 <div id="ref-KEhNzdys">
-<p>25. <strong>Dissemination and Characteristics of a Novel Plasmid-Encoded Carbapenem-Hydrolyzing Class D β-Lactamase, OXA-436, Found in Isolates from Four Patients at Six Different Hospitals in Denmark</strong><br />
+<p>27. <strong>Dissemination and Characteristics of a Novel Plasmid-Encoded Carbapenem-Hydrolyzing Class D β-Lactamase, OXA-436, Found in Isolates from Four Patients at Six Different Hospitals in Denmark</strong><br />
 Ørjan Samuelsen, Frank Hansen, Bettina Aasnæs, Henrik Hasman, Bjarte Aarmo Lund, Hanna-Kirsti S. Leiros, Berit Lilje, Jessin Janice, Lotte Jakobsen, Pia Littauer, … Anette M. Hammerum<br />
 <em>Antimicrobial Agents and Chemotherapy</em> (2017-10-23) <a href="https://doi.org/db7x">https://doi.org/db7x</a><br />
 DOI: <a href="https://doi.org/10.1128/aac.01260-17">10.1128/aac.01260-17</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29061750">29061750</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5740310">PMC5740310</a></p>
