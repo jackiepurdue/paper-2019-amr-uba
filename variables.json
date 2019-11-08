@@ -1,5 +1,5 @@
 {
-  "date": "November 6, 2019",
+  "date": "November 8, 2019",
   "authors": [
     {
       "github": "jackiepurdue",
@@ -9,54 +9,78 @@
       "twitter": "jackiepurdue",
       "email": "jpurdue@dal.ca",
       "affiliations": [
-        "Department of Computer Science, Dalhousie University"
+        "Faculty of Computer Science, Dalhousie University"
       ],
-      "funders": "Grant XXXXXXXX",
       "affiliation_numbers": [
         1
       ]
     },
     {
-      "github": "janeroe",
-      "name": "Jane Roe",
-      "initials": "JR",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "jane.roe@whatever.edu",
+      "name": "Jocelyn McDonald",
+      "initials": "JM",
+      "email": "jc210282@dal.ca",
       "affiliations": [
-        "Department of Something, University of Whatever",
-        "Department of Whatever, University of Something"
+        "Faculty of Computer Science, Dalhousie University"
       ],
       "affiliation_numbers": [
-        2,
-        3
+        1
+      ]
+    },
+    {
+      "name": "Dayna Mikkelsen",
+      "initials": "DM",
+      "email": "dy476861@dal.ca",
+      "affiliations": [
+        "Faculty of Computer Science, Dalhousie University"
+      ],
+      "affiliation_numbers": [
+        1
+      ]
+    },
+    {
+      "github": "fmaguire",
+      "name": "Finlay Maguire",
+      "initials": "fm",
+      "orcid": "0000-0002-1203-9514",
+      "twitter": "finlaym",
+      "email": "finlaymaguire@gmail.com",
+      "affiliations": [
+        "Faculty of Computer Science, Dalhousie University"
+      ],
+      "funders": "Donald Hill Family Fellowship in Computer Science",
+      "affiliation_numbers": [
+        1
+      ]
+    },
+    {
+      "name": "Robert G. Beiko",
+      "initials": "RGB",
+      "email": "rbeiko@dal.ca",
+      "affiliations": [
+        "Faculty of Computer Science, Dalhousie University"
+      ],
+      "affiliation_numbers": [
+        1
       ]
     }
   ],
   "affiliations": [
     {
-      "affiliation": "Department of Computer Science, Dalhousie University",
+      "affiliation": "Faculty of Computer Science, Dalhousie University",
       "affiliation_number": 1
-    },
-    {
-      "affiliation": "Department of Something, University of Whatever",
-      "affiliation_number": 2
-    },
-    {
-      "affiliation": "Department of Whatever, University of Something",
-      "affiliation_number": 3
     }
   ],
   "ci_source": {
     "repo_slug": "jackiepurdue/paper-2019-amr-uba",
     "repo_owner": "jackiepurdue",
     "repo_name": "paper-2019-amr-uba",
-    "commit": "2c7b3c7c89fe4cc333f31af7b832a17e577bd6bc"
+    "commit": "e7fdcaffb1236677f80672e538c658fc04e64be0"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 22,
-      "total": 22
+      "doi": 25,
+      "total": 25
     },
-    "word_count": 4098
+    "word_count": 4351
   }
 }
