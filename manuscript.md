@@ -5,7 +5,7 @@ author-meta:
 - Dayna Mikkelsen
 - Finlay Maguire
 - Robert G. Beiko
-date-meta: '2019-11-08'
+date-meta: '2019-11-12'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -21,10 +21,10 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/3969d06018729f1f61c4dac62d96a96b6b431b33/))
+([permalink](https://jackiepurdue.github.io/paper-2019-amr-uba/v/a335ad0076f35aa93283aa005176d30403e78e15/))
 was automatically generated
-from [jackiepurdue/paper-2019-amr-uba@3969d06](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/3969d06018729f1f61c4dac62d96a96b6b431b33)
-on November 8, 2019.
+from [jackiepurdue/paper-2019-amr-uba@a335ad0](https://github.com/jackiepurdue/paper-2019-amr-uba/tree/a335ad0076f35aa93283aa005176d30403e78e15)
+on November 12, 2019.
 </em></small>
 
 ## Authors

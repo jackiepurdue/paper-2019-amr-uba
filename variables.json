@@ -1,5 +1,5 @@
 {
-  "date": "November 8, 2019",
+  "date": "November 12, 2019",
   "authors": [
     {
       "github": "jackiepurdue",
@@ -74,7 +74,7 @@
     "repo_slug": "jackiepurdue/paper-2019-amr-uba",
     "repo_owner": "jackiepurdue",
     "repo_name": "paper-2019-amr-uba",
-    "commit": "3969d06018729f1f61c4dac62d96a96b6b431b33"
+    "commit": "a335ad0076f35aa93283aa005176d30403e78e15"
   },
   "manuscript_stats": {
     "reference_counts": {
