@@ -1,4 +1,4 @@
-# Uncultivated MAG and AMR Paper
+# Phylogenetic AMR Survey Manuscript
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://jackiepurdue.github.io/paper-2019-amr-uba/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://jackiepurdue.github.io/paper-2019-amr-uba/manuscript.pdf)
