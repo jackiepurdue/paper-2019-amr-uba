@@ -1,5 +1,5 @@
 {
-  "date": "November 12, 2019",
+  "date": "November 13, 2019",
   "authors": [
     {
       "github": "jackiepurdue",
@@ -71,10 +71,10 @@
     }
   ],
   "ci_source": {
-    "repo_slug": "jackiepurdue/paper-2019-amr-uba",
+    "repo_slug": "jackiepurdue/phylogenetic-amr-survey-manuscript",
     "repo_owner": "jackiepurdue",
-    "repo_name": "paper-2019-amr-uba",
-    "commit": "a335ad0076f35aa93283aa005176d30403e78e15"
+    "repo_name": "phylogenetic-amr-survey-manuscript",
+    "commit": "bcbe26e9d76456e3e0e009710426e27ad70798be"
   },
   "manuscript_stats": {
     "reference_counts": {
