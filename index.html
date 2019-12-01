@@ -9,7 +9,7 @@
   <meta name="author" content="Dayna Mikkelsen" />
   <meta name="author" content="Finlay Maguire" />
   <meta name="author" content="Robert G. Beiko" />
-  <meta name="dcterms.date" content="2019-11-13" />
+  <meta name="dcterms.date" content="2019-12-01" />
   <meta name="keywords" content="metagenome, antimicrobial resistance" />
   <title>Identifying possibly novel sources of antimicrobial resistance in uncultivated bacterial and archeal metagenome-assembled genomes</title>
   <style>
@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">Identifying possibly novel sources of antimicrobial resistance in uncultivated bacterial and archeal metagenome-assembled genomes</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/bcbe26e9d76456e3e0e009710426e27ad70798be/">permalink</a>) was automatically generated from <a href="https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/bcbe26e9d76456e3e0e009710426e27ad70798be">jackiepurdue/phylogenetic-amr-survey-manuscript@bcbe26e</a> on November 13, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/4fa2fe4a30d28969a325bdad8cac2758ae47d19e/">permalink</a>) was automatically generated from <a href="https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/4fa2fe4a30d28969a325bdad8cac2758ae47d19e">jackiepurdue/phylogenetic-amr-survey-manuscript@4fa2fe4</a> on December 1, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Jackie Purdue</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-3131-0688">0000-0003-3131-0688</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/jackiepurdue">jackiepurdue</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/jackiepurdue">jackiepurdue</a><br> <small> Faculty of Computer Science, Dalhousie University </small></p></li>
@@ -275,7 +275,7 @@
 </table>
 <h3 id="sequence-alignmnet">Sequence Alignmnet</h3>
 <p>Two alignments were created for each AMR determinant under study. The first alignment was created to compare the phylogenetic relationship of only the putative sequences. The second alignment was created for an overall comparison of sequences.</p>
-<p>The putative AMR alignment was made up of the sequences from the CARD prevalence data were concatenated in one multi-FASTA format file with the canonical sequences and an outgroup chosen for each AMR family as per table {<span class="citation" data-cites="tbl:outgroups">[<span class="citeproc-not-found" data-reference-id="tbl:outgroups"><strong>???</strong></span>]</span>}. In the second, more diverse alignment, The filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences with the same outgroup sequences (table {<span class="citation" data-cites="tbl:outgroups">[<span class="citeproc-not-found" data-reference-id="tbl:outgroups"><strong>???</strong></span>]</span>}).</p>
+<p>The putative AMR alignment was made up of the sequences from the CARD prevalence data were concatenated in one multi-FASTA format file with the canonical sequences and an outgroup chosen for each AMR family as per table <a href="#tbl:outgroups">6</a>. In the second, more diverse alignment, The filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences with the same outgroup sequences (table <a href="#tbl:outgroups">6</a>).</p>
 <p>This set of concatenated amino acid sequences were aligned with MAFFT-LINSI version 7.40 and trimmed by trimal version 1.4.rev22 using the automated1 option.</p>
 <h3 id="creation-of-phylogenies">Creation of phylogenies</h3>
 <p>For each alignment under each AMR family under study, IQ-TREE multicore version 1.6.9 <span class="citation" data-cites="JOWSuu8G"><a href="#ref-JOWSuu8G" role="doc-biblioref">19</a></span> was used to build a bootstrapped tree with -bb 1000 with the G+I+G4 model of substitution. Tree visualizations were created with ETE Toolkit version 3, and annotated with taxonomic information for each rank, and environmental and AMR data, based on information from the various metadata. (See supplemental).</p>
@@ -283,7 +283,7 @@
 <h3 id="phylogenetic-analysis-of-mcr-sequences">Phylogenetic analysis of MCR sequences</h3>
 <p>The phylogenetic relationships of the CARD canonical sequences, and the CARD prevalence sequences involving the MCR family were investigated to show the pylogenetic relationship of only the putative MCR sequences without the noise of additional sequences. A total of 87 genes, an out-group, the 32 canonical sequences, and the 54 prevalence sequences (clustered as per Table <a href="#tbl:exp-params">1</a>), were selected for analyses. The tree in Figure <a href="#fig:canon-prev-tree">1</a> shows several distinct clades. Each MCR variant forms a clade. MCR-1, MCR-2, and MCR-6 form a clade, appearing to more closely related to one another than with the other MCR family members. This clade is also closely related to the ICR-Mc clade. ICR-Mc <span class="citation" data-cites="JT9eRkR8"><a href="#ref-JT9eRkR8" role="doc-biblioref">20</a></span> is another phosphoethanolamine transferase which confers colistin resistance.</p>
 <figure>
-<img src="images/mcr191004_canon_prev.fasta.aln.trim.treefile.collapsed.svg" alt="Figure 1: Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, and an outgroup from Betaproteobacteria (lcl_prev_ in tan) Each MCR variant is coloured based on its primary numerical value." id="fig:canon-prev-tree" /><figcaption><span>Figure 1:</span> Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, and an outgroup from Betaproteobacteria (lcl_prev_ in tan) Each MCR variant is coloured based on its primary numerical value.</figcaption>
+<img src="images/mcr191004_canon_prev.fasta.aln.trim.treefile.collapsed.svg" alt="Figure 1: Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, and an outgroup from Betaproteobacteria (lcl_outgroup in grey). Each MCR variant is coloured based on its primary numerical value." id="fig:canon-prev-tree" /><figcaption><span>Figure 1:</span> Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, and an outgroup from Betaproteobacteria (lcl_outgroup in grey). Each MCR variant is coloured based on its primary numerical value.</figcaption>
 </figure>
 <p>The relationships were then collapsed to representative sequences for each numbered MCR variant in figure <a href="#fig:canon-prev-tree-collapsed">2</a> for a more condensed visualization of the overall MCR family relationships.</p>
 <p>From figure <a href="#fig:canon-prev-tree-collapsed">2</a> the gradient of diversity between some variants is occupied, such as the relationship of MCR 1, 2, and 6 and ICR-Mc, and MCR 7, 3, and 9. There are also relationships in which this diversity is missing, where unrepresented clades of MCR could exist.</p>
@@ -303,36 +303,33 @@
 <img src="images/mcr5_icrmc_diversity.svg" alt="Figure 4: Clade containing putative MCR 5 and ICR-Mc clades pruned from Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey." id="fig:mcr-5-icr" /><figcaption><span>Figure 4:</span> Clade containing putative MCR 5 and ICR-Mc clades pruned from Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey.</figcaption>
 </figure>
 <p>[TODO: visualization with plasmid distribution ]</p>
-<h4 id="mcr-alignment">MCR Alignment</h4>
-<p>[TODO: visualization with alignment/entropy] <img src="images/aln_mcr.png" alt="placeholder" id="fig:ndm-tree" /></p>
 <h3 id="phylogenetic-analysis-of-kpc">Phylogenetic analysis of KPC</h3>
-<p>18 canonical sequences, and the 8 prevalence sequences (clustered according to Table <a href="#tbl:exp-params">1</a>), non-redundant sequences, and 7 UBA sequences were combined in the phylogeny in Figure <a href="#fig:oxa-tree">7</a> In investigating the phylogenetic relationship of KPC also resulted in UBA sequences which were too distant from the canonical sequences to make a conjecture regarding their relationship to KPC family. In Figure <a href="#fig:kpc-tree">5</a> the 7 resulting UBA sequences branch with class A beta-lactamases as reported by the non-redundant BLAST.</p>
+<p>Using the 18 canonical sequences from Table <a href="#tbl:kpc-variants">3</a> as query sequences, 25 prevalence sequences, 376 non-redundant sequences, and 6 UBA sequences were recovered from the various databases. The result was combined in the phylogeny displayed in figure <a href="#fig:kpc-tree">12</a>. This phylogeny shows that many of the resulting sequences are distant from the canonical sequences. The main clade in figure <a href="#fig:kpc-main-tree">5</a> shows that many of the amr determinants are named as distinct sequences, while not having much phylogenetic distance between them. The most closely related clade is a clade containing IMI and SME-type beta lactamases. The remaining sequences are in a clade containing a large amount of class A beta-lactamases from the non-redundant data. All of the UBA sequences were present in this portion of the tree.</p>
 <figure>
-<img src="images/kpc191001_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg" alt="Figure 5: Phylogenetic relationship (lcl_canon) KPC family sequences along with 14 prevalence (lcl_prev) sequences." id="fig:kpc-tree" /><figcaption><span>Figure 5:</span> Phylogenetic relationship (lcl_canon) KPC family sequences along with 14 prevalence (lcl_prev) sequences.</figcaption>
+<img src="images/kpc_main_clade.svg" alt="Figure 5: A clade pruned from the phylogeny in figure {#fig:kpc-tree} which represents the most closely related genes to the KPC family genes." id="fig:kpc-main-tree" /><figcaption><span>Figure 5:</span> A clade pruned from the phylogeny in figure {#fig:kpc-tree} which represents the most closely related genes to the KPC family genes.</figcaption>
 </figure>
 <h3 id="phylogenetic-analysis-of-ndm">Phylogenetic analysis of NDM</h3>
-<p>The phylogenetic relationships of the NDM family were investigated. The 14 canonical sequences were used to query the same databases as in the phylogenetic analyses of MCR.</p>
-<p>The genes retained for the phylogeny were the 14 canonical sequences, 3 prevalence sequences ((clustered as per table <a href="#tbl:exp-params">1</a>)), 7 non-redundant sequences, 1 UBA sequence, and 1 out-group.</p>
-<p>This total of 27 resulted in the phylogeny in Figure <a href="#fig:ndm-tree">6</a>.</p>
+<p>14 canonical sequences were used to query the same databases as in the former phylogenetic analyses. The genes retained for the phylogeny were the 14 canonical sequences, 8 prevalence sequences, 12 non-redundant sequences, 1 UBA sequence, and 1 out-group. This resulted in the phylogenetic relationship in Figure <a href="#fig:ndm-tree">11</a>.</p>
 <figure>
-<img src="images/ndm190930_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg" alt="Figure 6: Phylogenetic relationship (lcl_canon) NDM family sequences along with 14 prevalence (lcl_prev) sequences." id="fig:ndm-tree" /><figcaption><span>Figure 6:</span> Phylogenetic relationship (lcl_canon) NDM family sequences along with 14 prevalence (lcl_prev) sequences.</figcaption>
+<img src="images/ndm191128_canon_prev_nrdb_uba.fasta.aln.trim.treefile.expanded.svg" alt="Figure 6: Phylogenetic relationship of 14 canonical (labels prefixed with lcl_canon_ in yellow), 8 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 12 NCBI non-redundant database sequences (lcl_nrdb), 1 UBA sequence (lcl_uba) and an outgroup from Betaproteobacteria (lcl_outgroup in grey). Each MCR variant is coloured based on its primary numerical value." id="fig:ndm-tree-all" /><figcaption><span>Figure 6:</span> Phylogenetic relationship of 14 canonical (labels prefixed with lcl_canon_ in yellow), 8 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 12 NCBI non-redundant database sequences (lcl_nrdb), 1 UBA sequence (lcl_uba) and an outgroup from Betaproteobacteria (lcl_outgroup in grey). Each MCR variant is coloured based on its primary numerical value.</figcaption>
 </figure>
-<p>The 7 sequences resulting from the NCBI data included 3 genes reported to be NDM-1, NDM-3, and NDM-5. The other 4 genes were reported to be general beta lactamase/carbapenemase hits. These sequences form a closely related multifurcation (due to poor support values) with the prevalence and canonical data. The only phylogenetically resolved gene in this clade was a prevalence hit for NDM-1 found in Shigella sonnei representing only itself in the cd-hit cluster. Interestingly other representatives from other purported NDM families are more closely related to each other, including the canonical NDM-1 sequence from Klebsiella pneumoniae. The one UBA BLAST result branches far from the clade containing the canonical indicating that under the coverage queried, there are no reasonably detectable NDM homologues in the UBA data. The alignment of this UBA under this relaxed query coverage of 60% is already pushing the limits of a “good alignment”, and reducing this further would produce meaningless results.</p>
+<p>The 12 sequences resulting from the NCBI data included 3 genes reported to be NDM-1, NDM-3, and NDM-5, while the other 4 genes were reported to be general beta lactamase/carbapenemase hits. As in the KPC phylogeny (figure <a href="#fig:kpc-main-tree">5</a>), there is very little phylogenetic difference between the named variants of NDM. The only significantly phylogenetically resolved genes in this clade were the prevalence hit for NDM-1 found in Shigella sonnei representing only itself in the cd-hit cluster, and the ncbi hits labeled as NDM-1 and NDM-5. The naming of these sequences seem not to be congruent with the phylogenetic relationships present in the tree. Some of the NDM-1 and NDM-5 genes are more closely related to the other NDM variants than themselves. The one BA BLAST result branches far from the clade containing the canonical indicating that under the coverage queried, there are no reasonably detectable NDM homologues in the UBA data. The alignment of this UBA under this relaxed query coverage of 60% is already pushing the limits of a “good alignment”, and reducing this further would produce meaningless results.</p>
 <h3 id="phylogenetic-analysis-of-oxa-48">Phylogenetic analysis of OXA-48</h3>
-<p>In investigating the phylogenetic relationship of OXA-48, the result was similar to that of NDM. There were multiple BLAST results for UBA sequences, but the hits were too phylogenetically dissimilar to draw a conjecture about their relationship to the OXA family. 6 canonical sequences, and the 5 prevalence sequences (clustered according to Table <a href="#tbl:exp-params">1</a>), 11 non-redundant sequences, and 112 UBA sequences were combined in the phylogeny in Figure <a href="#fig:oxa-tree">7</a></p>
+<p>In investigating the phylogenetic relationship of OXA-48, the result was similar to that of NDM. There were multiple BLAST results for UBA sequences, but the hits were too phylogenetically dissimilar to draw a conjecture about their relationship to the OXA family. 6 canonical sequences, and the 14 prevalence sequences, 20 non-redundant sequences, and 411 UBA sequences were combined in the phylogeny in Figure <a href="#fig:oxa-tree">9</a></p>
 <figure>
-<img src="images/oxa191001_canon_prev_nrdb_uba.fasta.aln.trim.treefile.collapsed.svg" alt="Figure 7: Phylogenetic relationship (lcl_canon) OXA-48 family sequences along with 14 prevalence (lcl_prev) sequences." id="fig:oxa-tree" /><figcaption><span>Figure 7:</span> Phylogenetic relationship (lcl_canon) OXA-48 family sequences along with 14 prevalence (lcl_prev) sequences.</figcaption>
+<img src="images/oxa_main_clade.svg" alt="Figure 7: The main phylogenetic relationship pruned from the tree inferred from OXA-48-like sequences from figure {#fig:oxa-tree}" id="fig:oxa-main-tree" /><figcaption><span>Figure 7:</span> The main phylogenetic relationship pruned from the tree inferred from OXA-48-like sequences from figure {#fig:oxa-tree}</figcaption>
 </figure>
-<p>The OXA-48 prevalence hits added further diversity to the referecne OXA-48-like sequences. OXA-436 <span class="citation" data-cites="KEhNzdys"><a href="#ref-KEhNzdys" role="doc-biblioref">27</a></span> was found, clustered with no other gene, in the prevalence data, and OXA-514 and OXA-515 were found in the non-redundant data.</p>
+<p>The OXA-48 prevalence hits added further diversity to the reference OXA-48-like sequences. OXA-436 <span class="citation" data-cites="KEhNzdys"><a href="#ref-KEhNzdys" role="doc-biblioref">27</a></span> was found, clustered with no other gene, in the prevalence data, and OXA-514 and OXA-515 were found in the non-redundant data. Much like in NDM, this diversity seems only to be diversity in name. The various named variants are too similar to produce significant phylogenetic resolution. This is most likely a symptom of the problematic way in which OXA family members are named.</p>
 <h2 id="discussion">Discussion</h2>
 <ul>
 <li>TODO: Discuss the following:
 <ul>
+<li>Messed up nomenclature</li>
 <li>We found a lot of intermingled MCRs, not so much with the others (plasmids etc.)</li>
 <li>Why were some UBAs not covered? (plasmids)</li>
 <li>What should we do with naming, especially as new variants are discovered and fill in the tree?</li>
-<li>Taxonomic anomolies and how they may be explained</li>
-<li>There were many clinical samples represented that <em>did</em> yeild MCRs, but the recovery could be bad</li>
+<li>Taxonomic anomalies and how they may be explained</li>
+<li>There were many clinical samples represented that <em>did</em> yield MCRs, but the recovery could be bad</li>
 </ul></li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>
@@ -390,8 +387,76 @@
 <tbody>
 </tbody>
 </table>
+<p>TODO: Quality/CHECKM information for UBAs</p>
+<a name="tbl:outgroups"></a>
+<table>
+<caption><span>Table 6:</span> Outgroups chosen in building the phylogenies of the 4 AMR families. </caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 39%" />
+<col style="width: 20%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Outgroup to AMR Family</th>
+<th>Gene</th>
+<th>Species</th>
+<th>Class</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MCR</td>
+<td>phosphoethanolamine–lipid A transferase</td>
+<td>Oxalobacter formigenes</td>
+<td>Betaproteobacteria</td>
+</tr>
+<tr class="even">
+<td>KPC</td>
+<td>class A beta-lactamase</td>
+<td>Mesorhizobium loti</td>
+<td>Alpha Proteobacteria</td>
+</tr>
+<tr class="odd">
+<td>NDM</td>
+<td>VIM-4 metallo-beta-lactamase</td>
+<td>Alcaligenes faecalis</td>
+<td>Betaproteobacteria</td>
+</tr>
+<tr class="even">
+<td>OXA-48</td>
+<td>OXA-10 family class D beta-lactamase OXA-454</td>
+<td>Delftia acidovorans</td>
+<td>Betaproteobacteria</td>
+</tr>
+</tbody>
+</table>
+<h4 id="mcr-alignment">MCR Alignment</h4>
+<p>[TODO: visualization with alignment/entropy] <img src="images/aln_mcr.png" alt="placeholder" id="fig:ndm-tree" /></p>
+<h4 id="kpc-alignment">KPC Alignment</h4>
+<p>[TODO: visualization with alignment/entropy] <img src="images/aln_kpc.png" alt="placeholder" id="fig:ndm-tree" /></p>
+<h4 id="ndm-alignment">NDM Alignment</h4>
+<p>[TODO: visualization with alignment/entropy] <img src="images/aln_ndm.png" alt="placeholder" id="fig:ndm-tree" /></p>
+<h4 id="oxa-48-alignment">OXA-48 Alignment</h4>
+<p>[TODO: visualization with alignment/entropy] <img src="images/aln_oxa.png" alt="placeholder" id="fig:ndm-tree" /></p>
 <figure>
 <img src="images/mcr191004_canon_prev_nrdb_uba.fasta.aln.trim.treefile.expanded.svg" alt="Figure 8: Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey." id="fig:canon-prev-nrdb-uba-tree" /><figcaption><span>Figure 8:</span> Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey.</figcaption>
+</figure>
+<figure>
+<img src="images/oxa191128.canon.svg" alt="Figure 9: Phylogenetic relationship (lcl_canon) OXA-48 family sequences along with 14 prevalence (lcl_prev) sequences." id="fig:oxa-tree" /><figcaption><span>Figure 9:</span> Phylogenetic relationship (lcl_canon) OXA-48 family sequences along with 14 prevalence (lcl_prev) sequences.</figcaption>
+</figure>
+<figure>
+<img src="images/oxa191128.expanded.svg" alt="Figure 10: Phylogenetic relationship (lcl_canon) OXA-48 family sequences along with 14 prevalence (lcl_prev) sequences." id="fig:oxa-tree-all" /><figcaption><span>Figure 10:</span> Phylogenetic relationship (lcl_canon) OXA-48 family sequences along with 14 prevalence (lcl_prev) sequences.</figcaption>
+</figure>
+<figure>
+<img src="images/ndm191128.canon.svg" alt="Figure 11: Phylogenetic relationship (lcl_canon) NDM family sequences along with 14 prevalence (lcl_prev) sequences." id="fig:ndm-tree" /><figcaption><span>Figure 11:</span> Phylogenetic relationship (lcl_canon) NDM family sequences along with 14 prevalence (lcl_prev) sequences.</figcaption>
+</figure>
+<figure>
+<img src="images/kpc191127.canon.svg" alt="Figure 12: Phylogenetic relationship (lcl_canon) KPC family sequences along with 14 prevalence (lcl_prev) sequences." id="fig:kpc-tree" /><figcaption><span>Figure 12:</span> Phylogenetic relationship (lcl_canon) KPC family sequences along with 14 prevalence (lcl_prev) sequences.</figcaption>
+</figure>
+<figure>
+<img src="images/kpc191127_canon_prev_nrdb_uba.fasta.aln.trim.treefile.expanded.svg" alt="Figure 13: Phylogenetic relationship (lcl_canon) KPC family sequences along with 14 prevalence (lcl_prev) sequences." id="fig:kpc-tree-all" /><figcaption><span>Figure 13:</span> Phylogenetic relationship (lcl_canon) KPC family sequences along with 14 prevalence (lcl_prev) sequences.</figcaption>
 </figure>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
