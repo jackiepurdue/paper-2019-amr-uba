@@ -283,7 +283,7 @@
     "id": "2xaXclNM"
   },
   {
-    "publisher": "Springer Nature",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "11",
     "DOI": "10.1038/s41564-017-0012-7",
     "type": "article-journal",
@@ -343,7 +343,7 @@
     "id": "wrBRBdFb"
   },
   {
-    "publisher": "Springer Nature",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "2",
     "DOI": "10.1038/s41564-017-0083-5",
     "type": "article-journal",
@@ -1260,6 +1260,7 @@
   {
     "publisher": "Canadian Science Publishing",
     "issue": "1",
+    "abstract": "<jats:p> A global medical crisis is unfolding as antibiotics lose effectiveness against a growing number of bacterial pathogens. Horizontal gene transfer (HGT) contributes significantly to the rapid spread of resistance, yet the transmission dynamics of genes that confer antibiotic resistance are poorly understood. Multiple mechanisms of HGT liberate genes from normal vertical inheritance. Conjugation by plasmids, transduction by bacteriophages, and natural transformation by extracellular DNA each allow genetic material to jump between strains and species. Thus, HGT adds an important dimension to infectious disease whereby an antibiotic resistance gene (ARG) can be the agent of an outbreak by transferring resistance to multiple unrelated pathogens. Here, we review the small number of cases where HGT has been detected in clinical environments. We discuss differences and synergies between the spread of plasmid-borne and chromosomal ARGs, with a special consideration of the difficulties of detecting transduction and transformation by routine genetic diagnostics. We highlight how 11 of the top 12 priority antibiotic-resistant pathogens are known or predicted to be naturally transformable, raising the possibility that this mechanism of HGT makes significant contributions to the spread of ARGs. HGT drives the evolution of untreatable “superbugs” by concentrating ARGs together in the same cell, thus HGT must be included in strategies to prevent the emergence of resistant organisms in hospitals and other clinical settings. </jats:p>",
     "DOI": "10.1139/cjm-2018-0275",
     "type": "article-journal",
     "page": "34-44",
