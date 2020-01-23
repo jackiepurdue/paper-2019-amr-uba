@@ -10,8 +10,12 @@
 **** TODO Visualization with plasmid distribution
 **** TODO Visualization with taxonomic distribution
 **** TODO Explain green dots
-     * eplain the green dots
+     * explain the green dots
      * look for other missing information in the figures
+**** TODO Fix broken links
+     * For example:
+       * {@fig:canon-prev-tree} 
+       * {#fig:canon-prev-tree}
 *** General TODO items
 **** TODO Gradient of the AMR trees
      * Come up with a better term/description of the observed “gradient of the AMR trees”, where the branches gradually could become less likely to be AMR determining the further away we get from canonical clades.
