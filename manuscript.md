@@ -21,9 +21,9 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/e411203c2a187590514cddd6cf02eb022a16557b/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/6f22c48bbe4139163dd2cf2b7d1ae0321454d6ff/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@e411203](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/e411203c2a187590514cddd6cf02eb022a16557b)
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@6f22c48](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/6f22c48bbe4139163dd2cf2b7d1ae0321454d6ff)
 on January 23, 2020.
 </em></small>
 
@@ -399,6 +399,8 @@ The OXA-48 prevalence hits added further diversity to the reference OXA-48-like 
   * What should we do with naming, especially as new variants are discovered and fill in the tree?
   * Taxonomic anomalies and how they may be explained
   * There were many clinical samples represented that *did* yield MCRs, but the recovery could be bad
+  
+
 
 
 ## Conclusion
