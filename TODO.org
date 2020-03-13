@@ -1,41 +1,48 @@
 * TODO Items
 ** Phylogenetic Survey Paper     
 *** Specific TODO items
-**** TODO Fix Table 1
+**** TODO [#B] Fix Table 1
      * Make table 1 more readable with better labels etc.
-**** TODO Quality information
+**** TODO [#B] Quality information
      * Display quality information in the supplemental material
      * CheckM values, coverage, quality scores
      * Cite these qualities where relevant in the results
-**** TODO Visualization with plasmid distribution
-**** TODO Visualization with taxonomic distribution
-**** TODO Explain green dots
+**** TODO [#B] Visualization with plasmid distribution
+**** TODO [#B] Visualization with taxonomic distribution
+**** TODO [#B] Explain green dots
      * explain the green dots
      * look for other missing information in the figures
-**** TODO Fix broken links
+**** TODO [#B] Fix broken links
      * For example:
        * {@fig:canon-prev-tree} 
        * {#fig:canon-prev-tree}
+**** TODO [#A] TODO: Should we talk about things like Leclercia?
+    * For the most part, taxa branched where expected, there doesn't seem to be much unexplained here.
+    * Many of these families added to the tree are associated with human disease/animal disease already, and one could expect to find colistin resistance there, however one family, Leclercia, branches in a curious place, and has not been shown to carry the MCR gene like this in any study
+**** TODO [#A] Talk about how Most of the clades of new organisms from UBAs are not surprising?
+    * If anything, these are at least an indicator that our conservative treatment of the metagenomic data was a good idea
+**** TODO [#B] Future work secton
+    * Probabilistic models? Assemble better with plasmids in mind? 
 *** General TODO items
-**** TODO Gradient of the AMR trees
+**** DONE Gradient of the AMR trees
      * Come up with a better term/description of the observed “gradient of the AMR trees”, where the branches gradually could become less likely to be AMR determining the further away we get from canonical clades.
      * We have all these clades of diversity peppered throughout.
      * This should probably be briefly described in the abstract and results.
      * Maybe it already is summed up by diversity/spread type talk, and this will just sound repetitive.
-**** TODO Results 
+**** WAITING [#A] Results 
      * We still do not have a clear picture.
      * Yes, we can see that some of these things are probably poorly named when it comes to their phylogenetic relationships. (Could there be an analogy to multi locus sequence typing here?)
      * Yes, we can see that there may be some novel AMR genes (in the MCR trees)
      * Yes, we can see that there may be some problems making other trees because of plasmids etc.
      * But, can we say anything solid about this?
-**** TODO Conclusion 
+**** WAITING [#A] Conclusion 
      * If the results were more focused, a conclusion would come naturally.
      * This conclusion will need to be added to Abstract and Conclusion section.
-**** TODO Consider rebuilding some of the trees
+**** TODO [#C] Consider rebuilding some of the trees
      * Example: Acinetobacter is not showing up in the MCR trees, and it had been discussed earlier that it may be taxonomically interesting in it's placement in the tree. (This was in notes from a meeting this summer, but it would require looking at the raw tree to see where it is located)
      * There could be other relationships we are missing out on because of the clustering.
      * Decide how much we want to discuss these sorts of interesting relationships, or if it's worth it to rebuild the trees based on more "interesting" taxa.
-**** TODO Discussion section
+**** DONE Discussion section
      * We already have many discussion points, and it should be easy to write a lot of this section independently of the other TODO items...
      * Messed up nomenclature
      * We found a lot of intermingled MCRs, not so much with the others (plasmids etc.)
@@ -43,3 +50,4 @@
      * What should we do with naming, especially as new variants are discovered and fill in the tree?
      * Taxonomic anomalies and how they may be explained
      * There were many clinical samples represented that did yield MCRs, but the recovery could be bad (This was another item from meeting notes of which I am not sure of the meaning)
+**** TODO [#C] Fix sections with bad writing
