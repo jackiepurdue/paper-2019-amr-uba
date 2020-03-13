@@ -51,3 +51,8 @@
      * Taxonomic anomalies and how they may be explained
      * There were many clinical samples represented that did yield MCRs, but the recovery could be bad (This was another item from meeting notes of which I am not sure of the meaning)
 **** TODO [#C] Fix sections with bad writing
+**** TODO [#B] Should more info be added about the dataset?
+    * sequencing
+    * assembley
+    * binning
+    * etc
