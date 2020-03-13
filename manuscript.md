@@ -5,7 +5,7 @@ author-meta:
 - Dayna Mikkelsen
 - Finlay Maguire
 - Robert G. Beiko
-date-meta: '2020-02-17'
+date-meta: '2020-03-13'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -21,10 +21,10 @@ title: Identifying possibly novel sources of antimicrobial resistance in unculti
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/78655b80e6e6e15c03411bd9eb21499d1e24ea02/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/882649f8e3339836f02f2c2f3511feec46b55cbb/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@78655b8](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/78655b80e6e6e15c03411bd9eb21499d1e24ea02)
-on February 17, 2020.
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@882649f](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/882649f8e3339836f02f2c2f3511feec46b55cbb)
+on March 13, 2020.
 </em></small>
 
 ## Authors
@@ -75,14 +75,13 @@ on February 17, 2020.
 
 Antimicrobial resistance (AMR) is a global threat to human health.
 Efforts to prevent the spread of AMR rely on surveillance of possible AMR determinants.
-Using phylogenetics to highlight potential sources of AMR could guide researchers in choosing organisms for phenotypic resistance testing. 
+Using phylogenetics to highlight potential sources of AMR could guide researchers in choosing organisms for phenotypic resistance testing.
 A systematic way of classifying AMR gene variants is important in comparing these phylogenetic relationships.
 In this study, the phylogenetic neighborhoods of several named AMR genes are characterized by their diversity, spread, and potential for discovering possibly novel AMR variants.
 Canonical sequence data from the Comprehensive Antibiotic Resistance Database (CARD) was used to query CARD prevalence data, NCBI sequence data, and draft quality metagenome assembled genomes (MAGs) from various uncultivated bacterial and archeal sources (UBAs).
 Genes which were potentially associated with mobile colistin resistance (MCR) were found in the UBA sources.
-New Delhi beta-lactamases (NDM), *Klebsiella pneumoniae* carbapenemases (KPC), and OXA beta-lactamases were not found to be represented in the UBAs,
-[TODO: "gradient of the AMR trees"]
-[TODO: conclusion: lots of novelty that cannot be accommodated by existing nomenclature schemes?]
+New Delhi beta-lactamases (NDM), Klebsiella pneumoniae carbapenemases (KPC), and OXA beta-lactamases were not found to be represented in the UBAs,
+[TODO: conclusions]
 
 
 ## Introduction
@@ -92,7 +91,7 @@ The evolution of resistance to these substances, known as antimicrobial resistan
 In the last century we have adopted and used antimicrobials to great effect in clinical medicine and agriculture.
 However, the use and abuse of antimicrobials has led to increasing levels of observed AMR [@1ByMfX8Y1].
 This poses a growing global health risk by undermining our ability to treat infectious diseases and perform surgeries [@kDtOJsGI].
-Infections by resistant microbes have greater mortality and morbidity [@kDtOJsGI] with the European Centre for Disease Prevention and Controlling estimating that 25,000 people per year die due to AMR [@OLzrpsK4].
+Infections by resistant microbes have greater mortality and morbidity [@kDtOJsGI] with the European Centre for Disease Prevention and Control estimating that 25,000 people per year die due to AMR [@OLzrpsK4].
 
 AMR can be due to intrinsic resistance within the organism or the acquisition of resistance via lateral gene transfer [@2xaXclNM].
 These mechanisms allow for the constant change of the resistome, making determining the scope of AMR within both pathogenic and non-pathogenic bacteria difficult [@1ByMfX8Y1].
@@ -152,7 +151,7 @@ Unfortunately, the genomes in databases are largely sequenced from microbes that
 As only a subset of microbial diversity can be cultured, this means many of our existing genomes aren't necessarily representative of the environment from which they were sampled.
 Recently, techniques have been developed that allow the recovery of genomes from metagenomic data e.g. [@DTtDOvle,@DfIRBmdF].
 As metagenomic sequencing, the direct sequencing of all DNA in a sample, doesn't require culturing these metagenome-assembled genomes (MAGs) represent a huge source of novel microbial diversity.
-Parks et. al. [@wapKbEHA], generated new 7,903 bacterial and archael (Uncultured Bacteria and Archaea; UBA) MAGs representing >30% increase in the sampled phylogenetic diversity of the bacteria and archaea.
+Parks et. al. [@wapKbEHA], generated new 7,903 bacterial and archaeal (Uncultured Bacteria and Archaea; UBA) MAGs representing >30% increase in the sampled phylogenetic diversity of the bacteria and archaea.
 
 Identifying and phylogenetically analysing key carbapenemase and colistin resistance genes in this dataset, CARD, CARD-prevalence and NCBI genomes, could greatly improve AMR surveillance of these genes.
 We would characterise previously unseen diversity in genomes not yet analyzed for AMR, and provide insights into the diversity of AMR across non-clinical samples.
@@ -269,7 +268,7 @@ Table: [TODO: Make table more readable/better labels etc] e-value, query coverag
 </table>
 
 
-### Sequence Alignmnet
+### Sequence Alignment
 
 Two alignments were created for each AMR determinant under study.
 The first alignment was created to compare the phylogenetic relationship of only the putative sequences.
@@ -290,17 +289,17 @@ Tree visualizations were created with ETE Toolkit version 3, and annotated with 
 
 ### Phylogenetic analysis of MCR sequences
 
-The phylogenetic relationships of the CARD canonical sequences, and the CARD prevalence sequences involving the MCR family were investigated to show the pylogenetic relationship of only the putative MCR sequences without the noise of additional sequences.
+The phylogenetic relationships of the CARD canonical sequences, and the CARD prevalence sequences involving the MCR family were investigated to show the phylogenetic relationship of only the putative MCR sequences without the noise of additional sequences.
 A total of 87 genes, an out-group, the 32 canonical sequences, and the 54 prevalence sequences (clustered as per Table {@tbl:exp-params}), were selected for analyses.
 The tree in Figure {@fig:canon-prev-tree} shows several distinct clades.
 Each MCR variant forms a clade.
-MCR-1, MCR-2, and MCR-6 form a clade, appearing to more closely related to one another than with the other MCR family members.
+MCR-1, MCR-2, and MCR-6 form a clade, appearing to br more closely related to one another than with the other MCR family members.
 This clade is also closely related to the ICR-Mc clade.
 ICR-Mc @JT9eRkR8 is another phosphoethanolamine transferase which confers colistin resistance.
 
 ![Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, and an outgroup from Betaproteobacteria (lcl_outgroup in grey). Each MCR variant is coloured based on its primary numerical value.](images/mcr191004_canon_prev.fasta.aln.trim.treefile.collapsed.svg){#fig:canon-prev-tree}
 
-The relationships were then collapsed to representative sequences for each numbered MCR variant in figure {@fig:canon-prev-tree-collapsed} for a more condensed visualization of the overall MCR family relationships. 
+The relationships were then collapsed to represent sequences for each numbered MCR variant in figure {@fig:canon-prev-tree-collapsed} for a more condensed visualization of the overall MCR family relationships. 
 
 From figure {@fig:canon-prev-tree-collapsed} the gradient of diversity between some variants is occupied, such as the relationship of MCR 1, 2, and 6 and ICR-Mc, and MCR 7, 3, and 9.
 There are also relationships in which this diversity is missing, where unrepresented clades of MCR could exist.
@@ -312,7 +311,7 @@ This resulted in a total of 409 sequences for subsequent analysis, all labeled a
 
 In addition, the 7903 draft quality MAGs were queried for AMR genes with RGI.
 RGI produced 1457246 results AMR determinants under the loose cutoff from the UBA data, 7171 for the strict cutoff,and 310 for the loose cutoff.
-It was hoped that pyhlogenetic analysis could find AMR determinants would be found in under the loose criterion that may have been missed by RGI-CARD.
+It was hoped that phylogenetic analysis could find AMR determinants would be found in under the loose criterion that may have been missed by RGI-CARD.
 The UBA BLAST results were included in the phylogeny in Figure {@fig:canon-prev-nrdb-uba-tree} for the analysis.
 The remainder of the analysis deals with relationships which are deemed to be interesting based on the locations of the UBAs between MCR family clades.
 
@@ -325,11 +324,11 @@ Even though qualities vary (Table ??), the sequences branch in the expected loca
 
 Between the clade containing MCR 7, and the most recent common ancestor of MCR 3 and MCR 7 clades, a clade of phosphoethanolamine lipid A transferase clade appears.
 This clade consists of the genus of gram negative bacteria, *Aeromonas*, @16EwPCiJT which is sometimes involved in human infection.
-This clade also includes an *Aeromonas veroni* hit from  from epidermal mucus of *Anguilla anguilla* in the UBA data.
+This clade also includes an *Aeromonas veronii* hit from  from epidermal mucus of *Anguilla anguilla* in the UBA data.
 Between MCR 9 and the most recent common ancestor of MCR 3 and 9, a clade of *Aeromonas* associated phosphoethanolamine lipid A transferases appear.
 
 The MCR 9 containing clade contains 8 UBAs and several NCBI non-redundant hits not reported as MCR family genes.
-5 Loose hits for MCR in a *Leclercia adecarboxyla* branch within this clade. 
+5 Loose hits for MCR in a *Leclercia adecarboxylata* branch within this clade. 
 These *Leclercia* branch below the common ancestor of MCR-9 and MCR-3 which are well supported. The *Leclercia* UBAs were all sampled from New York City MTA subway samples Metagenome.
 Acinetobacter is another opportunistic pathogen  @8uz5m0fP which is becoming resistant to many antimicrobials.
 
@@ -345,8 +344,8 @@ UBA3068, A *Psychrobacter sp.*, sampled from Oil polluted marine microbial commu
 and, UBA4193, a *Psychrobacter sp.*, sampled from the New York City MTA subway samples.
 The quality information for these sequences, shown in Table ??, shows that UBA3068 is near complete, while UBA4193 is only partial.
 It is encouraging to see that even with the quality difference, these two sequences branch in the expected clade.
-*Psychrobacter* @BjoH1Vii is a Genus is widespread and includes many cold adapted bacteria, it is an opportunistic pathogen, and has been found sometimes be a cause of infections in humans, animals, and fish. Many new species of *Psychrobacter* have been discovered in cold climates @WLzELTTa. Some of the species have been shown to be resistant to colistin, like *Psychrobacter vallis ps. nov.* and *Psychrobacter aquaticus ps. nov.* @2NZAmp2H and is sister to [TODO: display new tree such that *Acinetobacter* is shown]
-Another clade between these two variants contains phosphoethanolamine transferases from the genus *Stenotrophomonas*, including *Stenotrophomonas maltophilia* and *Stenotrophomonas acidaminiphila* which multidrug-resistant opportunistic pathogen @Ovca71PG.
+*Psychrobacter* @BjoH1Vii is a Genus is widespread and includes many cold adapted bacteria, it is an opportunistic pathogen, and has been found to sometimes be a cause of infections in humans, animals, and fish. Many new species of *Psychrobacter* have been discovered in cold climates @WLzELTTa. Some of the species have been shown to be resistant to colistin, like *Psychrobacter vallis ps. nov.* and *Psychrobacter aquaticus ps. nov.* @2NZAmp2H and is sister to [TODO: display new tree such that *Acinetobacter* is shown]
+Another clade between these two variants contains phosphoethanolamine transferases from the genus *Stenotrophomonas*, including *Stenotrophomonas maltophilia* and *Stenotrophomonas acidaminiphila* which is a multidrug-resistant opportunistic pathogen @Ovca71PG.
 Several UBA hits for *Stenotrophomonas maltophilia* show up as shotgun sequencing of environmental samples. [TODO: quality information]
 
 
