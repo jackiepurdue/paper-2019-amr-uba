@@ -94,6 +94,7 @@ if [ "$BUILD_PDF" != "false" ] && [ -n "$DOCKER_EXISTS" ]; then
 fi
 
 # Create DOCX output (if BUILD_DOCX environment variable equals "true")
+BUILD_DOCX=true
 if [ "$BUILD_DOCX" = "true" ]; then
   echo "Exporting Word Docx manuscript"
   pandoc --verbose \
