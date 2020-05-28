@@ -1,5 +1,5 @@
 {
-  "date": "May 26, 2020",
+  "date": "May 28, 2020",
   "authors": [
     {
       "github": "jackiepurdue",
@@ -74,13 +74,13 @@
     "repo_slug": "jackiepurdue/phylogenetic-amr-survey-manuscript",
     "repo_owner": "jackiepurdue",
     "repo_name": "phylogenetic-amr-survey-manuscript",
-    "commit": "b153c46f6d1ec9049fe3fef78a8a7145b3e64432"
+    "commit": "06c2ad0f675b76f7cf3f31bca48fae373cb6bfcd"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 28,
-      "total": 28
+      "doi": 29,
+      "total": 29
     },
-    "word_count": 5898
+    "word_count": 6063
   }
 }
