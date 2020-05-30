@@ -5,7 +5,7 @@ author-meta:
 - Dayna Mikkelsen
 - Finlay Maguire
 - Robert G. Beiko
-date-meta: '2020-05-28'
+date-meta: '2020-05-30'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -21,10 +21,10 @@ title: Reviewing the phylogenetic relationships and nomenclature of common antim
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/06c2ad0f675b76f7cf3f31bca48fae373cb6bfcd/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/4e9933469a858c266d7f7f5b7183d8d609ed1fc9/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@06c2ad0](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/06c2ad0f675b76f7cf3f31bca48fae373cb6bfcd)
-on May 28, 2020.
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@4e99334](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/4e9933469a858c266d7f7f5b7183d8d609ed1fc9)
+on May 30, 2020.
 </em></small>
 
 ## Authors
@@ -148,11 +148,12 @@ There are two data-sets within CARD, canonical and prevalence.
 Canonical is a conservative set of AMR genes and mutations that have been experimentally verified as being associated with resistance in a peer-reviewed publication.
 This is therefore slightly biased towards the organisms that have been most heavily studied.
 On the other hand, prevalence contains AMR sequences that have been detected by searching a broader set of WHO priority organism genomes from repositories such as National Center for Biotechnology Information (NCBI) for sequences similar to canonical sequences.
+This database is meant to represent the diversity of all current sequence data available to the public.
 This _in silico_ search is performed using CARD's BLAST-based Resistance Gene Identifier (RGI) tool and greatly increases the sequence diversity in CARD [@nvbyXyPe].
 
 However, this is still limited to a subset of all genomes currently available in central repositories like NCBI.
 If we want to thoroughly understand the evolution and spread of AMR genes we need to analyses as many genomes as possible.
-Unfortunately, the genomes in databases are largely sequenced from microbes that can be easily cultured. 
+Unfortunately, the genomes in databases are largely sequenced from microbes that can be easily . 
 As only a subset of microbial diversity can be cultured, this means many of our existing genomes aren't necessarily representative of the environment from which they were sampled.
 Recently, techniques have been developed that allow the recovery of genomes from metagenomic data e.g. [@DTtDOvle,@DfIRBmdF].
 As metagenomic sequencing, the direct sequencing of all DNA in a sample, doesn't require culturing these metagenome-assembled genomes (MAGs) represent a huge source of novel microbial diversity.
@@ -180,94 +181,106 @@ Incorporating other subfamilies of OXA proved to be too cumbersome.
 
 ### Querying the data
 
-The CARD canonical sequences from each family were used to perform a multiple query BLASTP (version 2.5.0 @s9ycaHcq) against the prevalence BLAST database with a e-value threshold and query coverages shown in Table {@tbl:exp-params}. 
+The CARD canonical sequences from each family were used to perform a multiple query BLASTP (version 2.5.0 @s9ycaHcq) against the prevalence BLAST database with a e-value threshold and query coverages shown in Table 1. 
 Many of the sequences are nearly identical, thus they were further processed by clustering with CD-HIT version 4.8.1 at a minimum sequence identities as per table {@tbl:exp-params}
 
-The reference CARD canonical sequences were also used to perform a multiple query BLASTP against the NCBI non-redundant database with a e-value threshold, and query coverage, also indicated in Table  {@tbl:exp-params}
-For simplicity in identifying the taxonomic history of the non-redundant hits, MULTISPECIES sequences were removed from the analyses.
+The reference CARD canonical sequences were also used to perform a multiple query BLASTP against the NCBI non-redundant database with a e-value threshold, and query coverage, also indicated in Table 1
 There are many highly sampled taxa and genes in the non-redundant database. 
 To balance the distribution, and reduce the size of the non-redundant sequence set, CD-HIT version 4.8.1 was also used to cluster the data as per table {@tbl:exp-params}.
 
 For the metagenomic data, RGI version 5.0 with CARD database version 3.02  @1ByMfX8Y1 was run on the contigs of the 7903 MAGS with the inclusion of loose, perfect, and strict hits.
-Sequences possibly containing AMR gene prediction data for each gene family was produced by filtering RGI output based on the its association with the search strings for each determinant in Table {@tbl:exp-params}
+Sequences possibly containing AMR gene prediction data for each gene family was produced by filtering RGI output based on the its association with the search strings for each determinant in Table 1
 The filtered data were translated to a blast database.
-The CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold and  query coverage in Table {@tbl:exp-params}.
+The CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold and  query coverage in Table 1. The E-values were chosen such that a tractable or sufficient
+number of sequences resulted from their respective database query. The minimum BLAST query coverages were chosen as to reduce noise in the final alignment, thus reducing the possibility of attempting to align non-homologous sequences.
 
 For all sequence variants obtained from each data source, redundant results for the prevalence, NCBI, and UBA queries were filtered from these BLASTP results by retrieving only the longest sequence for each uniquely labeled result. 
 
-<table>
-<td>
-||
-|-|
-Table: [TODO: Make table more readable/better labels etc] e-value, query coverage, and cluster percentage used for each AMR family experiment for the prevalence, ncbi non-redundant, and UBA databases. {#tbl:exp-params}
-</td>
-<tr><th>(A) MCR phosphoethanolamine transferase </th>
-<th>(B) KPC beta-lactamase</th>
-<th>(C) NDM beta-lactamase</th>
-<th>(D) OXA beta-lactamase</th></tr>
-
-<tr><td>
-
-
-| | |
-|-----------------|-------------------------------------|
-| Tree            | LG+I+G4                             |
-| e-value_p       | 1e-160                              |
-| e-value_n       | 1e-160                              |
-| e-value_u       | 1e-160                              |
-| coverage_p      | 98                                  |
-| coverage_n      | 98                                  |
-| coverage_u      | 98                                  |
-| clustering_p    | 100                                 |
-| clustering_n    | 100                                 |
-| clustering_u    | 100                                 |
-
-</td><td>
-
-| | |
-|-----------------|-------------------------------------|
-| Tree            | LG+I+G4                             |
-| e-value_p       | 1e-100                              |
-| e-value_n       | 1e-40                              |
-| e-value_u       | 1e-10                              |
-| coverage_p      | 99                                  |
-| coverage_n      | 99                                  |
-| coverage_u      | 60                                  |
-| clustering_p    | 99                                 |
-| clustering_n    | 70                                 |
-| clustering_u    | 100                                 |
-
-</td><td>
-
-| | |
-|-----------------|-------------------------------------|
-| Tree            | LG+I+G4                             |
-| e-value_p       | 1e-160                              |
-| e-value_n       | 1e-160                              |
-| e-value_u       | 1e-10                              |
-| coverage_p      | 98                                  |
-| coverage_n      | 98                                  |
-| coverage_u      | 60                                  |
-| clustering_p    | 100                                 |
-| clustering_n    | 100                                 |
-| clustering_u    | 100                                 |
-
-</td><td>
-
-| |  |
-|-----------------|-------------------------------------|
-| Tree            | LG+I+G4                             |
-| e-value_p       | 1e-100                              |
-| e-value_n       | 1e-100                              |
-| e-value_u       | 1e-10                              |
-| coverage_p      | 90                                  |
-| coverage_n      | 99                                  |
-| coverage_u      | 95                                  |
-| clustering_p    | N/A                                 |
-| clustering_n    | N/A                                 |
-| clustering_u    | N/A                                 |
-
-</td></tr>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-yj5y{background-color:#efefef;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-j4pq{background-color:#efefef;border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-llyw{background-color:#c0c0c0;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-yj5y" rowspan="2">AMR<br>Determinant</th>
+    <th class="tg-yj5y" colspan="3">Minimum BLAST<br>E-value<br></th>
+    <th class="tg-yj5y" colspan="3">Minimum BLAST <br>Query Coverage</th>
+    <th class="tg-j4pq" colspan="3">CD-HIT Sequence <br>Identity Threshold</th>
+  </tr>
+  <tr>
+    <td class="tg-llyw">CARD<br></td>
+    <td class="tg-llyw">NCBI<br></td>
+    <td class="tg-llyw">Parks<br></td>
+    <td class="tg-llyw">CARD<br></td>
+    <td class="tg-llyw">NCBI<br></td>
+    <td class="tg-llyw">Parks<br></td>
+    <td class="tg-llyw">CARD<br></td>
+    <td class="tg-llyw">NCBI<br></td>
+    <td class="tg-llyw">Parks<br></td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">MCR<br></td>
+    <td class="tg-0pky">1e-160</td>
+    <td class="tg-0pky">1e-160</td>
+    <td class="tg-0pky">1e-160</td>
+    <td class="tg-0pky">98</td>
+    <td class="tg-0pky">98</td>
+    <td class="tg-0pky">98</td>
+    <td class="tg-0pky">100</td>
+    <td class="tg-0pky">100</td>
+    <td class="tg-0pky">100</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">KPC</td>
+    <td class="tg-0pky">1e-100</td>
+    <td class="tg-0pky">1e-40</td>
+    <td class="tg-0pky">1e-10</td>
+    <td class="tg-0pky">99</td>
+    <td class="tg-0pky">99</td>
+    <td class="tg-0pky">60</td>
+    <td class="tg-0pky">99</td>
+    <td class="tg-0pky">70</td>
+    <td class="tg-0pky">100</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">NDM</td>
+    <td class="tg-0pky">1e-160</td>
+    <td class="tg-0pky">1e-160</td>
+    <td class="tg-0pky">1e-10</td>
+    <td class="tg-0pky">98</td>
+    <td class="tg-0pky">98</td>
+    <td class="tg-0pky">60</td>
+    <td class="tg-0pky">100</td>
+    <td class="tg-0pky">100 </td>
+    <td class="tg-0pky">100</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">OXA</td>
+    <td class="tg-0pky">1e-100</td>
+    <td class="tg-0pky">1e-100</td>
+    <td class="tg-0pky">1e-10</td>
+    <td class="tg-0pky">90</td>
+    <td class="tg-0pky">99</td>
+    <td class="tg-0pky">95</td>
+    <td class="tg-0pky">N/A</td>
+    <td class="tg-0pky">N/A</td>
+    <td class="tg-0pky">N/A</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="10"><b>Table 1</b>: Parameters used with BLAST and CD-HIT to obtain sequences for the phylogenies<br>of MCR phosphoethanolamine transferase, and KPC, NDM, and OXA beta-lactamases.<br>For each determinant, the minimum BLAST E-values, minimum query coverages, and CD-HIT Sequence Identity <br>threshold for clustering sequences are displayed for each database.<br>CARD represents the RGI-CARD prevalence sequence data, NCBI represents the NCBI non-redundant sequence<br>data, and Parks represents the MAG data source.<br></td>
+  </tr>
+</tbody>
 </table>
 
 
@@ -285,7 +298,11 @@ This set of concatenated amino acid sequences were aligned with MAFFT-LINSI vers
 ### Creation of phylogenies
 
 For each alignment under each AMR family under study, IQ-TREE multicore version 1.6.9 @JOWSuu8G was used to build a bootstrapped tree with -bb 1000 with the G+I+G4 model of substitution. 
-Tree visualizations were created with ETE Toolkit version 3, and annotated with taxonomic information for each rank, and environmental and AMR data, based on information from the various metadata. (See supplemental).
+Tree visualizations were created with ETE Toolkit version 3.
+The trees were annotated with taxonomic information for each rank by using ETE’s NCBI taxonomy module to translate the names result set from the various databases to taxonomic identifiers.
+The taxonomic identifier was used to query NCBI's taxonomy database for the taxonomy information.
+In cases where there were multiple hits for genes, the most recent common ancestor was used to query the taxonomic information, therefore some leaves in the trees were annotated with only partial taxonomic information.
+
 
 
 ## Results

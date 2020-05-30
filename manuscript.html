@@ -9,7 +9,7 @@
   <meta name="author" content="Dayna Mikkelsen" />
   <meta name="author" content="Finlay Maguire" />
   <meta name="author" content="Robert G. Beiko" />
-  <meta name="dcterms.date" content="2020-05-28" />
+  <meta name="dcterms.date" content="2020-05-30" />
   <meta name="keywords" content="metagenome, antimicrobial resistance" />
   <title>Reviewing the phylogenetic relationships and nomenclature of common antimicrobial resistance genes</title>
   <style>
@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">Reviewing the phylogenetic relationships and nomenclature of common antimicrobial resistance genes</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/06c2ad0f675b76f7cf3f31bca48fae373cb6bfcd/">permalink</a>) was automatically generated from <a href="https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/06c2ad0f675b76f7cf3f31bca48fae373cb6bfcd">jackiepurdue/phylogenetic-amr-survey-manuscript@06c2ad0</a> on May 28, 2020. </em></small></p>
+<p><small><em> This manuscript (<a href="https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/4e9933469a858c266d7f7f5b7183d8d609ed1fc9/">permalink</a>) was automatically generated from <a href="https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/4e9933469a858c266d7f7f5b7183d8d609ed1fc9">jackiepurdue/phylogenetic-amr-survey-manuscript@4e99334</a> on May 30, 2020. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Jackie Purdue</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-3131-0688">0000-0003-3131-0688</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/jackiepurdue">jackiepurdue</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/jackiepurdue">jackiepurdue</a><br> <small> Faculty of Computer Science, Dalhousie University </small></p></li>
@@ -43,245 +43,221 @@
 <p>Some of the most critical pathogens are the multi-drug resistant “ESKAPE” pathogens: <em>Enterococcus faecium</em>, <em>Staphylococcus aureus</em>, <em>Klebsiella pneumoniae</em>, <em>Acinetobacter baumannii</em>, <em>Pseudomonas aeruginosa</em>, and <em>Enterobacter</em> spp. <span class="citation" data-cites="b2c0QSMI">[<a href="#ref-b2c0QSMI" role="doc-biblioref">6</a>]</span>. These are the leading cause of hospital-acquired infections and are largely only treatable with carbapenem or polymyxin antibiotics <span class="citation" data-cites="OLzrpsK4">[<a href="#ref-OLzrpsK4" role="doc-biblioref">5</a>]</span>. Carbapenems are broad spectrum beta-lactam antibiotics typically used to treat life threatening, high risk, and multi-drug resistant bacterial infections. beta-lactamase producing bacteria have difficulty degrading carbapenems when combined with beta-lactamase inhibitors making them effective treatments against pathogens with multi-drug resistance <span class="citation" data-cites="OLzrpsK4">[<a href="#ref-OLzrpsK4" role="doc-biblioref">5</a>]</span>. However, there has been a recent emergence of resistance to these antimicrobials, presenting a new threat to public health. One way microbes can develop carbapenem resistance is through the acquisition of carbapenamase genes. <span class="citation" data-cites="OLzrpsK4">[<a href="#ref-OLzrpsK4" role="doc-biblioref">5</a>]</span>. Three main carbapenamase genes of concern are <em>Klebsiella pneumoniae</em> carbapenamase (KPC), New Delhi metallo-beta-lactamase (NDM) and OXA beta-lactamases <span class="citation" data-cites="OLzrpsK4">[<a href="#ref-OLzrpsK4" role="doc-biblioref">5</a>]</span>.</p>
 <p>Carbapenamases are classified as one of four classes (A-D) based on their molecular structure <span class="citation" data-cites="16ZzmUN7q">[<a href="#ref-16ZzmUN7q" role="doc-biblioref">7</a>]</span>. Class A, C, and D both use a serine residue to hydrolyze beta-lactam antibiotics <span class="citation" data-cites="2p1n2mr5">[<a href="#ref-2p1n2mr5" role="doc-biblioref">8</a>]</span>. KPC genes are a part of class A. Many variants of KPC are spreading and being discovered, however carbapenamases within this class are more rare than the other three classes <span class="citation" data-cites="OLzrpsK4">[<a href="#ref-OLzrpsK4" role="doc-biblioref">5</a>]</span>. Class D contains the OXA family of beta-lactamases. Unlike KPC and NDM, this family is characterized by phenotype rather than genotype. This family is characterized by specific hydrolases that can hydrolyze oxacillin and cloxacillin, with the enzyme being poorly inhibited by clavulanic acid (https://card.mcmaster.ca/ontology/36026). This results in a low amount of sequence homology within the family. A subset of this family, OXA-48 possesses carbapenem hydrolyzing activity <span class="citation" data-cites="UV1QqTS8">[<a href="#ref-UV1QqTS8" role="doc-biblioref">9</a>]</span>. The OXA-48 subfamily consists of five variants: OXA-48, OXA-162, OXA-163, OXA-181, OXA-204, and OXA-232 <span class="citation" data-cites="FqGNAObZ">[<a href="#ref-FqGNAObZ" role="doc-biblioref">10</a>]</span>. Class B beta-lactamases are metallo-enzymes that use a zinc active site to hydrolyze beta-lactam antibiotics. The NDM gene is classified as a class B beta-lactamase <span class="citation" data-cites="OLzrpsK4">[<a href="#ref-OLzrpsK4" role="doc-biblioref">5</a>]</span>. When pathogens become resistant to carbapenems, the last line of defense is the polymyxin antibiotic colistin. Polymyxins act via disrupting membrane permeability <span class="citation" data-cites="17k3PVuIy"><a href="#ref-17k3PVuIy" role="doc-biblioref">11</a></span>. Colistin is limited to a last line defense against carbapenem resistant infections due to its neurotoxic and nephrotoxic effects <span class="citation" data-cites="17k3PVuIy">[<a href="#ref-17k3PVuIy" role="doc-biblioref">11</a>]</span>. Despite its already limited use, mobilized colistin resistance (MCR) have been discovered <span class="citation" data-cites="vQTzfitx">[<a href="#ref-vQTzfitx" role="doc-biblioref">12</a>]</span>. Due to the emergence of resistance to many last-line antibiotics, it is important to characterize the total diversity and spread of these key resistance determinants. However, to perform these types of analyses we need two resources: a clear consolidated definition of what constitutes an AMR-related gene and a large amount of sequencing microbial genomes.</p>
 <p>Naming and defining AMR genes is difficult due to the legacy of research pre-DNA sequencing technology and the large number of different researchers and stakeholders involved in AMR. AMR determinants are typically classified into AMR families, some of which are based on phenotypic properties, and some based on sequence variation. The nomenclature is usually an acronym representing the mechanism of resistance, along with a numerical value to distinguish variants. Each sequence, determined to be novel by some arbitrary criteria, is assigned a new number. For example, the MCR phosphoethanolamine transferase gene family is a family of genes which code for a hinderance of the ability of colistin to bind to the cell membrane. The MCR-3 gene has a sequence identity which has been deemed to be significantly different than that of the other MCR genes in the family. MCR-3.1, is has been deemed to be a variant of the MCR-3 gene, which has a slight variation in gene sequence from other MCR-3 genes. In looking at another AMR gene family, NDM beta-lactamase, a different set of criteria are used to name variants. NDM betalactamases are classified as such by their ability to confer resistance to carbapenems and some other antibiotics. In this case, NDM-1, and NDM-2 are only different by a single amino acid substitution. This system for classification has the potential to be misleading when conducting AMR research. As in the examples, AMR families could appear to have a large amount of diversity, when in reality, sequences are closely related, and only a small number are actually distinct. Additionally, sequences which are not homologues, could potentially be classified in the same family, simply based on their function. An example of this is the OXA betalactamase family, which is is a phenotypically characterized family, and there are examples of determinants which have a low amount of sequence homology. OXA-20 has less than 20% amino acid sequence identity when compared with several other OXA family betalactamases <span class="citation" data-cites="1AFSAuSwx">[<a href="#ref-1AFSAuSwx" role="doc-biblioref">13</a>]</span>. This is a problem when attempting to characterize the AMR determinants by sequence similarity.</p>
-<p>High-quality manually curated AMR databases such as the Comprehensive Antibiotic Resistance Database (CARD) <span class="citation" data-cites="nvbyXyPe">[<a href="#ref-nvbyXyPe" role="doc-biblioref">14</a>]</span> provide a unified resource for the definition, nomenclature and classification of AMR genes. CARD organizes this information CARD through the antibiotic resistance ontology (ARO), a controlled vocabulary with defined relationships. There are two data-sets within CARD, canonical and prevalence. Canonical is a conservative set of AMR genes and mutations that have been experimentally verified as being associated with resistance in a peer-reviewed publication. This is therefore slightly biased towards the organisms that have been most heavily studied. On the other hand, prevalence contains AMR sequences that have been detected by searching a broader set of WHO priority organism genomes from repositories such as National Center for Biotechnology Information (NCBI) for sequences similar to canonical sequences. This <em>in silico</em> search is performed using CARD’s BLAST-based Resistance Gene Identifier (RGI) tool and greatly increases the sequence diversity in CARD <span class="citation" data-cites="nvbyXyPe">[<a href="#ref-nvbyXyPe" role="doc-biblioref">14</a>]</span>.</p>
-<p>However, this is still limited to a subset of all genomes currently available in central repositories like NCBI. If we want to thoroughly understand the evolution and spread of AMR genes we need to analyses as many genomes as possible. Unfortunately, the genomes in databases are largely sequenced from microbes that can be easily cultured. As only a subset of microbial diversity can be cultured, this means many of our existing genomes aren’t necessarily representative of the environment from which they were sampled. Recently, techniques have been developed that allow the recovery of genomes from metagenomic data e.g. <span class="citation" data-cites="DTtDOvle">[<a href="#ref-DTtDOvle" role="doc-biblioref">15</a>]</span>. As metagenomic sequencing, the direct sequencing of all DNA in a sample, doesn’t require culturing these metagenome-assembled genomes (MAGs) represent a huge source of novel microbial diversity. Parks et. al. <span class="citation" data-cites="wapKbEHA">[<a href="#ref-wapKbEHA" role="doc-biblioref">17</a>]</span>, generated new 7,903 bacterial and archaeal (Uncultured Bacteria and Archaea; UBA) MAGs representing &gt;30% increase in the sampled phylogenetic diversity of the bacteria and archaea.</p>
+<p>High-quality manually curated AMR databases such as the Comprehensive Antibiotic Resistance Database (CARD) <span class="citation" data-cites="nvbyXyPe">[<a href="#ref-nvbyXyPe" role="doc-biblioref">14</a>]</span> provide a unified resource for the definition, nomenclature and classification of AMR genes. CARD organizes this information CARD through the antibiotic resistance ontology (ARO), a controlled vocabulary with defined relationships. There are two data-sets within CARD, canonical and prevalence. Canonical is a conservative set of AMR genes and mutations that have been experimentally verified as being associated with resistance in a peer-reviewed publication. This is therefore slightly biased towards the organisms that have been most heavily studied. On the other hand, prevalence contains AMR sequences that have been detected by searching a broader set of WHO priority organism genomes from repositories such as National Center for Biotechnology Information (NCBI) for sequences similar to canonical sequences. This database is meant to represent the diversity of all current sequence data available to the public. This <em>in silico</em> search is performed using CARD’s BLAST-based Resistance Gene Identifier (RGI) tool and greatly increases the sequence diversity in CARD <span class="citation" data-cites="nvbyXyPe">[<a href="#ref-nvbyXyPe" role="doc-biblioref">14</a>]</span>.</p>
+<p>However, this is still limited to a subset of all genomes currently available in central repositories like NCBI. If we want to thoroughly understand the evolution and spread of AMR genes we need to analyses as many genomes as possible. Unfortunately, the genomes in databases are largely sequenced from microbes that can be easily . As only a subset of microbial diversity can be cultured, this means many of our existing genomes aren’t necessarily representative of the environment from which they were sampled. Recently, techniques have been developed that allow the recovery of genomes from metagenomic data e.g. <span class="citation" data-cites="DTtDOvle">[<a href="#ref-DTtDOvle" role="doc-biblioref">15</a>]</span>. As metagenomic sequencing, the direct sequencing of all DNA in a sample, doesn’t require culturing these metagenome-assembled genomes (MAGs) represent a huge source of novel microbial diversity. Parks et. al. <span class="citation" data-cites="wapKbEHA">[<a href="#ref-wapKbEHA" role="doc-biblioref">17</a>]</span>, generated new 7,903 bacterial and archaeal (Uncultured Bacteria and Archaea; UBA) MAGs representing &gt;30% increase in the sampled phylogenetic diversity of the bacteria and archaea.</p>
 <p>Identifying and phylogenetically analyzing key carbapenemase and colistin resistance genes in this dataset, CARD, CARD-prevalence and NCBI genomes, could greatly improve AMR surveillance of these genes. We would characterize previously unseen diversity in genomes not yet analyzed for AMR, and provide insights into the diversity of AMR across non-clinical samples. This could inform our understanding of the transmission of these mobile critical AMR genes and help refine the nomenclature of this ever-expanding dataset. Therefore, in this work we present a comprehensive phylogenetic survey and analysis of KPC, NDM, OXA-48, and MCR across all currently sequenced genomes.</p>
 <h2 id="methods">Methods</h2>
 <h3 id="data">Data</h3>
-<p>To sample diverse sources for AMR, various sequence databases were sampled for phylogenetic analyses. These sources include CARD canonical and prevalence sequences for the AMR genes under study, and associated homologs from NCBI non-redundant data and metagenomic data. The 32 canonical MCR sequence variants (table <a href="#tbl:mcr-variants">2</a>), 14 canonical NDM sequence variants (table <a href="#tbl:ndm-variants">4</a>), 6 canonical OXA-48-like sequence variants(table <a href="#tbl:oxa-variants">5</a>), and 18 canonical KPC sequence variants (table <a href="#tbl:kpc-variants">3</a>) as labeled in the CARD database, were obtained as a reference. The AMR prevalence data was queried from CARD Prevalence 3.0.5. The NCBI non-redundant data was queried from all non-redundant GenBank, PDB, SwissProt, PDB, PIR, and PRF on May 17, 2019. The metagenomic data came from a data-set of 7903 draft quality MAGs which were recovered from the Sequence Read Archive by Parks <span class="citation" data-cites="wrBRBdFb"><a href="#ref-wrBRBdFb" role="doc-biblioref">18</a></span>. These genomes were chosen specifically because they were likely to be from lineages which were under-sampled, environmental and non-human gastrointestinal samples being the main focus.</p>
+<p>To sample diverse sources for AMR, various sequence databases were sampled for phylogenetic analyses. These sources include CARD canonical and prevalence sequences for the AMR genes under study, and associated homologs from NCBI non-redundant data and metagenomic data. The 32 canonical MCR sequence variants (table <a href="#tbl:mcr-variants">1</a>), 14 canonical NDM sequence variants (table <a href="#tbl:ndm-variants">3</a>), 6 canonical OXA-48-like sequence variants(table <a href="#tbl:oxa-variants">4</a>), and 18 canonical KPC sequence variants (table <a href="#tbl:kpc-variants">2</a>) as labeled in the CARD database, were obtained as a reference. The AMR prevalence data was queried from CARD Prevalence 3.0.5. The NCBI non-redundant data was queried from all non-redundant GenBank, PDB, SwissProt, PDB, PIR, and PRF on May 17, 2019. The metagenomic data came from a data-set of 7903 draft quality MAGs which were recovered from the Sequence Read Archive by Parks <span class="citation" data-cites="wrBRBdFb"><a href="#ref-wrBRBdFb" role="doc-biblioref">18</a></span>. These genomes were chosen specifically because they were likely to be from lineages which were under-sampled, environmental and non-human gastrointestinal samples being the main focus.</p>
 <p>In the case of OXA beta-lactamase, only OXA-48-like genes were used for analysis. The OXA family is characterized by phenotype rather than genotype, and results in a low amount of sequence homology within the family. The phenotype of OXA-48 results from carbapenem hydrolyzing activity <span class="citation" data-cites="UV1QqTS8"><a href="#ref-UV1QqTS8" role="doc-biblioref">9</a></span>. This subfamily of OXA contains homologous sequences suitable for this study. Incorporating other subfamilies of OXA proved to be too cumbersome.</p>
 <h3 id="querying-the-data">Querying the data</h3>
-<p>The CARD canonical sequences from each family were used to perform a multiple query BLASTP (version 2.5.0 <span class="citation" data-cites="s9ycaHcq"><a href="#ref-s9ycaHcq" role="doc-biblioref">19</a></span>) against the prevalence BLAST database with a e-value threshold and query coverages shown in Table <a href="#tbl:exp-params">1</a>. Many of the sequences are nearly identical, thus they were further processed by clustering with CD-HIT version 4.8.1 at a minimum sequence identities as per table <a href="#tbl:exp-params">1</a></p>
-<p>The reference CARD canonical sequences were also used to perform a multiple query BLASTP against the NCBI non-redundant database with a e-value threshold, and query coverage, also indicated in Table <a href="#tbl:exp-params">1</a> For simplicity in identifying the taxonomic history of the non-redundant hits, MULTISPECIES sequences were removed from the analyses. There are many highly sampled taxa and genes in the non-redundant database. To balance the distribution, and reduce the size of the non-redundant sequence set, CD-HIT version 4.8.1 was also used to cluster the data as per table <a href="#tbl:exp-params">1</a>.</p>
-<p>For the metagenomic data, RGI version 5.0 with CARD database version 3.02 <span class="citation" data-cites="1ByMfX8Y1"><a href="#ref-1ByMfX8Y1" role="doc-biblioref">3</a></span> was run on the contigs of the 7903 MAGS with the inclusion of loose, perfect, and strict hits. Sequences possibly containing AMR gene prediction data for each gene family was produced by filtering RGI output based on the its association with the search strings for each determinant in Table <a href="#tbl:exp-params">1</a> The filtered data were translated to a blast database. The CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold and query coverage in Table <a href="#tbl:exp-params">1</a>.</p>
+<p>The CARD canonical sequences from each family were used to perform a multiple query BLASTP (version 2.5.0 <span class="citation" data-cites="s9ycaHcq"><a href="#ref-s9ycaHcq" role="doc-biblioref">19</a></span>) against the prevalence BLAST database with a e-value threshold and query coverages shown in Table 1. Many of the sequences are nearly identical, thus they were further processed by clustering with CD-HIT version 4.8.1 at a minimum sequence identities as per table {<span class="citation" data-cites="tbl:exp-params">[<span class="citeproc-not-found" data-reference-id="tbl:exp-params"><strong>???</strong></span>]</span>}</p>
+<p>The reference CARD canonical sequences were also used to perform a multiple query BLASTP against the NCBI non-redundant database with a e-value threshold, and query coverage, also indicated in Table 1 There are many highly sampled taxa and genes in the non-redundant database. To balance the distribution, and reduce the size of the non-redundant sequence set, CD-HIT version 4.8.1 was also used to cluster the data as per table {<span class="citation" data-cites="tbl:exp-params">[<span class="citeproc-not-found" data-reference-id="tbl:exp-params"><strong>???</strong></span>]</span>}.</p>
+<p>For the metagenomic data, RGI version 5.0 with CARD database version 3.02 <span class="citation" data-cites="1ByMfX8Y1"><a href="#ref-1ByMfX8Y1" role="doc-biblioref">3</a></span> was run on the contigs of the 7903 MAGS with the inclusion of loose, perfect, and strict hits. Sequences possibly containing AMR gene prediction data for each gene family was produced by filtering RGI output based on the its association with the search strings for each determinant in Table 1 The filtered data were translated to a blast database. The CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold and query coverage in Table 1. The E-values were chosen such that a tractable or sufficient number of sequences resulted from their respective database query. The minimum BLAST query coverages were chosen as to reduce noise in the final alignment, thus reducing the possibility of attempting to align non-homologous sequences.</p>
 <p>For all sequence variants obtained from each data source, redundant results for the prevalence, NCBI, and UBA queries were filtered from these BLASTP results by retrieving only the longest sequence for each uniquely labeled result.</p>
-<table>
-<td>
-<a name="tbl:exp-params"></a>
-<table>
-<caption><span>Table 1:</span> [TODO: Make table more readable/better labels etc] e-value, query coverage, and cluster percentage used for each AMR family experiment for the prevalence, ncbi non-redundant, and UBA databases. </caption>
-<tbody>
-</tbody>
-</table>
-</td>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-yj5y{background-color:#efefef;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-j4pq{background-color:#efefef;border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-llyw{background-color:#c0c0c0;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
 <tr>
-<th>
-<ol type="A">
-<li>MCR phosphoethanolamine transferase
+<th class="tg-yj5y" rowspan="2">
+AMR<br>Determinant
 </th>
-<th>
-<ol start="2" type="A">
-<li>KPC beta-lactamase
+<th class="tg-yj5y" colspan="3">
+Minimum BLAST<br>E-value<br>
 </th>
-<th>
-<ol start="3" type="A">
-<li>NDM beta-lactamase
+<th class="tg-yj5y" colspan="3">
+Minimum BLAST <br>Query Coverage
 </th>
-<th>
-<ol start="4" type="A">
-<li>OXA beta-lactamase
+<th class="tg-j4pq" colspan="3">
+CD-HIT Sequence <br>Identity Threshold
 </th>
-</tr></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol>
+</tr>
 <tr>
-<td>
-<table>
-<tbody>
-<tr class="odd">
-<td>Tree</td>
-<td>LG+I+G4</td>
-</tr>
-<tr class="even">
-<td>e-value_p</td>
-<td>1e-160</td>
-</tr>
-<tr class="odd">
-<td>e-value_n</td>
-<td>1e-160</td>
-</tr>
-<tr class="even">
-<td>e-value_u</td>
-<td>1e-160</td>
-</tr>
-<tr class="odd">
-<td>coverage_p</td>
-<td>98</td>
-</tr>
-<tr class="even">
-<td>coverage_n</td>
-<td>98</td>
-</tr>
-<tr class="odd">
-<td>coverage_u</td>
-<td>98</td>
-</tr>
-<tr class="even">
-<td>clustering_p</td>
-<td>100</td>
-</tr>
-<tr class="odd">
-<td>clustering_n</td>
-<td>100</td>
-</tr>
-<tr class="even">
-<td>clustering_u</td>
-<td>100</td>
-</tr>
-</tbody>
-</table>
+<td class="tg-llyw">
+CARD<br>
 </td>
-<td>
-<table>
-<tbody>
-<tr class="odd">
-<td>Tree</td>
-<td>LG+I+G4</td>
-</tr>
-<tr class="even">
-<td>e-value_p</td>
-<td>1e-100</td>
-</tr>
-<tr class="odd">
-<td>e-value_n</td>
-<td>1e-40</td>
-</tr>
-<tr class="even">
-<td>e-value_u</td>
-<td>1e-10</td>
-</tr>
-<tr class="odd">
-<td>coverage_p</td>
-<td>99</td>
-</tr>
-<tr class="even">
-<td>coverage_n</td>
-<td>99</td>
-</tr>
-<tr class="odd">
-<td>coverage_u</td>
-<td>60</td>
-</tr>
-<tr class="even">
-<td>clustering_p</td>
-<td>99</td>
-</tr>
-<tr class="odd">
-<td>clustering_n</td>
-<td>70</td>
-</tr>
-<tr class="even">
-<td>clustering_u</td>
-<td>100</td>
-</tr>
-</tbody>
-</table>
+<td class="tg-llyw">
+NCBI<br>
 </td>
-<td>
-<table>
-<tbody>
-<tr class="odd">
-<td>Tree</td>
-<td>LG+I+G4</td>
-</tr>
-<tr class="even">
-<td>e-value_p</td>
-<td>1e-160</td>
-</tr>
-<tr class="odd">
-<td>e-value_n</td>
-<td>1e-160</td>
-</tr>
-<tr class="even">
-<td>e-value_u</td>
-<td>1e-10</td>
-</tr>
-<tr class="odd">
-<td>coverage_p</td>
-<td>98</td>
-</tr>
-<tr class="even">
-<td>coverage_n</td>
-<td>98</td>
-</tr>
-<tr class="odd">
-<td>coverage_u</td>
-<td>60</td>
-</tr>
-<tr class="even">
-<td>clustering_p</td>
-<td>100</td>
-</tr>
-<tr class="odd">
-<td>clustering_n</td>
-<td>100</td>
-</tr>
-<tr class="even">
-<td>clustering_u</td>
-<td>100</td>
-</tr>
-</tbody>
-</table>
+<td class="tg-llyw">
+Parks<br>
 </td>
-<td>
-<table>
-<tbody>
-<tr class="odd">
-<td>Tree</td>
-<td>LG+I+G4</td>
-</tr>
-<tr class="even">
-<td>e-value_p</td>
-<td>1e-100</td>
-</tr>
-<tr class="odd">
-<td>e-value_n</td>
-<td>1e-100</td>
-</tr>
-<tr class="even">
-<td>e-value_u</td>
-<td>1e-10</td>
-</tr>
-<tr class="odd">
-<td>coverage_p</td>
-<td>90</td>
-</tr>
-<tr class="even">
-<td>coverage_n</td>
-<td>99</td>
-</tr>
-<tr class="odd">
-<td>coverage_u</td>
-<td>95</td>
-</tr>
-<tr class="even">
-<td>clustering_p</td>
-<td>N/A</td>
-</tr>
-<tr class="odd">
-<td>clustering_n</td>
-<td>N/A</td>
-</tr>
-<tr class="even">
-<td>clustering_u</td>
-<td>N/A</td>
-</tr>
-</tbody>
-</table>
+<td class="tg-llyw">
+CARD<br>
+</td>
+<td class="tg-llyw">
+NCBI<br>
+</td>
+<td class="tg-llyw">
+Parks<br>
+</td>
+<td class="tg-llyw">
+CARD<br>
+</td>
+<td class="tg-llyw">
+NCBI<br>
+</td>
+<td class="tg-llyw">
+Parks<br>
 </td>
 </tr>
+</thead>
+<tbody>
+<tr>
+<td class="tg-0pky">
+MCR<br>
+</td>
+<td class="tg-0pky">
+1e-160
+</td>
+<td class="tg-0pky">
+1e-160
+</td>
+<td class="tg-0pky">
+1e-160
+</td>
+<td class="tg-0pky">
+98
+</td>
+<td class="tg-0pky">
+98
+</td>
+<td class="tg-0pky">
+98
+</td>
+<td class="tg-0pky">
+100
+</td>
+<td class="tg-0pky">
+100
+</td>
+<td class="tg-0pky">
+100
+</td>
+</tr>
+<tr>
+<td class="tg-0pky">
+KPC
+</td>
+<td class="tg-0pky">
+1e-100
+</td>
+<td class="tg-0pky">
+1e-40
+</td>
+<td class="tg-0pky">
+1e-10
+</td>
+<td class="tg-0pky">
+99
+</td>
+<td class="tg-0pky">
+99
+</td>
+<td class="tg-0pky">
+60
+</td>
+<td class="tg-0pky">
+99
+</td>
+<td class="tg-0pky">
+70
+</td>
+<td class="tg-0pky">
+100
+</td>
+</tr>
+<tr>
+<td class="tg-0pky">
+NDM
+</td>
+<td class="tg-0pky">
+1e-160
+</td>
+<td class="tg-0pky">
+1e-160
+</td>
+<td class="tg-0pky">
+1e-10
+</td>
+<td class="tg-0pky">
+98
+</td>
+<td class="tg-0pky">
+98
+</td>
+<td class="tg-0pky">
+60
+</td>
+<td class="tg-0pky">
+100
+</td>
+<td class="tg-0pky">
+100
+</td>
+<td class="tg-0pky">
+100
+</td>
+</tr>
+<tr>
+<td class="tg-0pky">
+OXA
+</td>
+<td class="tg-0pky">
+1e-100
+</td>
+<td class="tg-0pky">
+1e-100
+</td>
+<td class="tg-0pky">
+1e-10
+</td>
+<td class="tg-0pky">
+90
+</td>
+<td class="tg-0pky">
+99
+</td>
+<td class="tg-0pky">
+95
+</td>
+<td class="tg-0pky">
+N/A
+</td>
+<td class="tg-0pky">
+N/A
+</td>
+<td class="tg-0pky">
+N/A
+</td>
+</tr>
+<tr>
+<td class="tg-0lax" colspan="10">
+<b>Table 1</b>: Parameters used with BLAST and CD-HIT to obtain sequences for the phylogenies<br>of MCR phosphoethanolamine transferase, and KPC, NDM, and OXA beta-lactamases.<br>For each determinant, the minimum BLAST E-values, minimum query coverages, and CD-HIT Sequence Identity <br>threshold for clustering sequences are displayed for each database.<br>CARD represents the RGI-CARD prevalence sequence data, NCBI represents the NCBI non-redundant sequence<br>data, and Parks represents the MAG data source.<br>
+</td>
+</tr>
+</tbody>
 </table>
 <h3 id="sequence-alignment">Sequence Alignment</h3>
 <p>Two alignments were created for each AMR determinant under study. The first alignment was created to compare the phylogenetic relationship of only the putative sequences. The second alignment was created for an overall comparison of sequences.</p>
-<p>The putative AMR alignment was made up of the sequences from the CARD prevalence data were concatenated in one multi-FASTA format file with the canonical sequences and an outgroup chosen for each AMR family as per table <a href="#tbl:outgroups">6</a>. In the second, more diverse alignment, The filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences with the same outgroup sequences (table <a href="#tbl:outgroups">6</a>).</p>
+<p>The putative AMR alignment was made up of the sequences from the CARD prevalence data were concatenated in one multi-FASTA format file with the canonical sequences and an outgroup chosen for each AMR family as per table <a href="#tbl:outgroups">5</a>. In the second, more diverse alignment, The filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all concatenated to one multi-FASTA format file with the canonical sequences with the same outgroup sequences (table <a href="#tbl:outgroups">5</a>).</p>
 <p>This set of concatenated amino acid sequences were aligned with MAFFT-LINSI version 7.40 and trimmed by trimal version 1.4.rev22 using the automated1 option.</p>
 <h3 id="creation-of-phylogenies">Creation of phylogenies</h3>
-<p>For each alignment under each AMR family under study, IQ-TREE multicore version 1.6.9 <span class="citation" data-cites="JOWSuu8G"><a href="#ref-JOWSuu8G" role="doc-biblioref">20</a></span> was used to build a bootstrapped tree with -bb 1000 with the G+I+G4 model of substitution. Tree visualizations were created with ETE Toolkit version 3, and annotated with taxonomic information for each rank, and environmental and AMR data, based on information from the various metadata. (See supplemental).</p>
+<p>For each alignment under each AMR family under study, IQ-TREE multicore version 1.6.9 <span class="citation" data-cites="JOWSuu8G"><a href="#ref-JOWSuu8G" role="doc-biblioref">20</a></span> was used to build a bootstrapped tree with -bb 1000 with the G+I+G4 model of substitution. Tree visualizations were created with ETE Toolkit version 3. The trees were annotated with taxonomic information for each rank by using ETE’s NCBI taxonomy module to translate the names result set from the various databases to taxonomic identifiers. The taxonomic identifier was used to query NCBI’s taxonomy database for the taxonomy information. In cases where there were multiple hits for genes, the most recent common ancestor was used to query the taxonomic information, therefore some leaves in the trees were annotated with only partial taxonomic information.</p>
 <h2 id="results">Results</h2>
 <h3 id="phylogenetic-analysis-of-mcr-sequences">Phylogenetic analysis of MCR sequences</h3>
-<p>The phylogenetic relationships of the CARD canonical sequences, and the CARD prevalence sequences involving the MCR family were investigated to show the phylogenetic relationship of only the putative MCR sequences without the noise of additional sequences. A total of 87 genes, an out-group, the 32 canonical sequences, and the 54 prevalence sequences (clustered as per Table <a href="#tbl:exp-params">1</a>), were selected for analyses. The tree in Figure <a href="#fig:canon-prev-tree">1</a> shows several distinct clades. Each MCR variant forms a clade. MCR-1, MCR-2, and MCR-6 form a clade, appearing to br more closely related to one another than with the other MCR family members. This clade is also closely related to the ICR-Mc clade. ICR-Mc <span class="citation" data-cites="JT9eRkR8"><a href="#ref-JT9eRkR8" role="doc-biblioref">21</a></span> is another phosphoethanolamine transferase which confers colistin resistance.</p>
+<p>The phylogenetic relationships of the CARD canonical sequences, and the CARD prevalence sequences involving the MCR family were investigated to show the phylogenetic relationship of only the putative MCR sequences without the noise of additional sequences. A total of 87 genes, an out-group, the 32 canonical sequences, and the 54 prevalence sequences (clustered as per Table {<span class="citation" data-cites="tbl:exp-params">[<span class="citeproc-not-found" data-reference-id="tbl:exp-params"><strong>???</strong></span>]</span>}), were selected for analyses. The tree in Figure <a href="#fig:canon-prev-tree">1</a> shows several distinct clades. Each MCR variant forms a clade. MCR-1, MCR-2, and MCR-6 form a clade, appearing to br more closely related to one another than with the other MCR family members. This clade is also closely related to the ICR-Mc clade. ICR-Mc <span class="citation" data-cites="JT9eRkR8"><a href="#ref-JT9eRkR8" role="doc-biblioref">21</a></span> is another phosphoethanolamine transferase which confers colistin resistance.</p>
 <figure>
 <img src="images/mcr191004_canon_prev.fasta.aln.trim.treefile.collapsed.svg" alt="Figure 1: Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, and an outgroup from Betaproteobacteria (lcl_outgroup in grey). Each MCR variant is coloured based on its primary numerical value." id="fig:canon-prev-tree" /><figcaption><span>Figure 1:</span> Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, and an outgroup from Betaproteobacteria (lcl_outgroup in grey). Each MCR variant is coloured based on its primary numerical value.</figcaption>
 </figure>
@@ -304,7 +280,7 @@
 </figure>
 <p>[TODO: visualization with plasmid distribution ]</p>
 <h3 id="phylogenetic-analysis-of-kpc">Phylogenetic analysis of KPC</h3>
-<p>Using the 18 canonical sequences from Table <a href="#tbl:kpc-variants">3</a> as query sequences, 25 prevalence sequences, 376 non-redundant sequences, and 6 UBA sequences were recovered from the various databases. The result was combined in the phylogeny displayed in figure <a href="#fig:kpc-tree">12</a>. This phylogeny shows that many of the resulting sequences are distant from the canonical sequences. The main clade in figure <a href="#fig:kpc-main-tree">5</a> shows that many of the amr determinants are named as distinct sequences, while not having much phylogenetic distance between them. The most closely related clade is a clade containing IMI and SME-type beta lactamases. The remaining sequences are in a clade containing a large amount of class A beta-lactamases from the non-redundant data. All of the UBA sequences were present in this portion of the tree.</p>
+<p>Using the 18 canonical sequences from Table <a href="#tbl:kpc-variants">2</a> as query sequences, 25 prevalence sequences, 376 non-redundant sequences, and 6 UBA sequences were recovered from the various databases. The result was combined in the phylogeny displayed in figure <a href="#fig:kpc-tree">12</a>. This phylogeny shows that many of the resulting sequences are distant from the canonical sequences. The main clade in figure <a href="#fig:kpc-main-tree">5</a> shows that many of the amr determinants are named as distinct sequences, while not having much phylogenetic distance between them. The most closely related clade is a clade containing IMI and SME-type beta lactamases. The remaining sequences are in a clade containing a large amount of class A beta-lactamases from the non-redundant data. All of the UBA sequences were present in this portion of the tree.</p>
 <figure>
 <img src="images/kpc_main_clade.svg" alt="Figure 5: A clade pruned from the phylogeny in figure {#fig:kpc-tree} which represents the most closely related genes to the KPC family genes." id="fig:kpc-main-tree" /><figcaption><span>Figure 5:</span> A clade pruned from the phylogeny in figure {#fig:kpc-tree} which represents the most closely related genes to the KPC family genes.</figcaption>
 </figure>
@@ -334,7 +310,7 @@
 <h1 id="supplemental">Supplemental</h1>
 <a name="tbl:mcr-variants"></a>
 <table>
-<caption><span>Table 2:</span> Names of the canonical MCR phosphoethanolamine transferase variants from CARD database </caption>
+<caption><span>Table 1:</span> Names of the canonical MCR phosphoethanolamine transferase variants from CARD database </caption>
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
@@ -348,7 +324,7 @@
 </table>
 <a name="tbl:kpc-variants"></a>
 <table>
-<caption><span>Table 3:</span> Names of the canonical beta-lactamase variants from CARD database </caption>
+<caption><span>Table 2:</span> Names of the canonical beta-lactamase variants from CARD database </caption>
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
@@ -362,7 +338,7 @@
 </table>
 <a name="tbl:ndm-variants"></a>
 <table>
-<caption><span>Table 4:</span> Names of the canonical NDM beta-lactamase variants from CARD database </caption>
+<caption><span>Table 3:</span> Names of the canonical NDM beta-lactamase variants from CARD database </caption>
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
@@ -376,7 +352,7 @@
 </table>
 <a name="tbl:oxa-variants"></a>
 <table>
-<caption><span>Table 5:</span> Names of the canonical OXA beta-lactamase variants from CARD database </caption>
+<caption><span>Table 4:</span> Names of the canonical OXA beta-lactamase variants from CARD database </caption>
 <thead>
 <tr class="header">
 <th>OXA-162 OXA-163 OXA-181 OXA-204 OXA-232 OXA-48</th>
@@ -388,7 +364,7 @@
 <p>TODO: Quality/CHECKM information for UBAs</p>
 <a name="tbl:outgroups"></a>
 <table>
-<caption><span>Table 6:</span> Outgroups chosen in building the phylogenies of the 4 AMR families. </caption>
+<caption><span>Table 5:</span> Outgroups chosen in building the phylogenies of the 4 AMR families. </caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 39%" />
