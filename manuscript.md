@@ -21,9 +21,9 @@ title: Reviewing the phylogenetic relationships and nomenclature of common antim
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/4e9933469a858c266d7f7f5b7183d8d609ed1fc9/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/119127db5332e28c35aba2369c0e179ae45605b4/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@4e99334](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/4e9933469a858c266d7f7f5b7183d8d609ed1fc9)
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@119127d](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/119127db5332e28c35aba2369c0e179ae45605b4)
 on May 30, 2020.
 </em></small>
 
@@ -309,59 +309,59 @@ In cases where there were multiple hits for genes, the most recent common ancest
 
 ### Phylogenetic analysis of MCR sequences
 
-The phylogenetic relationships of the CARD canonical sequences, and the CARD prevalence sequences involving the MCR family were investigated to show the phylogenetic relationship of only the putative MCR sequences without the noise of additional sequences.
-A total of 87 genes, an out-group, the 32 canonical sequences, and the 54 prevalence sequences (clustered as per Table {@tbl:exp-params}), were selected for analyses.
-The tree in Figure {@fig:canon-prev-tree} shows several distinct clades.
-Each MCR variant forms a clade.
-MCR-1, MCR-2, and MCR-6 form a clade, appearing to br more closely related to one another than with the other MCR family members.
+A phylogeny with only putative MCR gene family sequences was created, showing the relationships without additional diversity.
+An out-group, 32 canonical sequences, and 54 prevalence sequences were selected for this phylogeny.
+The resulting tree in Figure {@fig:canon-prev-tree} shows MCR family members 1 through 9 forming distinct sub-clades in the tree.
+MCR-1, MCR-2, and MCR-6 form a closely related clade.
 This clade is also closely related to the ICR-Mc clade.
 ICR-Mc @JT9eRkR8 is another phosphoethanolamine transferase which confers colistin resistance.
+MCR-3, and MCR-7, also form a closely related clade.
+![Phylogenetic relationship of 32 canonical (labels prefixed with 'lcl_canon' in yellow), 54 prevalence (labels prefixed with 'lcl_prev' in tan) MCR family sequences, and an outgroup from Betaproteobacteria ('lcl_outgroup' in grey). Each MCR variant is coloured based on its primary numerical value.](images/mcr_canon_prev_full.mintax.svg){#fig:canon-prev-tree}
 
-![Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, and an outgroup from Betaproteobacteria (lcl_outgroup in grey). Each MCR variant is coloured based on its primary numerical value.](images/mcr191004_canon_prev.fasta.aln.trim.treefile.collapsed.svg){#fig:canon-prev-tree}
+The relationships were further condensed with a representative for each MCR family member (figure {@fig:canon-prev-tree-collapsed}).
+The overall diversity gradient becomes more apparent in this tree.
+Regions of the tree vary in their potential to accommodate additional diversity.
+Regions containing more evolutionary distance are accommodating to additional diversity, while closely related regions would are not.
 
-The relationships were then collapsed to represent sequences for each numbered MCR variant in figure {@fig:canon-prev-tree-collapsed} for a more condensed visualization of the overall MCR family relationships. 
+![Phylogenetic relationship of 9 representative MCR family sequences, and an outgroup from Betaproteobacteria. (labels prefixed with 'lcl_canon' in yellow are canonical, labels prefixed with 'lcl_prev' in tan are prevalence, and an outgroup from Betaproteobacteria is prefixed with 'lcl_outgroup' in grey)](images/mcr_canon_prev_collapsed.mintax.svg){#fig:canon-prev-tree-collapsed}
 
-From figure {@fig:canon-prev-tree-collapsed} the gradient of diversity between some variants is occupied, such as the relationship of MCR 1, 2, and 6 and ICR-Mc, and MCR 7, 3, and 9.
-There are also relationships in which this diversity is missing, where unrepresented clades of MCR could exist.
+The phylogenies represented by Figures {@fig:mcr-3-9}, {@fig:mcr-5-icr}, and {@fig:canon-prev-nrdb-uba-tree} were created with additional diversity by querying the NCBI non-redundant database, and the MAGs from the Parks data @wrBRBdFb.
+The filtering criteria in Table 1 were applied to these data sets.
 
-![Phylogenetic relationship of 9 MCR family sequences, and an outgroup from Betaproteobacteria.](images/canon_prev.fasta.aln.trim.treefile.collapsed.svg){#fig:canon-prev-tree-collapsed}
-
-In an attempt to discover these potential clades between these named MCR families, sequences from the NCBI non-redundant data were added to the analysis to be compared with the canonical and prevalence sequences.
-This resulted in a total of 409 sequences for subsequent analysis, all labeled as phosphoethanolamine lipid A transferase genes, where 104 hits were labeled as MCR family genes.
-
-In addition, the 7903 draft quality MAGs were queried for AMR genes with RGI.
-RGI produced 1457246 results AMR determinants under the loose cutoff from the UBA data, 7171 for the strict cutoff,and 310 for the loose cutoff.
-It was hoped that phylogenetic analysis could find AMR determinants would be found in under the loose criterion that may have been missed by RGI-CARD.
-The UBA BLAST results were included in the phylogeny in Figure {@fig:canon-prev-nrdb-uba-tree} for the analysis.
-The remainder of the analysis deals with relationships which are deemed to be interesting based on the locations of the UBAs between MCR family clades.
+After filtering, 409 NCBI sequence hits, labeled as phosphoethanolamine lipid A transferase, and 104 NCBI sequence hits, labeled as MCR family, were selected for addition to the phylogeny.
+The 7903 draft quality MAGs were queried for AMR genes with RGI.
+RGI produced 1457246 loose hits, 7171 strict hits, and 310 perfect hits.
+After applying filters, only 63 MAG sourced genes were retained for the phylogeny.
+Due to the large size, the phylogeny displayed in Figure {@fig:canon-prev-nrdb-uba-tree} was subdivided into Figures {@fig:mcr-3-9}, and {@fig:mcr-5-icr}.
+The subdivisions were chosen based on a pruning at the point of the most recent common ancestor of sets of canonical MCR labeled leaves.
+The set including MCR-3, MCR-7, and MCR-9, and the set including MCR-1, MCR-2, MCR-5, MCR-6, and ICR-Mc, contained several clades of diversity between some of the canonical and prevalence leaves.
+Other choices for leaf sets contained added diversity that was distant from canonical sequences, and were not chosen as a focused figures.
 
 
-Between the clade containing MCR 3, and the most recent common ancestor of MCR 3 and MCR 7 clades (figure {@fig:mcr-3-9}), there is a clade of sequences from NCBI which have been reported as MCR 3 [TODO: look at linked literature].
-Present within this clade is a single UBA result, UBA705, which the Parks data @wrBRBdFb reports as a Comparative metagenome analyses of anode-associated microbial communities developed in rice paddy field-soil microbial fuel cells, is reported to be *Aeromonas hydrophilia*.
-This present within the clade alone with several other canonical and non-redundant Aeromonadalacea.
-Aeromonas hydrophilia is a species which has been found to have an MCR-3 gene.
-Even though qualities vary (Table ??), the sequences branch in the expected location.
 
-Between the clade containing MCR 7, and the most recent common ancestor of MCR 3 and MCR 7 clades, a clade of phosphoethanolamine lipid A transferase clade appears.
+Between the clade containing MCR-3, and the most recent common ancestor of MCR-3 and MCR-7 clades (figure {@fig:mcr-3-9}), there is a clade of sequences from NCBI which have been reported as MCR-3.
+Present within this clade is a single result from the Parks dataset @wrBRBdFb, UBA705.
+This leaf is labelled as *Aeromonas hydrophilia*, and is associated with rice paddy field-soil microbial fuel cells.
+This is present within the clade alone with several other canonical and non-redundant Aeromonadalacea.
+*Aeromonas hydrophilia* is a species which has been found to have an MCR-3 gene.
+
+Present between the clade containing MCR 7, and the most recent common ancestor of MCR 3 and MCR 7 clades, is a clade of NCBI sourced phosphoethanolamine lipid A transferase.
 This clade consists of the genus of gram negative bacteria, *Aeromonas*, @16EwPCiJT which is sometimes involved in human infection.
-This clade also includes an *Aeromonas veronii* hit from  from epidermal mucus of *Anguilla anguilla* in the UBA data.
-Between MCR 9 and the most recent common ancestor of MCR 3 and 9, a clade of *Aeromonas* associated phosphoethanolamine lipid A transferases appear.
-
+This clade also includes an *Aeromonas veronii* hit from epidermal mucus of *Anguilla anguilla* in the Parks data.
+Between MCR 9 and the most recent common ancestor of MCR 3 and 9, a clade of Aeromonas associated phosphoethanolamine lipid A transferases appear.
 The MCR 9 containing clade contains 8 UBAs and several NCBI non-redundant hits not reported as MCR family genes.
-5 Loose hits for MCR in a *Leclercia adecarboxylata* branch within this clade. 
-These *Leclercia* branch below the common ancestor of MCR-9 and MCR-3 which are well supported. The *Leclercia* UBAs were all sampled from New York City MTA subway samples Metagenome.
-Acinetobacter is another opportunistic pathogen  @8uz5m0fP which is becoming resistant to many antimicrobials.
+5 Loose hits for MCR in a Leclercia adecarboxylata branch within this clade.
+These *Leclercia* branch below the common ancestor of MCR-9 and MCR-3 which are well supported.
+The *Leclercia* UBAs were all sampled from New York City MTA subway samples Metagenome.
+*Acinetobacter* is another opportunistic pathogen @8uz5m0fP which is becoming resistant to many antimicrobials.
 
-
-![Clade containing putative MCR3 and MCR 9 clades pruned from Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey.](images/mcr3_mcr9_diversity.svg){#fig:mcr-3-9}
-
+![Clade containing putative MCR3 and MCR 9 clades pruned from Phylogenetic relationship of 32 canonical (labels prefixed with 'lcl_canon'_ in yellow), and 54 prevalence (labels prefixed with 'lcl_prev' in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with 'lcl_nrdb' in blue), and 91 UBA sourced sequences (labels prefixed with 'lcl_uba' in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey.](images/mcr3_mcr9_diversity.mintax.svg){#fig:mcr-3-9}
 
 Between MCR 5 and ICR-Mc (figure {#fig:mcr-5-icr}), there appear clades of diversity in the genus *Psychrobacter*.
 Branching between these two clades, as a descendant to this ancestor, is a clade of *Psycrobacter* species bacteria.
 This clade includes several hits from the non-redundant database, and two hits from the UBA data.
 According to the Parks @wrBRBdFb data, the identity of these samples are,
-UBA3068, A *Psychrobacter sp.*, sampled from Oil polluted marine microbial communities from Coal and Oil in Point Santa Barbara, California, USA
-and, UBA4193, a *Psychrobacter sp.*, sampled from the New York City MTA subway samples.
+UBA3068, A *Psychrobacter sp.*, sampled from Oil polluted marine microbial communities and, UBA4193, a *Psychrobacter sp.*, sampled from the New York City subway.
 The quality information for these sequences, shown in Table ??, shows that UBA3068 is near complete, while UBA4193 is only partial.
 It is encouraging to see that even with the quality difference, these two sequences branch in the expected clade.
 *Psychrobacter* @BjoH1Vii is a Genus is widespread and includes many cold adapted bacteria, it is an opportunistic pathogen, and has been found to sometimes be a cause of infections in humans, animals, and fish. Many new species of *Psychrobacter* have been discovered in cold climates @WLzELTTa. Some of the species have been shown to be resistant to colistin, like *Psychrobacter vallis ps. nov.* and *Psychrobacter aquaticus ps. nov.* @2NZAmp2H and is sister to [TODO: display new tree such that *Acinetobacter* is shown]
@@ -369,7 +369,7 @@ Another clade between these two variants contains phosphoethanolamine transferas
 Several UBA hits for *Stenotrophomonas maltophilia* show up as shotgun sequencing of environmental samples. [TODO: quality information]
 
 
-![Clade containing putative MCR 5 and ICR-Mc clades pruned from Phylogenetic relationship of 32 canonical (labels prefixed with lcl_canon_ in yellow), and 54 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with lcl_prev_ in blue), and 91 UBA sourced sequences (labels prefixed with lcl_prev_ in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey.](images/mcr5_icrmc_diversity.svg){#fig:mcr-5-icr}
+![Clade containing putative MCR 5 and ICR-Mc clades pruned from Phylogenetic relationship of 32 canonical labels (prefixed with 'lcl_canon'_ in yellow), and 54 prevalence (labels prefixed with 'lcl_prev' in tan) MCR family sequences, 595 NCBI non-redundant sequences (labels prefixed with 'lcl_nrdb' in blue), and 91 UBA sourced sequences (labels prefixed with 'lcl_uba' in green). Each MCR variant is coloured based on its primary numerical value. If the sequence is not reported to be MCR family it is coloured in grey.](images/mcr5_icrmc_diversity.mintax.svg){#fig:mcr-5-icr}
 
 
 [TODO: visualization with plasmid distribution ]
@@ -383,30 +383,34 @@ This phylogeny shows that many of the resulting sequences are distant from the c
 The most closely related clade is a clade containing IMI and SME-type beta lactamases.
 The remaining sequences are in a clade containing a large amount of class A beta-lactamases from the non-redundant data. All of the UBA sequences were present in this portion of the tree.
 
-![A clade pruned from the phylogeny in figure {#fig:kpc-tree} which represents the most closely related genes to the KPC family genes.](images/kpc_main_clade.svg){#fig:kpc-main-tree}
+![A clade pruned from the phylogeny in figure {#fig:kpc-tree} which represents the most closely related genes to the KPC family genes. 18 canonical labels (prefixed with 'lcl_canon'_ in yellow), and 25 prevalence (labels prefixed with 'lcl_prev' in tan), and 28 NCBI non-redundant sequences (labels prefixed with 'lcl_nrdb' in blue). Each KPC variant is coloured based on its primary numerical value. If the sequence is not reported to be KPC family it is coloured in grey.](images/kpc_main_clade.mintax.svg){#fig:kpc-main-tree}
 
 
 ### Phylogenetic analysis of NDM
 
-14 canonical sequences were used to query the same databases as in the former phylogenetic analyses. The genes retained for the phylogeny were the 14 canonical sequences, 8 prevalence sequences, 12 non-redundant sequences, 1 UBA sequence, and 1 out-group. This resulted in the phylogenetic relationship in Figure {@fig:ndm-tree}. 
+14 canonical sequences were used to query the data for NDM beta-lactamase.
+The genes retained for the phylogeny were 14 canonical sequences, 8 prevalence sequences, 12 non-redundant sequences, 1 UBA sequence, and an out-group.
+This resulted in the phylogenetic relationship in Figure {@fig:ndm-tree}.
 
-![Phylogenetic relationship of 14 canonical (labels prefixed with lcl_canon_ in yellow), 8 prevalence (labels prefixed with lcl_prev_ in tan) MCR family sequences, 12 NCBI non-redundant database sequences (lcl_nrdb), 1 UBA sequence (lcl_uba) and an outgroup from Betaproteobacteria (lcl_outgroup in grey). Each MCR variant is coloured based on its primary numerical value.](images/ndm191128_canon_prev_nrdb_uba.fasta.aln.trim.treefile.expanded.svg){#fig:ndm-tree-all}
+![Phylogenetic relationship of 14 canonical (labels prefixed with 'lcl_canon' in yellow), 8 prevalence (labels prefixed with 'lcl_prev' in tan), 12 NCBI non-redundant database sequences (labeled as 'lcl_nrdb' in blue), 1 UBA sequence (labeled as 'lcl_uba' in green), and an outgroup from Betaproteobacteria (labeled as 'lcl_outgroup' in grey). Each NDM variant is coloured based on its primary numerical value.](images/ndm_full.mintax.svg){#fig:ndm-tree-all}
 
 The 12 sequences resulting from the NCBI data included 3 genes reported to be NDM-1, NDM-3, and NDM-5, while the other 4 genes were reported to be general beta lactamase/carbapenemase hits.
 As in the KPC phylogeny (figure {@fig:kpc-main-tree}), there is very little phylogenetic difference between the named variants of NDM.
-The only significantly phylogenetically resolved genes in this clade were the prevalence hit for NDM-1 found in Shigella sonnei representing only itself in the cd-hit cluster, and the ncbi hits labeled as NDM-1 and NDM-5.
-The naming of these sequences seem not to be congruent with the phylogenetic relationships present in the tree. Some of the NDM-1 and NDM-5 genes are more closely related to the other NDM variants than themselves.
-The one  BA BLAST result branches far from the clade containing the canonical indicating that under the coverage queried, there are no reasonably detectable NDM homologues in the UBA data. The alignment of this UBA under this relaxed query coverage of 60% is already pushing the limits of a "good alignment", and reducing this further would produce meaningless results.
+The only phylogenetically distinct genes in this clade were the prevalence hit for NDM-1, and the ncbi hits labeled as NDM-1 and NDM-5.
+The naming of these sequences seem not to be congruent with the phylogenetic relationships present in the tree.
+Some of the NDM-1 and NDM-5 genes are more closely related to the other NDM variants than themselves.
+One BLAST result from the Parks data branches far from the clade containing the canonical sequences.
+This indicates that under the coverage queried, there are no reasonably detectable NDM homologues in the UBA data.
+The alignment of this UBA under this relaxed query coverage of 60% (see Table 1) is questionable.
+Reducing query coverage further could produce more sequences from the Parks data, but the resulting alignment would produce a meaningless phylogeny.
 
 ### Phylogenetic analysis of OXA-48
 
-In investigating the phylogenetic relationship of OXA-48, the result was similar to that of NDM.
-There were multiple BLAST results for UBA sequences, but the hits were too phylogenetically dissimilar to draw a conjecture about their relationship to the OXA family. 6 canonical sequences, and the 14 prevalence sequences, 20 non-redundant sequences, and 411 UBA sequences were combined in the phylogeny in Figure {@fig:oxa-tree}
+In querying for the OXA-48 portion of the analysis, multiple BLAST results for UBA sequences were found, but the hits were too phylogenetically dissimilar to draw a conjecture about their relationship to the OXA family. 6 canonical sequences, and the 14 prevalence sequences, and 20 non-redundant sequences are combined in the phylogeny in Figure {@fig:oxa-tree}
 
-![The main phylogenetic relationship pruned from the tree inferred from OXA-48-like sequences from figure {#fig:oxa-tree}](images/oxa_main_clade.svg){#fig:oxa-main-tree}
+![The main phylogenetic relationship pruned from the tree inferred from OXA-48-like sequences from figure {#fig:oxa-tree}. 6 canonical (labels prefixed with 'lcl_canon'_ in yellow), and 14 prevalence (labels prefixed with 'lcl_prev' in tan), 20 NCBI non-redundant sequences (labels prefixed with 'lcl_nrdb' in blue). Each OXA-48 variant is coloured based on its primary numerical value. If the sequence is not reported to be OXA-48 family it is coloured in grey.](images/oxa_main_clade.mintax.svg){#fig:oxa-main-tree}
 
-
-The OXA-48 prevalence hits added further diversity to the reference OXA-48-like sequences. OXA-436 @KEhNzdys was found, clustered with no other gene, in the prevalence data, and OXA-514 and OXA-515 were found in the non-redundant data. Much like in NDM, this diversity seems only to be diversity in name. The various named variants are too similar to produce significant phylogenetic resolution. This is most likely a symptom of the problematic way in which OXA family members are named.
+The OXA-48 prevalence hits added further diversity to the reference OXA-48-like sequences. OXA-436 @KEhNzdys was found, clustered with no other gene, in the prevalence data, and OXA-514 and OXA-515 were found in the non-redundant data. Much like in NDM, this diversity seems only to be diversity in name. The various named variants are too similar to produce significant phylogenetic resolution.
 
 
 ## Discussion
