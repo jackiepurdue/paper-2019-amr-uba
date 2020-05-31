@@ -21,9 +21,9 @@ title: Reviewing the phylogenetic relationships and nomenclature of common antim
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/edf7423bb94ad4608978ad045fcb5c89438d8089/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/b0eceb2d1e0103a5e4d0736d83b563285e780ae6/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@edf7423](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/edf7423bb94ad4608978ad045fcb5c89438d8089)
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@b0eceb2](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/b0eceb2d1e0103a5e4d0736d83b563285e780ae6)
 on May 31, 2020.
 </em></small>
 
@@ -432,7 +432,7 @@ Plasmids could have been poorly recovered in the assembly phase of the SRA exper
 These experiments were performed with high-throughput sequencing, many using Illumina HiSeq 2000 and 2500, which produce short reads.
 Plasmids from short reads are known to be difficult to assemble due to sequence characteristics [@12zFifp5x] [@12zFifp5x] [@DTtDOvle].
 
-### Part 2: Phylogenetic poositioning of AMR genes from NCBI and MAGs
+### Part 2: Phylogenetic positioning of AMR genes from NCBI and MAGs
 
 Another way in which the analyses of MCR and the beta lactamases differ is in the spread and diversity of the relationships.
 In addition to MAG sources, which are completely lacking in the beta lactamase trees, the MCR tree contains several sequences from NCBI’s non-redundant database which land close to canonical clades.
@@ -456,7 +456,7 @@ If the OXA were more thoroughly separated into actual homologous groups, perhaps
 These groups of OXA could behave very differently and some could have data recovery similar to that of MCR, but we are missing out on this because of the phenotypic naming scheme over a rigorous scheme which takes into account the genetic similarity. In MCR, the naming situation is less arbitrary. The closely related variants are classified under the same primary number.
 Several versions of MCR-1 exist, for example, and all form a clade.
 
-### Part 4: Should naming reflext phylogenetic relationships?
+### Part 4: Should naming reflect phylogenetic relationships?
 
 Finding an ideal nomenclature scheme which within, or generalizing across AMR families is problematic.
 Nomenclature which has been shown to be phylogenetically consistent, such as that of MCR, is nonetheless subject to ambiguity.
