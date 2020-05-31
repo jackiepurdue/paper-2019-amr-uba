@@ -21,9 +21,9 @@ title: Reviewing the phylogenetic relationships and nomenclature of common antim
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/26150239cac7ced88d0ee258dda43b2f25d890a6/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/b02ec428c5623e4dde1a534a1dcca53dbaf75f0b/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@2615023](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/26150239cac7ced88d0ee258dda43b2f25d890a6)
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@b02ec42](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/b02ec428c5623e4dde1a534a1dcca53dbaf75f0b)
 on May 31, 2020.
 </em></small>
 
@@ -469,13 +469,6 @@ It can be seen that it would be more likely that one may discover, for example, 
 Justifying naming of a new NDM gene, when all genes available to the public are essentially identical, seems to be problematic, however, further investigations into certain patterns of changes in the amino acid sequences may further granularize our classification.
 Ultimately, many interesting questions about the nomenclature of these genes are rooted in ontology.
 Classifying these genes is of utmost importance for communication between scientists, and a naming scheme which seeks a balance between practicality, evolutionary relationships, function, and context, must be found.
-
-
-## Conclusion
-
-* The data for three of the four phylogenetic analyses were not ideal for expanding on the known diversity of AMR homologs. These beta lactamase phylogenies did, however show the importance of unambiguous naming schemes, and care when it comes to presenting data honestly. 
-* The study also showed that it is important to take the type of data into consideration, and metagenomic sequencing must come a long way before these studies can produce quality information.
-* MCR is a good candidate for this type of study because it has the right balance of homology and diversity in the group, and is an example of a better naming scheme.
 
 
 # Supplemental

@@ -74,13 +74,13 @@
     "repo_slug": "jackiepurdue/phylogenetic-amr-survey-manuscript",
     "repo_owner": "jackiepurdue",
     "repo_name": "phylogenetic-amr-survey-manuscript",
-    "commit": "26150239cac7ced88d0ee258dda43b2f25d890a6"
+    "commit": "b02ec428c5623e4dde1a534a1dcca53dbaf75f0b"
   },
   "manuscript_stats": {
     "reference_counts": {
       "doi": 32,
       "total": 32
     },
-    "word_count": 6123
+    "word_count": 6012
   }
 }
