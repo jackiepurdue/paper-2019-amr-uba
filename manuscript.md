@@ -21,9 +21,9 @@ title: Reviewing the phylogenetic relationships and nomenclature of common antim
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/b02ec428c5623e4dde1a534a1dcca53dbaf75f0b/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/edf7423bb94ad4608978ad045fcb5c89438d8089/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@b02ec42](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/b02ec428c5623e4dde1a534a1dcca53dbaf75f0b)
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@edf7423](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/edf7423bb94ad4608978ad045fcb5c89438d8089)
 on May 31, 2020.
 </em></small>
 
