@@ -21,9 +21,9 @@ title: Reviewing the phylogenetic relationships and nomenclature of common antim
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/a05dabbe9d8a86de9b0a556bcae60a9df41a0f11/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/97bd2ea246383500f9818ee484ba33b54031ea79/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@a05dabb](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/a05dabbe9d8a86de9b0a556bcae60a9df41a0f11)
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@97bd2ea](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/97bd2ea246383500f9818ee484ba33b54031ea79)
 on June 7, 2020.
 </em></small>
 
@@ -418,7 +418,7 @@ The OXA-48 prevalence hits added further diversity to the reference OXA-48-like 
 ### Part 1: An expanded set of candidate resistance genes
 
 Homologous sequences from NCBI, CARD prevalence data, and a large set of MAGs, were queried, filtered, and added to phylogenies.
-The filtering criteria where chosen to ignore small changes between sequences(99-100% sequence identity threshold), and to produce meaningful alignments in the final phylogenies (90-99% query coverage).
+The filtering criteria where chosen to ignore small changes between sequences (99-100% sequence identity threshold), and to produce meaningful alignments in the final phylogenies (90-99% query coverage).
 
 NCBI and CARD prevalence added new homologues to the phylogenies, however, these conservative filtering criteria contributed obvious homologues from only the MCR MAG analysis, and not in the three beta lactamase MAG analyses.
 This contradistinction could be explained by plasmid distributions.
@@ -429,10 +429,11 @@ Plasmids from short reads are known to be difficult to assemble[@12zFifp5x] [@12
 
 Another way in which the analyses of MCR and the beta lactamases differ is in the spread and diversity of the relationships.
 In addition to MAG sources, which are completely lacking in the beta lactamase trees, the MCR tree contains several sequences from NCBI’s non-redundant database which land close to canonical clades.
-There are several clades made up of canonical and prevalence sequence genes separated by swathes of diversity from both NCBI and the MAGs.
+Some of the added NCBI and MAG sourced sequences are not so close, but share ancestors with canonical sequences nonetheless.
 This suggests that there could be more diversity to be found within the MCR class.
 In contrast, the added diversity in phylogenies from OXA-48, KPC is distant from the canonical and prevalence sequences.
-The matches which are close, are nearly identical to the canonical and prevalence sequences.The beta-lactamase phylogenies are low in gene diversity, and thus form very tight, closely related clades.
+The matches which are close, are nearly identical to the canonical and prevalence sequences.
+The beta-lactamase phylogenies are low in gene diversity, and thus form very tight, closely related clades.
 This displays that this study is very sensitive to the diversity of the gene being studied, whether it be from bias in sampling, or high amount of genetic conservation in the gene pool.
 
 ### Part 3: Phylogenetic relationships vs. nomenclature
