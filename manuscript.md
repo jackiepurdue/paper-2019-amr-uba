@@ -21,9 +21,9 @@ title: Reviewing the phylogenetic relationships and nomenclature of common antim
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/2995cff789e75b716233e5c664fca7c699d65f29/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/a05dabbe9d8a86de9b0a556bcae60a9df41a0f11/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@2995cff](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/2995cff789e75b716233e5c664fca7c699d65f29)
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@a05dabb](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/a05dabbe9d8a86de9b0a556bcae60a9df41a0f11)
 on June 7, 2020.
 </em></small>
 
@@ -417,20 +417,13 @@ The OXA-48 prevalence hits added further diversity to the reference OXA-48-like 
 
 ### Part 1: An expanded set of candidate resistance genes
 
-The aim of this study was to use the phylogenetic relationships of AMR genes to expand on current AMR surveillance efforts of CARD.
 Homologous sequences from NCBI, CARD prevalence data, and a large set of MAGs, were queried, filtered, and added to phylogenies.
-Most hits for these queries were not worth retaining.
-One reason for this is that many sequences were closley related to each other, clustering into a single representative sequence.
-Investigating, for example, a single change in amino acid, would not be conducive to this sort of overview.
-The other reason many sequences were not retained is that they lacked sufficient query coverage to produce a good sequence alignment.
-This was most evident in the UBA data. Many of the UBA sequences were filtered out becasuse they were only partial matches.
+The filtering criteria where chosen to ignore small changes between sequences(99-100% sequence identity threshold), and to produce meaningful alignments in the final phylogenies (90-99% query coverage).
 
-One further problem with the UBA data is that hits that did pass the filtering criteria did not seem to be homologous to the canonical sequences.
-Loose RGI matches in the MAGs for MCR, NDM, KPC, and OXA-48 were examined, but after applying conservative filtering criteria, only the MCR survey produced matches which would be worthy of further consideration for resistance testing.
-This contradistinction between the MCR analysis and the beta lactamase analyses could be explained by plasmid distributions.
-Plasmids could have been poorly recovered in the assembly phase of the SRA experiments.
-These experiments were performed with high-throughput sequencing, many using Illumina HiSeq 2000 and 2500, which produce short reads.
-Plasmids from short reads are known to be difficult to assemble due to sequence characteristics [@12zFifp5x] [@12zFifp5x] [@DTtDOvle].
+NCBI and CARD prevalence added new homologues to the phylogenies, however, these conservative filtering criteria contributed obvious homologues from only the MCR MAG analysis, and not in the three beta lactamase MAG analyses.
+This contradistinction could be explained by plasmid distributions.
+Plasmids could have been poorly recovered in the assembly phase of the SRA experiments, many of which produce short reads (Illumina HiSeq 2000 and 2500).
+Plasmids from short reads are known to be difficult to assemble[@12zFifp5x] [@12zFifp5x] [@DTtDOvle].
 
 ### Part 2: Phylogenetic positioning of AMR genes from NCBI and MAGs
 
