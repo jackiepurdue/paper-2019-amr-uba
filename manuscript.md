@@ -21,9 +21,9 @@ title: Reviewing the phylogenetic relationships and nomenclature of common antim
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/97bd2ea246383500f9818ee484ba33b54031ea79/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/555090087b503b991eed81098eb5e73799dc8929/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@97bd2ea](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/97bd2ea246383500f9818ee484ba33b54031ea79)
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@5550900](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/555090087b503b991eed81098eb5e73799dc8929)
 on June 7, 2020.
 </em></small>
 
@@ -316,6 +316,7 @@ MCR-1, MCR-2, and MCR-6 form a closely related clade.
 This clade is also closely related to the ICR-Mc clade.
 ICR-Mc @JT9eRkR8 is another phosphoethanolamine transferase which confers colistin resistance.
 MCR-3, and MCR-7, also form a closely related clade.
+
 ![Phylogenetic relationship of 32 canonical (labels prefixed with 'lcl_canon' in yellow), 54 prevalence (labels prefixed with 'lcl_prev' in tan) MCR family sequences, and an outgroup from Betaproteobacteria ('lcl_outgroup' in grey). Each MCR variant is coloured based on its primary numerical value.](images/mcr_canon_prev_full.mintax.svg){#fig:canon-prev-tree}
 
 The relationships were further condensed with a representative for each MCR family member (figure {@fig:canon-prev-tree-collapsed}).
