@@ -5,7 +5,7 @@ author-meta:
 - Dayna Mikkelsen
 - Finlay Maguire
 - Robert G. Beiko
-date-meta: '2020-05-31'
+date-meta: '2020-06-07'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -21,10 +21,10 @@ title: Reviewing the phylogenetic relationships and nomenclature of common antim
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/b0eceb2d1e0103a5e4d0736d83b563285e780ae6/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/2995cff789e75b716233e5c664fca7c699d65f29/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@b0eceb2](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/b0eceb2d1e0103a5e4d0736d83b563285e780ae6)
-on May 31, 2020.
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@2995cff](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/2995cff789e75b716233e5c664fca7c699d65f29)
+on June 7, 2020.
 </em></small>
 
 ## Authors
@@ -421,7 +421,7 @@ The aim of this study was to use the phylogenetic relationships of AMR genes to 
 Homologous sequences from NCBI, CARD prevalence data, and a large set of MAGs, were queried, filtered, and added to phylogenies.
 Most hits for these queries were not worth retaining.
 One reason for this is that many sequences were closley related to each other, clustering into a single representative sequence.
-Investigating, for example, a single change in amino acid, would not be condicive to this sort of overview.
+Investigating, for example, a single change in amino acid, would not be conducive to this sort of overview.
 The other reason many sequences were not retained is that they lacked sufficient query coverage to produce a good sequence alignment.
 This was most evident in the UBA data. Many of the UBA sequences were filtered out becasuse they were only partial matches.
 
