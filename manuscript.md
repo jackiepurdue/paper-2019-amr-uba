@@ -5,7 +5,7 @@ author-meta:
 - Dayna Mikkelsen
 - Finlay Maguire
 - Robert G. Beiko
-date-meta: '2020-06-07'
+date-meta: '2020-06-09'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -21,10 +21,10 @@ title: Reviewing the phylogenetic relationships and nomenclature of common antim
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/555090087b503b991eed81098eb5e73799dc8929/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/ece5de440ab3f3e177e6f65d24fc03b4f55bae97/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@5550900](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/555090087b503b991eed81098eb5e73799dc8929)
-on June 7, 2020.
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@ece5de4](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/ece5de440ab3f3e177e6f65d24fc03b4f55bae97)
+on June 9, 2020.
 </em></small>
 
 ## Authors
@@ -424,6 +424,8 @@ The filtering criteria where chosen to ignore small changes between sequences (9
 NCBI and CARD prevalence added new homologues to the phylogenies, however, these conservative filtering criteria contributed obvious homologues from only the MCR MAG analysis, and not in the three beta lactamase MAG analyses.
 This contradistinction could be explained by plasmid distributions.
 Plasmids could have been poorly recovered in the assembly phase of the SRA experiments, many of which produce short reads (Illumina HiSeq 2000 and 2500).
+TODO: Look at The number/percentages of completely sequenced genomes, completely sequenced plasmids analyzed for each pathogen, and see if there is any concrete evidence that the above is actually happening.
+This seems to be problematic with bias in sampling, so other ideas/sources that may be promising are welcome.
 Plasmids from short reads are known to be difficult to assemble[@12zFifp5x] [@12zFifp5x] [@DTtDOvle].
 
 ### Part 2: Phylogenetic positioning of AMR genes from NCBI and MAGs
