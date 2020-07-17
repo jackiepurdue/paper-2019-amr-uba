@@ -1,15 +1,8 @@
-* TODO Items
-** Specific TODO items
-    * Make table 1 more readable with better labels etc.
-*** TODO [#B] Quality information
-    * Display quality information in the supplemental material
-    * CheckM values, coverage, quality scores
-    * Cite these qualities where relevant in the results
-*** TODO [#B] Visualization with plasmid distribution
-*** TODO [#B] Visualization with taxonomic distribution
-*** TODO [#B] Explain green dots
-    * explain the green dots
-*** TODO [#C] Consider rebuilding some of the trees
-    * Example: Acinetobacter is not showing up in the MCR trees, and it had been discussed earlier that it may be taxonomically interesting in it's placement in the tree. (This was in notes from a meeting this summer, but it would require looking at the raw tree to see where it is located)
-    * There could be other relationships we are missing out on because of the clustering.
-    * Decide how much we want to discuss these sorts of interesting relationships, or if it's worth it to rebuild the trees based on more "interesting" taxa.
+* NOTES AND TODO ITEMS
+** Quality information
+   * Display quality information in the supplemental material
+   * CheckM values, coverage, quality scores
+   * Cite these qualities where relevant in the results
+** Explain green dots
+   * explain the green dots
+** Consider rebuilding some of the trees
