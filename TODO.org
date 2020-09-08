@@ -5,4 +5,3 @@
    * Cite these qualities where relevant in the results
 ** Explain green dots
    * explain the green dots
-** Consider rebuilding some of the trees
