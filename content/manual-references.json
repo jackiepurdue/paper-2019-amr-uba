@@ -1,10 +1,45 @@
 [
 {
-  "id": "url:https://github.com/manubot/rootstock",
+  "id": "url:whoplan",
   "type": "webpage",
-  "URL": "https://github.com/manubot/rootstock",
-  "title": "manubot/rootstock GitHub repository",
-  "container-title": "GitHub",
+  "URL": "https://www.who.int/antimicrobial-resistance/global-action-plan/en/",
+  "title": "WHO Global Action Plan on Antimicrobial Resistance",
+  "issued": {
+    "date-parts": [
+      [
+        2015
+      ]
+    ]
+  },
+  "author": [
+    {
+      "family": "World Health Organisation"
+    }
+  ]
+},
+{
+  "id": "url:whopriority",
+  "type": "webpage",
+  "URL": "https://www.who.int/medicines/publications/global-priority-list-antibiotic-resistant-bacteria/en/",
+  "title": "WHO Global Priority List of Antibiotic Resistant Bacteria",
+  "issued": {
+    "date-parts": [
+      [
+        2017
+      ]
+    ]
+  },
+  "author": [
+    {
+      "family": "World Health Organisation"
+    }
+  ]
+},
+{
+  "id": "url:canadanosocomial",
+  "type": "webpage",
+  "URL": "https://www.canada.ca/en/public-health/services/publications/science-research-data/summary-report-healthcare-associated-infection-antimicrobial-resistance-antimicrobial-use-surveillance-data-2013-2017.html",
+  "title": "Canadian Nosocomial Infection Surveillance Program",
   "issued": {
     "date-parts": [
       [
@@ -14,8 +49,25 @@
   },
   "author": [
     {
-      "given": "Daniel",
-      "family": "Himmelstein"
+      "family": "Public Health Agency of Canada"
+    }
+  ]
+},
+{
+  "id": "url:canadafedaction",
+  "type": "webpage",
+  "URL": "https://www.canada.ca/en/health-canada/services/publications/drugs-health-products/federal-action-plan-antimicrobial-resistance-canada.html",
+  "title": "Federal Action Plan on Antimicrobial Resistance",
+  "issued": {
+    "date-parts": [
+      [
+        2015
+      ]
+    ]
+  },
+  "author": [
+    {
+      "family": "Public Health Agency of Canada"
     }
   ]
 }
