@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/gh-pages) branch hosts the contents of this directory at https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/.
-The permalink for this webpage version is https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/0dc9fd5b3b312be66e6979bccaffea72024082e0/.
+The permalink for this webpage version is https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/496508e1fdcbac123907e7a200032afee5efc07b/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/freeze/.
 
 ## Files
@@ -36,4 +36,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`0dc9fd5b3b312be66e6979bccaffea72024082e0`](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/commit/0dc9fd5b3b312be66e6979bccaffea72024082e0).
+[`496508e1fdcbac123907e7a200032afee5efc07b`](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/commit/496508e1fdcbac123907e7a200032afee5efc07b).
