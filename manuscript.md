@@ -5,7 +5,7 @@ author-meta:
 - Dayna Mikkelsen
 - Finlay Maguire
 - Robert G. Beiko
-date-meta: '2020-09-30'
+date-meta: '2020-10-06'
 keywords:
 - metagenome
 - antimicrobial resistance
@@ -22,10 +22,10 @@ title: Incorporation of metagenome-assembled genome data into antimicrobial resi
 
 <small><em>
 This manuscript
-([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/496508e1fdcbac123907e7a200032afee5efc07b/))
+([permalink](https://jackiepurdue.github.io/phylogenetic-amr-survey-manuscript/v/159d9742aa8ac96a488d8fb62444384175592aa9/))
 was automatically generated
-from [jackiepurdue/phylogenetic-amr-survey-manuscript@496508e](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/496508e1fdcbac123907e7a200032afee5efc07b)
-on September 30, 2020.
+from [jackiepurdue/phylogenetic-amr-survey-manuscript@159d974](https://github.com/jackiepurdue/phylogenetic-amr-survey-manuscript/tree/159d9742aa8ac96a488d8fb62444384175592aa9)
+on October 6, 2020.
 </em></small>
 
 ## Authors
@@ -75,7 +75,7 @@ on September 30, 2020.
 ## Abstract {.page_break_before}
 
 The increase and spread of antimicrobial resistance (AMR) poses a global threat to human and animal health.
-The emergence of mobilised resistance to last-line antibiotics such as carbapenems and polymyxins are a particular cause for alarm.
+The emergence of mobilised genes conferring resistance to last-line antibiotics such as carbapenems and polymyxins are a particular cause for alarm.
 Given their ability to be laterally transferred between unrelated bacteria, surveillance of the evolution and transmission of these genes is vital to mitigating their impact.
 However, the poor characterisation of many important non-clinical environments and bacteria as well as failings in the existing classification and nomenclature of AMR genes pose a major barrier to this work.
 Metagenome assembled genome (MAG) methods, in which genomes are recovered from untargeted metagenomic sequencing, have been used to greatly increase the diversity of sampled bacterial genomes.
@@ -83,12 +83,11 @@ Therefore, by profiling AMR genes detectable in MAG datasets we can greatly expa
 Through this, we can also identify inconsistencies and potential refinements of the existing nomenclature.
 
 In this study, the phylogenetic neighborhoods of several mobilised AMR gene families, of public-health importance, were examined for diversity, spread, and classification consistency.
-These gene families include: mobile colistin resistance (MCR), New Delhi beta-lactamase (NDM), Klebsiella pneumoniae carbapenemase (KPC), and the OXA-48-like beta-lactamase lactamase family.
-Canonical genes in the Comprehensive Antibiotic Resistance Database (CARD) for these families were used to identify putative homologues within CARD:Resistomes & Variants data, NCBI sequence databases, and draft quality MAGs from a large set of uncultivated bacterial and archeal sources (UBA).
-For each of these 4 AMR gene families, phylogenetic analyses were conducted for the expanded set of candidate resistance genes.
+These gene families include: mobile colistin resistance (MCR), New Delhi beta-lactamase (NDM), _Klebsiella pneumoniae_ carbapenemase (KPC), and the OXA-48-like beta-lactamase family.
+Canonical genes in the Comprehensive Antibiotic Resistance Database (CARD) for these families were used to identify putative homologues within CARD:Resistomes & Variants data, NCBI non-redundant databases, and draft quality MAGs from a large set of uncultivated bacterial and archeal sources (UBA).
 
-Although limited uncharacterised diversity in NDM, KPC, and OXA-48 carbapenemases was uncovered, several possibly novel clades of MCR genes were discovered.
-In general, the carbapenemas families were found to be more tightly defined, with most added diversity being either extremely close, or phylogenetically distant.
+Although limited novel diversity in NDM, KPC, and OXA-48-like carbapenemases was identified, several possibly new clades of MCR genes were discovered.
+In general, the carbapenemase families were found to be more tightly defined, with most added diversity being either extremely close, or phylogenetically distant.
 The MCR family showed many new clades of diversity, even within well defined "canonical" clades.
 A large number of existing gene names within all 4 families were identified to be inconsistent with phylogeny or inconsequential in relation to the diversity they encompass.
 Additionally, there was a huge variability in the diversity encompassed by individual allele names across the AMR gene families analysed.
@@ -108,82 +107,70 @@ To mitigate the spread of AMR, the World Health Organization (WHO) (and national
 The WHO's priority list of antibiotic resistant bacteria [@Pb5xYOu4] highlights the multi-drug resistant pathogens upon which these efforts should be focused.
 This includes the ESKAPE pathogens: _Enterococcus faecium_, _Staphylococcus aureus_, _Klebsiella pneumoniae_, _Acinetobacter baumannii_, _Pseudomonas aeruginosa_, and _Enterobacter_ spp. [@bODq6dmJ,@b2c0QSMI,@aMfsvHsj].
 These pathogens have become resistant to many common classes of antimicrobials including penicillins, all generations of cephalosporins, gylcopeptides, quinolones, and peptide antibiotics [@bODq6dmJ].
-Concerningly, this also includes mobilised, i.e. laterally transferable between unrelated lineages, resistance to last-line carbapenem and colistin antibiotics [@oR3fXrzb].
+Concerningly, this also includes resistance to last-line carbapenem and colistin antibiotics related to mobilised AMR genes i.e., laterally transferable between unrelated lineages [@oR3fXrzb].
 
 Carbapenems are broad spectrum beta-lactam antibiotics that cannot be degraded by most beta-lactamases, as such they are used to treat life threatening, high risk, and multi-drug resistant bacterial infections [@OLzrpsK4].
 The number of observed carbapenem resistant _K. pneumoniae_, _E. coli_, _E. cloacae_, and _A. baumanii_ hospital-acquired infections have increased in Canada since 2013 [@hbKzfUrw], presenting a new threat to public-health.
 Resistance to carbapenems is largely mediated by acquisition of one of several families of carbapenemase genes [@OLzrpsK4].
-Due to their mobility and host-range, 3 carbapenemase gene families of public-health concern are _Klebsiella pneumoniae_ carbapenamase (KPC), New Delhi metallo-beta-lactamase (NDM), and OXA-48 type beta-lactamases [@OLzrpsK4].
-
-Carbapenamases are assigned to one of four classes (A-D) based on their molecular structure [@16ZzmUN7q].
-Class A, C, and D use a serine residue to hydrolyze beta-lactam antibiotics [@2p1n2mr5].
-KPC genes are a part of class A, and are the most prevalent in that class [@OLzrpsK4]. 
-Many variants of KPC are spreading and being discovered, however carbapenamases within this class are more rare than those within classes B, C, and D [@OLzrpsK4].
-Class B beta-lactamases are metallo-enzymes that use a zinc active site to hydrolyze beta-lactam antibiotics. 
-The NDM gene is classified as a class B beta-lactamase [@OLzrpsK4], and is the most prevalent in that class [@OLzrpsK4].
-Class D contains the OXA-48 beta-lactamases which are the most prevalent in that class [@OLzrpsK4]. 
-Unlike KPC and NDM, the OXA family is characterized by phenotype rather than genotype. 
-This "family" is characterized by specific hydrolases that can hydrolyze oxacillin and cloxacillin, with the enzyme being poorly inhibited by clavulanic acid (https://card.mcmaster.ca/ontology/36026).
-This results in relatively few homology relationships within the family.
-A subset of this family, OXA-48 possesses carbapenem hydrolyzing activity [@UV1QqTS8].
-The OXA-48 subfamily consists of five variants: OXA-48, OXA-162, OXA-163, OXA-181, OXA-204, and OXA-232 [@FqGNAObZ].
+Due to their mobility and host-range, 3 of the carbapenemase gene families of most pressing public-health concern are _Klebsiella pneumoniae_ carbapenamase (KPC), New Delhi metallo-beta-lactamase (NDM), and OXA-48-like beta-lactamases [@OLzrpsK4].
+These are, respectively, the most prevalent carbapenemase families within the A, B, and D beta-lactamase classes [@OLzrpsK4].
 
 For carbapenem resistant infections, polymyxin E (colistin) and B antibiotics are frequently the only remaining option.
-Polymyxins act by disrupting membrane permeability [@17k3PVuIy] and has had limited use in humans due to its neurotoxic and nephrotoxic effects [@17k3PVuIy].
+Polymyxins act by disrupting membrane permeability [@17k3PVuIy] and have had limited use in humans due to their neurotoxic and nephrotoxic effects [@17k3PVuIy].
 Despite this, mobilized colistin resistance (MCR) has emerged in clinical pathogens [@vQTzfitx] likely due to transmission from agricultural usage of colistin [@11oxu50eO].
-This further underscores the vital importance of surveillance for evolution and potential transmission of AMR between environmental, agricultural, and clinical samples.
+This underscores the vital importance of a "One-Health" based comprehensive surveillance program of AMR genes and their movement across environmental, agricultural, and clinical contexts.
 
-This kind of surveillance requires large-scale phylogenetic analyses which characterise the total diversity, context, and spread of these key resistance determinants.
-In order to perform these types of analyses we need two resources: a clear consolidated definition of what constitutes an AMR-related gene and a large amount of sequenced microbial genomes.
-However, naming and defining AMR genes is difficult to a complex legacy of historical nomenclature (prior to widespread DNA sequencing), and a huge quantity of active AMR research from a broad-range of stakeholders including academia, government organizations, human health, animal health, and agri-food industries [@10jnMhzRm].
+This kind of AMR surveillance requires large-scale phylogenetic analyses which characterise the total diversity, context, and spread of these key resistance determinants.
+In order to perform these types of analyses we need two resources: a clear consolidated definition of what constitutes an AMR-related gene and a large number of sequenced microbial genomes.
+However, naming and defining AMR genes is difficult due to a complex legacy of historical nomenclature (prior to widespread DNA sequencing), and a huge quantity of active AMR research from a broad-range of stakeholders including academia, government organizations, human health, animal health, and agri-food industries [@10jnMhzRm].
 
-AMR determinants are typically classified into families [@nvbyXyPe], some of which are based on phenotypic properties, and others on sequence variation.
-The nomenclature is usually an acronym with varying representations, such as the mechanism of resistance, the organism it is associated with, or the molecular structre.
-Each acronym is assigned a numerical value to distinguish variants.
-Each sequence, determined to be novel by some criterion, is assigned a new number.
+AMR determinants are typically classified into families [@nvbyXyPe], some of which are based on phenotypic properties, and others on sequence homology.
+These families are usually named according to a specific unifying characteristic, such as the resistance conferred (e.g., OXA-48-like, MCR), the geographic (e.g., "New Delhi" portion of NDM) or taxonomic (KPC) source of first observed examples, or the molecular structure ("metalloenzyme" portion of NDM).
+These are reduced to a short acronym or abbreviated version (i.e., a gene symbol) and assigned a numerical suffix to distinguish variants.
+Each allele, determined to be novel by some (ideally evolutionary) criterion, is assigned a new suffix number in this scheme.
 For example, the MCR phosphoethanolamine transferase gene family inhibits the binding of colistin to the cell membrane.
 The MCR-3 gene has a sequence identity which has been deemed to be significantly different from that of the other MCR genes in the family.
-MCR-3.1, has been deemed to be a variant of the MCR-3 gene, which has a slight variation in gene sequence from other MCR-3 genes [@x2VQlvOO].
-Members of the NDM beta-lactamase gene family are named using a different set of criteria.
-In this case, NDM-1, and NDM-2 differ only by a single amino acid substitution.
-This system for classification has the potential to be misleading when conducting AMR research.
-The amount of diversity encompassed within different names and alleles is hugely variable across AMR genes.
-For example, NDM has little diversity, while MCR has a large amount of  sequenced microbial genomes.
-Some AMR families are not even defined on the basis of sequence space but phenotypically.
-An example of this is the OXA beta-lactamase family, which is a phenotypically characterized family, with several different homologous sets of genes.
-OXA-20 has less than 20% amino acid sequence identity when compared with several other OXA-48-like family beta-lactamases [@1AFSAuSwx].
-This is a problem when attempting to characterize the AMR determinants by sequence similarity.
+MCR-3.1, in turn has been deemed to be a variant of the MCR-3 gene, with only slight variation from other MCR-3 genes [@x2VQlvOO].
+Alternatively, members of the NDM beta-lactamase gene family are named using a different set of criteria.
+Specifically, genes that differ by only a single amino acid substitution are assigned a distinct suffix e.g., NDM-1 and NDM-2.
+Consequently, the amount of diversity encompassed within different gene names and alleles is hugely variable across AMR families.
+This problem is further exacerbated by the existence of AMR families such as the OXA-beta lactamases which are not defined on sequence identity but phenotypically.
+Within this "family", there are numerous homologous sets of genes unified only by an ability to hydrolyse oxacillin.
+OXA-20 has less than 20% amino acid sequence identity when compared with to other OXA-48-like family beta-lactamases [@1AFSAuSwx].
+This highly variable complex system of classification has the potential to be misleading when conducting AMR research across the breadth of known AMR determinants.
 
 High-quality manually curated AMR databases such as the Comprehensive Antibiotic Resistance Database (CARD) [@nvbyXyPe] provide a unified resource for the definition, nomenclature and classification of AMR genes.
 CARD organizes this information through the Antibiotic Resistance Ontology (ARO), a controlled vocabulary with defined relationships.
 There are two datasets within CARD, CARD:Canonical and CARD:Resistomes & Variants (R&V).
 Canonical is a conservative set of AMR genes and mutations that have been experimentally verified as being associated with resistance in a peer-reviewed publication.
 As a consequence, most of the entries in CARD:Canonical are derived from the most intensively studied organisms, such as the ESKAPE pathogens.
-On the other hand, CARD:R&V contains AMR sequences that have been detected by searching a set of 88 WHO priority organism genomes from central repositories of publicly available sequencing data such as National Center for Biotechnology Information (NCBI) for sequences similar to corresponding Canonical sequences.
+On the other hand, CARD:R&V contains AMR sequences that have been detected by searching a set of 88 WHO priority organism genomes from central repositories of publicly available sequencing data such as National Center for Biotechnology Information (NCBI) for genes similar to corresponding Canonical sequences.
 This _in silico_ search is performed using CARD's BLAST/DIAMOND-based Resistance Gene Identifier (RGI) tool and greatly increases the sequence diversity in CARD [@nvbyXyPe].
 
-However, this is still limited to a subset of all genomes currently available in central International Nucleotide Sequence Database Collaboration (INSDC) repositories like NCBI.
-If we want to thoroughly understand the evolution and spread of AMR genes we need to analyse as many genomes as possible.
+However, this survey is still limited to a subset of all genomes currently available in central International Nucleotide Sequence Database Collaboration (INSDC) repositories like NCBI.
+If we want to thoroughly understand the evolution and spread of AMR genes we need to as much genomic diversity as possible.
 Unfortunately, the genomes in databases are largely sequenced from microbes that can be easily cultured. 
 As only a subset of microbial diversity can be cultured, this means many of our existing genomes aren't necessarily representative of the environment from which they were sampled [@wapKbEHA].
 Recently, techniques have been developed that allow the recovery of genomes from metagenomic data e.g., [@DTtDOvle,@DfIRBmdF].
-As metagenomic sequencing, the direct sequencing of all DNA in a sample, doesn't require culturing these metagenome-assembled genomes (MAGs) represent a huge source of novel microbial diversity.
+As metagenomic sequencing, the direct sequencing of all DNA in a sample, doesn't require this bias inducing culturing step these metagenome-assembled genomes (MAGs) represent a huge source of previously unseen microbial diversity.
 Parks et. al. [@wapKbEHA], generated new 7,903 bacterial and archaeal (Uncultured Bacteria and Archaea; UBA) MAGs representing >30% increase in the sampled phylogenetic diversity of the bacteria and archaea.
 
-By combining this MAG dataset with CARD:R&V, and other NCBI non-redundant data, we are able to greatly increase the breadth of data available for surveillance beyond clinical samples and environments.
-Phylogenetic analyses of this data can then be used to characterise the evolution and previously unexplored diversity of these critical public-health priority carbapenemase (KPC, NDM, and OXA-48) and colistin AMR gene families.
-These analyses will also highlight inconsistencies and possible refinements in the classification and nomenclature of these genes and their variant alleles.
+By combining this MAG dataset with CARD:R&V, and other NCBI non-redundant data, we are able to greatly increase the breadth of data available for surveillance beyond clinical samples.
+Phylogenetic analyses of this data was then be used to characterise the evolution and novel diversity of these critical public-health priority carbapenemase (KPC, NDM, and OXA-48) and colistin (MCR) AMR gene families.
+These analyses also highlight inconsistencies and possible refinements in the classification and nomenclature of these genes and their variant alleles.
 Therefore, in this work we present an in-depth investigation of the classification and phylogeny of KPC, NDM, OXA-48, and MCR gene families across all currently available sequenced genomes and MAGs.
 
 
 ## Methods
 
+All code used for this project is available at [github.com/jackiepurdue/amr_uba](github.com/jackiepurdue/amr_uba).
+
 ### Data
 
 We surveyed four separate databases to assess the diversity of known and candidate AMR genes.
-These sources include CARD:Canonical and CARD:R&V (version 3.0.5) sequences for the KPC, NDM, OXA-48, and MCR gene families, and associated homologs from NCBI non-redundant data and UBA MAG data.
+These sources include CARD:Canonical and CARD:R&V (version 3.0.5) sequences for the KPC, NDM, OXA-48-like, and MCR gene families, and associated homologs from NCBI non-redundant data and UBA MAG data.
 The 32 canonical MCR sequence variants (Table {@tbl:mcr-variants}), 18 canonical KPC sequence variants (Table {@tbl:kpc-variants}), 14 canonical NDM sequence variants (Table {@tbl:ndm-variants}), and 6 canonical OXA-48-like sequence variants (Table {@tbl:oxa-variants}), as labeled in the CARD database, were obtained as a reference. 
-The NCBI non-redundant data consisted of all non-redundant GenBank, Protein Data Bank (PDB), SwissProt, Protein information resource (PIR), Protein research foundation (PRF) data from May 17, 2019.
+The NCBI non-redundant data consisted of all non-redundant GenBank, Protein Data Bank (PDB), SwissProt, Protein information resource (PIR), Protein research foundation (PRF) data as of May 17, 2019.
 The MAG data was derived from a data-set of 7,903 draft quality MAGs generated from Sequence Read Archive data by Parks et. al [@wrBRBdFb]. 
 The SRA metagenomic data from which these MAGs were derived were chosen to represent lineages which were under-sampled (e.g., environmental and non-human gastrointestinal samples).
 
@@ -194,11 +181,11 @@ Many of the sequences are nearly identical, thus they were further processed by 
 
 The reference CARD canonical sequences were also used to perform a multiple query BLASTP against the NCBI non-redundant database with an e-value and query coverage threshold indicated in Table 1
 There are many highly sampled taxa and genes in the non-redundant database. 
-To balance the distribution, and reduce the size of the non-redundant sequence set, CD-HIT version 4.8.1 was also used to cluster the data as per Table 1.
+To balance the distribution, and reduce the size of the non-redundant sequence set, CD-HIT version 4.8.1 was also used to cluster the data for each family as per Table 1.
 
 For the metagenomic data, RGI version 5.0 with CARD database version 3.02 [@1ByMfX8Y1] was run on the contigs of the 7903 MAGs with the inclusion of loose, perfect, and strict hits.
 The search strings in Table S1 were used to extract results from the RGI output.
-The CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with a e-value threshold and query coverage from Table 1.
+The CARD canonical sequences were used to perform a multiple query BLASTP against this UBA blast database with an e-value threshold and query coverage from Table 1.
 The minimum BLAST query coverages were chosen to produce meaningful alignments.
 
 For all sequence variants obtained from each data source, redundant results for the prevalence, NCBI, and UBA queries were filtered from these BLASTP results by retrieving only the longest sequence for each unique Subject Taxonomy ID. 
@@ -289,13 +276,13 @@ For all sequence variants obtained from each data source, redundant results for 
   </tr>
 </tbody>
 </table>
-Table 1: Names of the canonical MCR phosphoethanolamine transferase variants from CARD database {#tbl:params}
+![Table 1: Names of the canonical MCR phosphoethanolamine transferase variants from CARD database](){#tbl:params}
 
 ### Sequence Alignment
 
 Two alignments were created for each AMR determinant under study.
-The first alignment was created to compare the phylogenetic relationship of the canonical and prevalence (putaive) sequences.
-The second alignment was created for an comparison of sequences from all four databases.
+The first alignment was created to compare the phylogenetic relationship of the canonical and R&V (putative) sequences.
+The second alignment was created for a comparison of sequences from all four databases.
 
 The putative AMR alignment was made up of the sequences from the CARD prevalence data were combined in one multi-FASTA format file with the canonical sequences and an outgroup chosen for each AMR family as per table ?? [TODO: make a table of outgroups in supplemental]. 
 In the second, more diverse alignment, The filtered sequences from NCBI non-redundant data, CARD prevalence data, UBA data were all combined into one multi-FASTA format file with the canonical sequences with the same outgroup sequences (table ??).
@@ -323,6 +310,7 @@ This clade is closely related to ICR-Mc [@JT9eRkR8], another phosphoethanolamine
 MCR-3 and MCR-7, also form a closely related clade.
 
 ![Phylogenetic relationship of 32 canonical (labels prefixed with 'lcl_canon' in yellow), 54 CARD:R&V (labels prefixed with 'lcl_prev' in tan) MCR family sequences, and an outgroup from Betaproteobacteria ('lcl_outgroup' in grey). Each MCR variant is coloured based on its allele number.](images/mcr_canon_prev_full.mintax.svg){#fig:canon-prev-tree}
+
 The tree visualisation was further condensed to only a single representative for each MCR allele (figure {@fig:canon-prev-tree-collapsed}).
 Regions of the tree vary in their potential to accept additional diversity.
 Some clades are tightly related, while others have more distance between them.
